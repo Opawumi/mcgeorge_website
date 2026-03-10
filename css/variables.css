@@ -1,0 +1,190 @@
+:root {
+  /* Primary Colors */
+  --primary: #006625;
+  --primary-100: #e5f0e9;
+  --primary-200: #cce0d3;
+  --primary-300: #99c2a8;
+  --primary-400: #66a37c;
+  --primary-500: #338551;
+  --primary-600: #00521e;
+  --primary-700: #003d16;
+  --primary-800: #00290f;
+  --primary-900: #001407;
+
+  /* Secondary Colors */
+  --secondary: #8ff7a7;
+  --secondary-100: #f4fef6;
+  --secondary-200: #e9fded;
+  --secondary-300: #d2fcdc;
+  --secondary-400: #bcfaca;
+  --secondary-500: #a5f9b9;
+  --secondary-600: #72c686;
+  --secondary-700: #569464;
+  --secondary-800: #396343;
+  --secondary-900: #1d3121;
+
+  /* Base Colors */
+  --white: #ffffff;
+  --black: #020100;
+  --dark-surface: #1d3121;
+  --border: #e6e6e5;
+
+  /* Neutral Colors */
+  --neutral: #7b7b7b;
+  --neutral-100: #f2f2f2;
+  --neutral-200: #e5e5e5;
+  --neutral-300: #cacaca;
+  --neutral-400: #b0b0b0;
+  --neutral-500: #959595;
+  --neutral-600: #626262;
+  --neutral-700: #4a4a4a;
+  --neutral-800: #313131;
+  --neutral-900: #191919;
+
+  /* Font Weights */
+  --font-weight-400: 400; /* Regular */
+  --font-weight-500: 500; /* Medium */
+  --font-weight-600: 600; /* Semi-bold */
+  --font-weight-700: 700; /* Bold */
+
+  /* Font Sizes: Headings (Mobile Base) */
+  --text-h1: 32px;
+  --text-h2: 28px;
+  --text-h3: 20px;
+  --text-h4: 18px;
+  --text-h5: 16px;
+  --text-h6: 15px;
+
+  /* Font Sizes: Body (Mobile Base) */
+  --text-xlarge: 16px;
+  --text-large: 16px;
+  --text-regular: 14px;
+  --text-small: 12px;
+
+  /* Size: Captions & Microcopy (Mobile Base) */
+  --text-caption: 12px;
+  --text-microcopy: 12px;
+  --text-overline: 13px;
+
+  /* Size: Buttons & CTAs (Consistent across all devices) */
+  --text-btn-primary: 16px;
+  --text-btn-secondary: 14px;
+  --text-btn-small: 12px;
+
+  /* Size: Form Labels & Input Text (Mobile Base) */
+  --text-label: 14px;
+  --text-input: 14px;
+  --text-helper: 12px;
+  --text-error: 12px;
+
+  /* Size: Quotes & Callouts (Mobile Base) */
+  --text-quote: 18px;
+  --text-citation: 14px;
+
+  --radius-1: 2px;
+  --radius-2: 4px;
+  --radius-3: 6px;
+  --radius-4: 8px;
+  --radius-5: 8px;
+  --radius-6: 16px;
+
+  /* Strokes (Same across all devices) */
+  --stroke-0: 0px;
+  --stroke-00: 0.5px;
+  --stroke-1: 1px;
+  --stroke-2: 2px;
+  --stroke-3: 4px;
+
+  /* Spacing (Mobile Base) */
+  --spacing: 0px;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 16px;
+  --spacing-6: 16px;
+  --spacing-7: 20px;
+  --spacing-8: 24px;
+  --spacing-9: 32px;
+  --spacing-10: 40px;
+  --spacing-11: 48px;
+  --spacing-12: 64px;
+  --spacing-13: 64px;
+}
+
+/* Tablet Overrides */
+@media (min-width: 768px) {
+  :root {
+    /* Headings */
+    --text-h1: 40px;
+    --text-h2: 32px;
+    --text-h3: 24px;
+    --text-h4: 20px;
+    --text-h6: 16px; /* H5 stays 16px */
+
+    /* Body */
+    --text-xlarge: 18px;
+    --text-large: 18px;
+    --text-regular: 16px;
+    --text-small: 14px;
+
+    /* Captions & Microcopy */
+    --text-overline: 10px;
+
+    /* Form Labels & Input Text */
+    --text-label: 16px;
+    --text-input: 16px;
+
+    /* Quotes & Callouts */
+    --text-quote: 20px;
+    --text-citation: 16px;
+
+    --radius-3: 8px;
+    --radius-5: 12px;
+
+    --spacing-6: 20px;
+    --spacing-7: 24px;
+    --spacing-8: 32px;
+    --spacing-9: 40px;
+    --spacing-10: 48px;
+    --spacing-11: 64px;
+    --spacing-12: 80px;
+    --spacing-13: 80px;
+  }
+}
+
+/* Desktop Overrides */
+@media (min-width: 1024px) {
+  :root {
+    /* Headings */
+    --text-h1: 48px;
+    --text-h2: 36px;
+    --text-h3: 28px;
+    --text-h4: 22px;
+    --text-h5: 18px; /* H6 stays 16px */
+
+    /* Body */
+    --text-xlarge: 20px;
+    /* Large, Regular, and Small stay the same as Tablet */
+
+    /* Form Labels & Input Text */
+    --text-input: 14px;
+
+    /* Quotes & Callouts */
+    --text-quote: 24px;
+
+    --radius-4: 12px;
+    --radius-5: 16px;
+    --radius-6: 24px;
+
+    --spacing-5: 20px;
+    --spacing-6: 24px;
+    --spacing-7: 32px;
+    --spacing-8: 40px;
+    --spacing-9: 48px;
+    --spacing-10: 64px;
+    --spacing-11: 80px;
+    --spacing-12: 96px;
+    --spacing-13: 120px;
+  }
+}

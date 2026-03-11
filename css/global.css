@@ -325,7 +325,7 @@ a {
     width: 36px;
     height: 36px;
     aspect-ratio: 1/1;
-    background: url("../assets/logo.svg") white 50% / cover no-repeat;
+    background: url("../assets/logo_ng.svg") white 50% / cover no-repeat;
 }
 
 .last_icon {

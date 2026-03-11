@@ -1,11 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('./variables.css');
-@import url('./utilities.css');
+@import url("./variables.css");
+@import url("./utilities.css");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Inter', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--neutral-100);
+  color: var(--neutral-900);
+}
+
+/* Header
+   -------------------------------------------------------------------------- */
+
+.site-header-main {
+  background-color: var(--white);
+}
+
+.site-header-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-6) var(--spacing-12);
+}
+
+.site-header-logo img {
+  display: block;
+  height: 40px;
+}
+
+.site-header-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-7);
+}
+
+.site-header-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--text-regular);
+  color: var(--black);
+  font-weight: var(--font-weight-600);
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  padding-block: 4px;
+}
+
+.site-header-link.active{
+    color: var(--primary);
+}
+
+.site-header-link.active::after {
+  width: 100%;
+}
+
+.site-header-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+  transition: width 150ms ease;
+}
+
+.site-header-link:hover::after,
+.site-header-link:focus-visible::after {
+  width: 100%;
+}
+
+.site-header-link-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.site-header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+
+.site-header-cta-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.site-header-login {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-regular);
+  font-weight: var(--font-weight-500);
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.site-header-login-icon {
+  width: 16px;
+  height: 16px;
 }

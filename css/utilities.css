@@ -201,13 +201,13 @@
 
 .btn-primary-outline {
   background-color: transparent;
-  color: var(--primary-700);
-  border-color: var(--primary-600);
+  color: var(--primary);
+  border-color: var(--primary);
 }
 
 .btn-primary-outline:hover:not(:disabled) {
   background-color: var(--primary-100);
-  border-color: var(--primary-700);
+  border-color: var(--primary);
 }
 
 .btn-white-outline {
@@ -237,7 +237,7 @@
 }
 
 .section-container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: var(--spacing-10) var(--spacing-12);
 }

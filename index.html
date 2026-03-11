@@ -1,15 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>McGeorge Consulting Ltd. | Home</title>
     <link rel="stylesheet" href="./css/global.css">
 </head>
 <body>
     
-    <footer>
+    <header class="site-header">
+      <!-- Main bar: light background, logo | nav | Login + Book a Call -->
+      <div class="site-header-main">
+        <div class="site-header-inner">
+          <a
+            href="/"
+            class="site-header-logo"
+            aria-label="McGeorge Consulting home"
+          >
+            <img src="./assets/logo.svg" alt="McGeorge Consulting Ltd" />
+          </a>
+
+          <nav class="site-header-nav" aria-label="Main navigation">
+            <a href="#" class="site-header-link active">
+              Why McGeorge
+            </a>
+            <a href="#" class="site-header-link">
+              Services
+              <img
+                src="./assets/chevron-down-green.svg"
+                alt=""
+                aria-hidden="true"
+                class="site-header-link-icon"
+              />
+            </a>
+            <a href="#" class="site-header-link">
+              Industries
+            </a>
+            <a href="#" class="site-header-link">
+              Products
+            </a>
+            <a href="#" class="site-header-link">Insight</a>
+            <a href="#" class="site-header-link">
+              Career
+            </a>
+          </nav>
+
+          <div class="site-header-actions">
+            <a href="#" class="site-header-login">
+              <img
+                src="./assets/login.svg"
+                alt=""
+                aria-hidden="true"
+                class="site-header-login-icon"
+              />
+              Login
+            </a>
+            <button
+              type="button"
+              class="btn btn-primary btn-lg site-header-cta"
+            >
+              Book a Call
+              <img
+                src="./assets/arrow-right.svg"
+                alt=""
+                aria-hidden="true"
+                class="site-header-cta-icon"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+   <footer>
         <a href="./components/footer.html">footer</a>
     </footer>
-</body>
+  </body>
 </html>

@@ -977,7 +977,42 @@
     background: var(--primary-100);
 }
 
-.section_4_section_productlist_container_link_component_image {
+.section_4_section_productlist_container_link_component_image_1 {
+    width: 168px;
+    height: 96px;
+    border-radius: var(--radius-3);
+    background: url(../assets/asmartfarm.svg) var(--primary-100) 50% / cover no-repeat;
+}
+
+.section_4_section_productlist_container_link_component_image_2 {
+    width: 168px;
+    height: 96px;
+    border-radius: var(--radius-3);
+    background: url(../assets/asmartfarm.svg) var(--primary-100) 50% / cover no-repeat;
+}
+
+.section_4_section_productlist_container_link_component_image_3 {
+    width: 168px;
+    height: 96px;
+    border-radius: var(--radius-3);
+    background: url(../assets/asmartfarm.svg) var(--primary-100) 50% / cover no-repeat;
+}
+
+.section_4_section_productlist_container_link_component_image_4 {
+    width: 168px;
+    height: 96px;
+    border-radius: var(--radius-3);
+    background: url(../assets/asmartfarm.svg) var(--primary-100) 50% / cover no-repeat;
+}
+
+.section_4_section_productlist_container_link_component_image_5 {
+    width: 168px;
+    height: 96px;
+    border-radius: var(--radius-3);
+    background: url(../assets/asmartfarm.svg) var(--primary-100) 50% / cover no-repeat;
+}
+
+.section_4_section_productlist_container_link_component_image_6 {
     width: 168px;
     height: 96px;
     border-radius: var(--radius-3);
@@ -1451,7 +1486,21 @@
     background: var(--white);
 }
 
-.section_6_container_2_container_2_container_image {
+.section_6_container_2_container_2_container_image_1 {
+    width: 175.997px;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url(../assets/erp_image.png) lightgray 50% / cover no-repeat;
+}
+
+.section_6_container_2_container_2_container_image_2 {
+    width: 175.997px;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url(../assets/erp_image.png) lightgray 50% / cover no-repeat;
+}
+
+.section_6_container_2_container_2_container_image_3 {
     width: 175.997px;
     align-self: stretch;
     border-radius: var(--radius-5);

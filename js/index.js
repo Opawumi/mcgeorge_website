@@ -117,22 +117,22 @@
       scrollToIndex()
     }
 
-    var leftBtn = document.querySelector('.productinfo_button_left')
-    var rightBtn = document.querySelector('.productinfo_button_right')
+    var leftBtns = document.querySelectorAll('.productinfo_button_left')
+    var rightBtns = document.querySelectorAll('.productinfo_button_right')
 
-    if (leftBtn) {
-      leftBtn.addEventListener('click', function (e) {
+    leftBtns.forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
         e.preventDefault()
         goProductsPrev()
       })
-    }
+    })
 
-    if (rightBtn) {
-      rightBtn.addEventListener('click', function (e) {
+    rightBtns.forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
         e.preventDefault()
         goProductsNext()
       })
-    }
+    })
   }
 })()
 

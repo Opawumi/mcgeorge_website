@@ -823,6 +823,15 @@
     letter-spacing: 0;
 }
 
+.section_4_section_productinfo_container_container_2_title span {
+    display: none;
+    color: var(--primary);
+    font-size: var(--text-h2);
+    font-weight: var(--font-weight-700);
+    line-height: 1.22222;
+    letter-spacing: 0;
+}
+
 .section_4_section_productinfo_container_container_2_subtitle {
     color: var(--primary);
     font-size: var(--text-h2);
@@ -943,7 +952,8 @@
 
 .section_4_section_productlist_container .section_4_section_productlist_container_link {
     display: flex;
-    width: 260px;
+    width: 100%;
+    min-width: 260px;
     padding: var(--spacing-6);
     flex-direction: column;
     align-items: flex-start;
@@ -969,12 +979,21 @@
 .section_4_section_productlist_container_link_component {
     display: flex;
     height: 120px;
+    width: 100%;
     padding: 12px 21px;
     justify-content: center;
     align-items: center;
     align-self: stretch;
     border-radius: var(--radius-2);
     background: var(--primary-100);
+}
+
+.section_4_section_productlist_container_link_component.oil_and_gas {
+    background: var(--black);
+}
+
+.section_4_section_productlist_container_link.workmerate_erp_suite {
+    min-width: 290px;
 }
 
 .section_4_section_productlist_container_link_component_image_1 {
@@ -985,42 +1004,45 @@
 }
 
 .section_4_section_productlist_container_link_component_image_2 {
-    width: 168px;
-    height: 96px;
+    width: 57.344px;
+    height: 64px;
     border-radius: var(--radius-3);
-    background: url(../assets/asmartfarm.svg) var(--primary-100) 50% / cover no-repeat;
+    background: url(../assets/e_memo.svg) var(--primary-100) 50% / cover no-repeat;
 }
 
 .section_4_section_productlist_container_link_component_image_3 {
     width: 168px;
+    flex: 1 0 0;
     height: 96px;
     border-radius: var(--radius-3);
-    background: url(../assets/asmartfarm.svg) var(--primary-100) 50% / cover no-repeat;
+    background: url(../assets/mclearnms.svg) var(--primary-100) 50% / cover no-repeat;
+    mix-blend-mode: multiply;
 }
 
 .section_4_section_productlist_container_link_component_image_4 {
-    width: 168px;
-    height: 96px;
+    width: 163px;
+    height: 30.326px;
     border-radius: var(--radius-3);
-    background: url(../assets/asmartfarm.svg) var(--primary-100) 50% / cover no-repeat;
+    background: url(../assets/mcsportng.svg) var(--primary-100) 50% / cover no-repeat;
 }
 
 .section_4_section_productlist_container_link_component_image_5 {
-    width: 168px;
-    height: 96px;
+    width: 162px;
+    height: 18.968px;
     border-radius: var(--radius-3);
-    background: url(../assets/asmartfarm.svg) var(--primary-100) 50% / cover no-repeat;
+    background: url(../assets/workmerate.svg) var(--primary-100) 50% / cover no-repeat;
 }
 
 .section_4_section_productlist_container_link_component_image_6 {
-    width: 168px;
-    height: 96px;
+    width: 136px;
+    height: 62px;
     border-radius: var(--radius-3);
-    background: url(../assets/asmartfarm.svg) var(--primary-100) 50% / cover no-repeat;
+    background: url(../assets/hds.svg) var(--black) 50% / cover no-repeat;
 }
 
 .section_4_section_productlist_container_link_component_frame {
     display: flex;
+    width: 100%;
     align-items: center;
     gap: var(--spacing-4);
     align-self: stretch;
@@ -1028,6 +1050,7 @@
 
 .section_4_section_productlist_container_link_component_frame_container {
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-1);
@@ -1037,6 +1060,7 @@
 .section_4_section_productlist_container_link_component_frame_container_title {
     align-self: stretch;
     color: var(--black);
+    width: 100%;
     font-size: var(--text-h6);
     font-weight: var(--font-weight-600);
     line-height: 22px;
@@ -1167,6 +1191,15 @@
 }
 
 .section_5_container_container_2_linkheader_title_2 {
+    color: var(--primary);
+    font-size: var(--text-h2);
+    font-weight: var(--font-weight-700);
+    line-height: 44px;
+    letter-spacing: 0;
+}
+
+.section_5_container_container_2_linkheader_title_2 > span {
+    display: none;
     color: var(--primary);
     font-size: var(--text-h2);
     font-weight: var(--font-weight-700);
@@ -1521,7 +1554,7 @@
     width: 175.997px;
     align-self: stretch;
     border-radius: var(--radius-5);
-    background: url(../assets/erp_image.png) lightgray 50% / cover no-repeat;
+    background: url(../assets/erp01_image.png) lightgray 50% / cover no-repeat;
 }
 
 .section_6_container_2_container_2_container_container {
@@ -2097,7 +2130,7 @@
     }
 
     .section_2_cards {
-        gap: 24px;
+        gap: 16px;
     }
 
     .section_2_cards_row_1 {
@@ -2267,6 +2300,32 @@
     .hero_section_section_7 .hero_container {
         padding: 0px 24px 0px;
         margin: 40px auto 0px;
+    }
+
+    .section_4_section_productinfo_container_container_2_title > span {
+        display: inline;
+        color: var(--primary);
+        font-size: var(--text-h2);
+        font-weight: var(--font-weight-700);
+        line-height: 1.22222;
+        letter-spacing: 0;
+    }
+
+    .section_4_section_productinfo_container_container_2_subtitle {
+        display: none;
+    }
+
+    .section_5_container_container_2_linkheader_title_2 > span {
+        display: inline;
+        color: var(--primary);
+        font-size: var(--text-h2);
+        font-weight: var(--font-weight-700);
+        line-height: 44px;
+        letter-spacing: 0;
+    }
+
+    .section_5_container_container_2_subtitle {
+        display: none;
     }
 
 }

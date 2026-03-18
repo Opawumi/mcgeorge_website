@@ -91,7 +91,19 @@
       return cardRect.width + gap
     }
 
+    function getVisibleCount () {
+      var step = getStep()
+      if (!step) return 1
+
+      // How many cards fit fully in the viewport width
+      var containerWidth = productContainer.clientWidth || 0
+      var count = Math.floor(containerWidth / step)
+
+      return Math.max(1, count)
+    }
+
     function clampIndex (index) {
+      visibleCount = getVisibleCount()
       var maxStart = Math.max(productCards.length - visibleCount, 0)
       if (index < 0) return 0
       if (index > maxStart) return maxStart
@@ -99,6 +111,9 @@
     }
 
     function scrollToIndex () {
+      // Recompute in case layout changed (mobile/desktop, resize, etc.)
+      visibleCount = getVisibleCount()
+      currentStart = clampIndex(currentStart)
       var step = getStep()
       var target = step * currentStart
       productContainer.scrollTo({

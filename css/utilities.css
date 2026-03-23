@@ -111,7 +111,7 @@
 }
 
 .text-secondary {
-  color: var(--secondary-700);
+  color: var(--secondary);
 }
 
 .text-neutral {
@@ -206,7 +206,7 @@
 }
 
 .btn-primary-outline:hover:not(:disabled) {
-  background-color: var(--primary-100);
+  background-color: rgba(55, 55, 55, 0.2);
   border-color: var(--primary);
 }
 
@@ -236,8 +236,15 @@
   font-size: var(--text-btn-primary);
 }
 
+/* Section container */
 .section-container {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: var(--spacing-10) var(--spacing-12);
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    padding: var(--spacing-10) var(--spacing-8);
+  }
 }

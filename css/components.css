@@ -1,0 +1,18 @@
+/* Breadcrumbs */
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  font-size: var(--text-btn-small);
+  font-weight: var(--font-weight-500);
+}
+.breadcrumbs a {
+  color: var(--white);
+}
+
+.breadcrumbs.breadcrumbs-primary a.active {
+  color: var(--secondary);
+}
+.breadcrumbs.breadcrumbs-secondary a.active {
+  color: var(--primary);
+}

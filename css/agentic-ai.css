@@ -514,6 +514,9 @@
 
   .ai_approach_step_num {
     margin-top: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
   }
 
   .ai_approach_step_desc {

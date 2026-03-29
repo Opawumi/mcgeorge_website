@@ -117,6 +117,34 @@ letter-spacing: 0.5px;
     background: url("../../../assets/services/ai/manufacturing_background_image.svg") lightgray 50% / cover no-repeat;
 }
 
+.component_2_background_image_2 {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/ai/infrastructure_background_image.jpg") lightgray 50% / cover no-repeat;
+}
+
+.component_2_background_image_3 {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/ai/llm_background_image.jpg") lightgray 50% / cover no-repeat;
+}
+
+.component_2_background_image_4 {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/ai/data_background_image.jpg") lightgray 50% / cover no-repeat;
+}
+
+.component_2_background_image_5 {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/ai/bootcamp_background_image.jpg") lightgray 50% / cover no-repeat;
+}
+
 .section_1 {
     display: flex;
     width: 100%;
@@ -374,7 +402,7 @@ letter-spacing: 0.5px;
 
 .section_7 > div > div > div + div > div > div {
     display: flex;
-    width: 48px;
+    min-width: 48px;
     height: 48px;
     padding-left: 0;
     justify-content: center;
@@ -547,6 +575,7 @@ letter-spacing: 0.5px;
     font-weight: var(--font-weight-600);
     line-height: 22px; 
     text-align: center;
+    text-wrap: nowrap;
 }
 
 .section_3 > div + div > div > h6 + div > p {
@@ -746,15 +775,29 @@ letter-spacing: 0.5px;
     align-items: flex-start;
     flex: 1 0 0;
     align-self: stretch;
-    border-radius: var(--radius-5);
+    border-radius: 16px;
     border: var(--stroke-1) solid var(--border);
     gap: unset;
+    overflow: hidden; /* clip image/children to border-radius */
 }
 
 .section_8 > div + div > div > div {
+    min-width: 100%;
     height: 160px;
     align-self: stretch;
     background: url(/assets/services/ai/agentic_ai.png) lightgray 0px -24.633px / 100% 146.964% no-repeat;
+}
+
+.cybersecurity {
+    background: url(/assets/services/ai/cybersecurity.jpg) lightgray 0px -24.633px / 100% 146.964% no-repeat !important; 
+}
+
+.execs {
+    background: url(/assets/services/ai/execs.jpg) lightgray 0px -24.633px / 100% 146.964% no-repeat !important; 
+}
+
+.finance {
+    background: url(/assets/services/ai/finance.jpg) lightgray 0px -24.633px / 100% 146.964% no-repeat !important; 
 }
 
 .section_8 > div + div > div > div + div {
@@ -818,9 +861,7 @@ letter-spacing: 0.5px;
 .section_8 > div + div > div > div + div > div + div > svg {
     width: 16px;
     height: 16px;
-}
-
-.cta {
+}.cta {
     display: flex;
     width: 100%;
     max-width: 1440px;
@@ -917,4 +958,683 @@ letter-spacing: 0.5px;
     border: 1px solid var(--primary) !important;
     background: transparent;
     color: var(--primary);
+}
+
+.mobile_button {
+    display: none;
+}
+
+.mobile_section_3 {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .component_2 {
+        display: flex;
+        padding: var(--spacing-10) var(--spacing-8);
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: var(--spacing-6);
+    }
+
+    .component_2_background_image {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_2 {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_3 {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_4 {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_5 {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_hero_text_container {
+        width: 100%;
+        display: flex;
+        padding: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .breadcumbs {
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        row-gap: var(--spacing-2);
+    }
+
+    .breadcumbs a {
+        white-space: normal;
+    }
+
+    .component_2_frame_frame_2 > h1 {
+        color: var(--black);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px; 
+        letter-spacing: 0;
+    }
+
+    .component_2_frame_frame_2 > p {
+        color: var(--black);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0;
+    }
+
+    .component_2_frame_frame_2 {
+        gap: 4px;
+    }
+
+    .hero_actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .hero_actions > button {
+        width: 100%;
+    }
+
+    .section_1 {
+        display: flex;
+        padding: 32px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .section_1_container {
+        min-width: unset;
+        width: 100%;
+        gap: 4px;
+    }
+
+    .section_1_container > h2 {
+        color: var(--black);
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0;
+    }
+
+    .section_1 > p {
+        color: var(--Black, #020100);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0;
+    }
+
+    .section_1_container_container > p {
+        color: var(--Primary-Primary, #006625);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
+
+    .section_2 {
+        display: flex;
+        padding: 32px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .section_2_container {
+        gap: 8px;
+    }
+
+    .section_2_container_container > h6 {
+        color: #006625;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px; 
+        letter-spacing: 0;
+        text-transform: uppercase;
+    }
+
+    .section_2_container > h2 {
+        color: var(--black);
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px; 
+        letter-spacing: 0;
+    }
+
+    .section_2_container_2 {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .link_card > img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .section_3 > div,
+    .cta > div,
+    .section_4 > div {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .section_7 {
+        display: flex;
+        padding: 32px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    .section_7 > div {
+        flex-direction: column;
+    }
+
+    .section_7 > div > div + div{
+        min-height: 240px;
+    }
+
+    .section_7 > div > div > div > div h6 {
+        color: var(--Primary-Primary, #006625);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0;
+        text-transform: uppercase;
+    }
+
+    .section_7 > div > div > div > div + div > h2 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0;
+    }
+
+    .section_7 > div > div > div + div > div {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .section_7 > div > div > div + div > div > div {
+        min-width: 36px;
+        height: 36px;
+    }
+
+    .section_7 > div > div > div + div > div > h6 {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0;
+    }
+
+    .section_3 {
+        display: none;
+        /* padding: 32px 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px; */
+    }
+
+    /* .section_3 > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+    }
+
+    .section_3 > div > div + div > h2 {
+        color: var(--black);
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0;
+        text-align: center;
+    }
+
+    .section_3 > div + div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0;
+        align-self: stretch;
+    } */
+
+    .section_4 {
+        display: flex;
+        padding: 32px 24px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .section_4 > div > div > h6 {
+        color: var(--primary);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0;
+        text-transform: uppercase;
+    }
+
+    .section_4 > div > div + div > h2  {        
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0;
+    }
+
+    .section_4 > div {
+        gap: 8px;
+    }
+
+    
+    .section_4 > div > h4 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0;
+    }
+
+    .section_4 > div + div > div {
+        gap: 4px;
+        padding: 4px 12px 4px 4px;
+    }
+
+    .section_4 > div + div > div > h6 {        
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0;
+    }
+
+    .section_8 {
+        display: flex;
+        padding: 32px 24px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    /* .section_8 > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+    } */
+
+    .section_8 > div > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+    }
+
+    .section_8 > div > div + div {
+        display: none;
+    }
+
+    .section_8 > div > div > div > h6 {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0;
+    }
+
+    .section_8 > div + div > div > div + div > div > h6 {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0;
+    }
+
+    .section_8 > div + div > div > div + div > div > p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0;
+    }
+
+    .section_8 > div + div > div > div + div {
+        gap: 12px;
+    }
+
+    .section_8 > div:first-child {
+        align-self: stretch;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .section_8 > div + div {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: min(280px, calc(100vw - 96px));
+        gap: 16px;
+        align-items: stretch;
+        align-self: stretch;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        overscroll-behavior-x: contain;
+    }
+
+    .section_8 > div + div > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: none;
+        width: min(280px, calc(100vw - 96px));
+        min-width: min(280px, calc(100vw - 96px));
+        max-width: none;
+        align-self: stretch;
+        border-radius: 16px;
+        border: var(--stroke-1) solid var(--border);
+        gap: unset;
+        overflow: hidden;
+    }
+
+    .mobile_button {
+        width: 100%;
+        display: flex;
+        padding: 12px 16px;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        border-radius: 4px;
+        border: 1px solid var(--primary);
+        background: transparent;
+        color: var(--primary);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+    }
+
+    .mobile_button > svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .cta {
+        display: flex;
+        padding: 32px 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .cta > div > div > h6 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0;
+        text-transform: uppercase;
+    }
+
+    .cta > div {
+        gap: 8px;
+    }
+
+    .cta > div > h2 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0;
+    }
+
+    .cta > div > p {
+        color: var(--black);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0;
+    }
+
+    .cta > div + div {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .cta > div + div > button {
+        width: 100%;
+    }
+
+    .cta > div + div > button + button {
+        width: 100%;
+    }
+
+    .mobile_section_3 {
+        display: flex;
+        padding: 32px 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .mobile_section_3 > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+    }
+
+    .mobile_section_3 > div > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        align-self: stretch;
+    }
+
+    .mobile_section_3 > div > div > div {
+        width: 31.99px;
+        height: 1.979px;
+        border-radius: 58217800px;
+        background: var(--primary);
+    }
+
+    .mobile_section_3 > div > div > h6 {
+        color: var(--primary);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0;
+    }
+
+    .mobile_section_3 > div > div + div > h2 {
+        color: var(--black);
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0;
+        text-align: center;
+    }
+
+    .mobile_section_3 > div > div + div > h2 > span {
+        color: var(--primary);
+    }
+
+    .mobile_section_3 > div + div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+        position: relative;
+        isolation: isolate;
+    }
+
+    /* Vertical timeline: 2px #CCE0D3 from bottom of 1st icon to top of 5th (under icons 2–4). */
+    .mobile_section_3 > div + div > div:first-child > div:first-child {
+        anchor-name: --m3-icon-1;
+    }
+
+    .mobile_section_3 > div + div > div:nth-child(5) > div:first-child {
+        anchor-name: --m3-icon-5;
+    }
+
+    .mobile_section_3 > div + div::before {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        left: calc(16px + 18px - 1px);
+        width: 2px;
+        background: #CCE0D3;
+        pointer-events: none;
+        /* Fallback when anchor() is not supported (approximate; may need content tweaks) */
+        top: calc(16px + 36px);
+        height: calc(100% - (16px + 36px) - (16px + 36px));
+    }
+
+    @supports (top: anchor(--m3-icon-1 bottom)) {
+        .mobile_section_3 > div + div::before {
+            left: calc(anchor(--m3-icon-1 center) - 1px);
+            top: anchor(--m3-icon-1 bottom);
+            height: calc(anchor(--m3-icon-5 top) - anchor(--m3-icon-1 bottom));
+        }
+    }
+
+    .mobile_section_3 > div + div > div {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        padding: 24px 16px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+        border-radius: 8px;
+        overflow: visible;
+    }
+
+    .mobile_section_3 > div + div > div > div:first-child {
+        position: relative;
+        z-index: 2;
+    }
+
+    .mobile_section_3 > div + div > div > div {
+        display: flex;
+        width: 36px;
+        height: 36px;
+        padding-right: 0;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        border: 0.75px solid var(--primary-200);
+        background: var(--white);
+    }
+
+    .mobile_section_3 > div + div > div > div > svg {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+    }
+
+    .mobile_section_3 > div + div > div > div + div  {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        flex: 1 0 0;
+        min-width: 0;
+        overflow: visible;
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .mobile_section_3 > div + div > div > div + div > h6 {
+        color: var(--primary);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+    }
+
+    .mobile_section_3 > div + div > div > div + div > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        align-self: stretch;
+        flex-shrink: 0;
+        min-height: min-content;
+        overflow: visible;
+        border: 0;
+        outline: none;
+        box-shadow: none;
+        background: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .mobile_section_3 > div + div > div > div + div > div > h6 {
+        color: var(--black);
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0;
+    }
+
+    .mobile_section_3 > div + div > div > div + div > div > p {
+        color: var(--neutral-600);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0;
+    }
 }

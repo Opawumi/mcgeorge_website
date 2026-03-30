@@ -145,6 +145,41 @@ letter-spacing: 0.5px;
     background: url("../../../assets/services/ai/bootcamp_background_image.jpg") lightgray 50% / cover no-repeat;
 }
 
+.component_2_background_image_6 {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/ai/research_background_image.jpg") lightgray 50% / cover no-repeat;
+}
+
+.component_2_background_image_7 {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/ai/saas_background_image.jpg") lightgray 50% / cover no-repeat;
+}
+
+.component_2_background_image_8 {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/ai/teams_background_image.jpg") lightgray 50% / cover no-repeat;
+}
+
+.component_2_background_image_9 {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/ai/enterprise_background_image.jpg") lightgray 50% / cover no-repeat;
+}
+
+.component_2_background_image_10 {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/ai/gpu_background_image.png") lightgray 50% / cover no-repeat;
+}
+
 .section_1 {
     display: flex;
     width: 100%;
@@ -1008,6 +1043,36 @@ letter-spacing: 0.5px;
     }
 
     .component_2_background_image_5 {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_6 {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_7 {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_8 {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_9 {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_10 {
         height: 240px;
         align-self: stretch;
         flex: unset;

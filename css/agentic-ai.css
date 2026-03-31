@@ -515,8 +515,41 @@
   .ai_approach_step_num {
     margin-top: 0;
     width: 100%;
-    align-items: center;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: var(--spacing-4);
+    row-gap: var(--spacing-1);
+    align-items: start;
+    text-align: left;
+  }
+
+  .ai_approach_step::before {
+    content: "";
+    position: absolute;
+    left: 19px;
+    top: 40px;
+    bottom: calc(var(--spacing-7) * -1);
+    width: 2px;
+    background: var(--primary-200);
+  }
+
+  .ai_approach_step:last-child::before {
+    display: none;
+  }
+
+  .ai_approach_step img {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+  }
+
+  .ai_approach_step_num,
+  .ai_approach_step_title,
+  .ai_approach_step_desc {
+    grid-column: 2;
+  }
+
+  .ai_approach_step_num {
+    margin-top: 0;
   }
 
   .ai_approach_step_desc {

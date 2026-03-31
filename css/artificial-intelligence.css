@@ -55,6 +55,7 @@
     color: var(--black);
     font-size: var(--text-large);
     font-weight: var(--font-weight-300);
+
   }
   
   .ai_hero_image {
@@ -71,9 +72,15 @@
   }
   .ai_hero_actions {
     display: flex;
-    flex-direction: row;
-    gap: var(--spacing-2);
-    margin-top: var(--spacing-5);
+    flex-direction: column;
+    gap: var(--spacing-4);
+    margin-top: var(--spacing-7);
+  }
+
+  @media (min-width: 768px) {
+    .ai_hero_actions {
+      flex-direction: row;
+    }
   }
 
   
@@ -239,8 +246,16 @@
   object-fit: contain;
 }
 
+.ai_approach_step_num {
+  margin-top: var(--spacing-1);
+  color: var(--primary);
+  font-size: var(--text-btn-secondary);
+  font-weight: var(--font-weight-500);
+  line-height: 1;
+}
+
 .ai_approach_step_title {
-  margin-top: var(--spacing-3);
+  margin-top: var(--spacing-2);
 }
 
 .ai_approach_step_desc {
@@ -251,9 +266,9 @@
 @media (max-width: 767px) {
   .ai_approach_steps {
     flex-direction: column;
-    gap: var(--spacing-6);
+    gap: var(--spacing-7);
     margin-top: var(--spacing-6);
-    align-items: center;
+    align-items: stretch;
   }
 
   .ai_approach_connector {
@@ -261,13 +276,48 @@
   }
 
   .ai_approach_step {
+    position: relative;
     width: 100%;
-    align-items: center;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: var(--spacing-4);
+    row-gap: var(--spacing-1);
+    align-items: start;
+    text-align: left;
+  }
+
+  .ai_approach_step::before {
+    content: "";
+    position: absolute;
+    left: 19px;
+    top: 40px;
+    bottom: calc(var(--spacing-7) * -1);
+    width: 2px;
+    background: var(--primary-200);
+  }
+
+  .ai_approach_step:last-child::before {
+    display: none;
+  }
+
+  .ai_approach_step img {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+  }
+
+  .ai_approach_step_num,
+  .ai_approach_step_title,
+  .ai_approach_step_desc {
+    grid-column: 2;
+  }
+
+  .ai_approach_step_num {
+    margin-top: 0;
   }
 
   .ai_approach_step_desc {
     max-width: none;
+    margin-top: 0;
   }
 }
 

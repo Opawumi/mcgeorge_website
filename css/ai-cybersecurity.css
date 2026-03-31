@@ -1,0 +1,11 @@
+/* AI Cybersecurity page: clone of agentic-ai with one layout difference */
+
+@import url("./agentic-ai.css");
+
+/* Flip the "What we solve" columns on desktop only */
+@media (min-width: 992px) {
+  .agentic_key_wrapper.agentic_key_wrapper--reverse {
+    flex-direction: row-reverse;
+  }
+}
+

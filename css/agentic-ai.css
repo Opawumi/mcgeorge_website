@@ -12,6 +12,7 @@
   font-size: var(--text-btn-small);
   font-weight: var(--font-weight-500);
   margin-bottom: var(--spacing-2);
+  flex-wrap: wrap;
 }
 .breadcrumbs a {
   color: var(--black);
@@ -52,12 +53,15 @@
 .agentic_hero_text h1 {
   font-size: var(--text-h1);
   line-height: 1.16667;
+  margin-bottom: var(--spacing-2);
 }
 
 .agentic_hero_text p {
   color: var(--black);
   font-size: var(--text-large);
   font-weight: var(--font-weight-300);
+  margin-bottom: var(--spacing-2);
+  line-height: 1.4;
 }
 
 .agentic_hero_image {
@@ -75,7 +79,7 @@
 
 .agentic_hero_actions {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: var(--spacing-2);
   margin-top: var(--spacing-5);
 }
@@ -295,6 +299,9 @@
   .agentic_key_grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .agentic_hero_actions {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 992px) {
@@ -460,9 +467,9 @@
 @media (max-width: 767px) {
   .ai_approach_steps {
     flex-direction: column;
-    gap: var(--spacing-6);
+    gap: var(--spacing-7);
     margin-top: var(--spacing-6);
-    align-items: center;
+    align-items: stretch;
   }
 
   .ai_approach_connector {
@@ -470,13 +477,48 @@
   }
 
   .ai_approach_step {
+    position: relative;
     width: 100%;
-    align-items: center;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: var(--spacing-4);
+    row-gap: var(--spacing-1);
+    align-items: start;
+    text-align: left;
+  }
+
+  .ai_approach_step::before {
+    content: "";
+    position: absolute;
+    left: 19px;
+    top: 40px;
+    bottom: calc(var(--spacing-7) * -1);
+    width: 2px;
+    background: var(--primary-200);
+  }
+
+  .ai_approach_step:last-child::before {
+    display: none;
+  }
+
+  .ai_approach_step img {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+  }
+
+  .ai_approach_step_num,
+  .ai_approach_step_title,
+  .ai_approach_step_desc {
+    grid-column: 2;
+  }
+
+  .ai_approach_step_num {
+    margin-top: 0;
   }
 
   .ai_approach_step_desc {
     max-width: none;
+    margin-top: 0;
   }
 }
 
@@ -752,7 +794,7 @@
 }
 
 .ai-cta .text-body {
-  max-width: 760px;
+  max-width: 1036px;
   line-height: 1.6;
 }
 

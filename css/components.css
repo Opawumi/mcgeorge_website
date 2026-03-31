@@ -5,6 +5,7 @@
   gap: var(--spacing-1);
   font-size: var(--text-btn-small);
   font-weight: var(--font-weight-500);
+  flex-wrap: wrap;
 }
 .breadcrumbs a {
   color: var(--white);

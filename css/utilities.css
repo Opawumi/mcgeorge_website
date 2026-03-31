@@ -134,9 +134,8 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: var(spacing-3) var(spacing-6);
+  padding: var(--spacing-3) var(--spacing-6);
   border-radius: var(--radius-2);
-  border-width: var(--stroke-1);
   border-style: solid;
   font-weight: var(--font-weight-600);
   font-size: var(--text-btn-primary);
@@ -162,7 +161,7 @@
 
 .btn-primary {
   background-color: var(--primary);
-  border-color: var(--primary-600);
+  border-color: var(--primary);
   color: var(--white);
 }
 

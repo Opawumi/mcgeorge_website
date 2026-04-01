@@ -52,7 +52,8 @@
 
 .agentic_hero_text h1 {
   font-size: var(--text-h1);
-  line-height: 1.16667;
+  line-height: 1.25;
+  letter-spacing: 0;
   margin-bottom: var(--spacing-2);
 }
 
@@ -61,7 +62,8 @@
   font-size: var(--text-large);
   font-weight: var(--font-weight-300);
   margin-bottom: var(--spacing-2);
-  line-height: 1.4;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
 }
 
 .agentic_hero_image {
@@ -371,7 +373,7 @@
   }
 }
 
-/* AI Approach (delivery steps) - copied structure from AI page */
+/* AI Approach (delivery steps) — aligned with artificial-intelligence + fidic mobile timeline */
 
 .ai_approach {
   background: var(--white);
@@ -432,7 +434,11 @@
   min-width: 0;
 }
 
-.ai_approach_step img {
+.ai_approach_step_icon {
+  z-index: 1;
+}
+
+.ai_approach_step_icon img {
   width: 40px;
   height: 40px;
   border-radius: 999px;
@@ -450,18 +456,27 @@
   object-fit: contain;
 }
 
+.ai_approach_step_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .ai_approach_step_num {
-  margin-block: var(--spacing-2);
+  margin-top: var(--spacing-1);
+  color: var(--primary);
   font-size: var(--text-btn-secondary);
   font-weight: var(--font-weight-500);
-  color: var(--primary);
   line-height: 1;
+}
+
+.ai_approach_step_title {
+  margin-top: var(--spacing-2);
 }
 
 .ai_approach_step_desc {
   margin-top: var(--spacing-1);
   max-width: 220px;
-  color: var(--neutral-700);
 }
 
 @media (max-width: 767px) {
@@ -469,7 +484,7 @@
     flex-direction: column;
     gap: var(--spacing-7);
     margin-top: var(--spacing-6);
-    align-items: stretch;
+    align-items: center;
   }
 
   .ai_approach_connector {
@@ -479,73 +494,41 @@
   .ai_approach_step {
     position: relative;
     width: 100%;
-    display: grid;
-    grid-template-columns: 40px 1fr;
-    column-gap: var(--spacing-4);
-    row-gap: var(--spacing-1);
-    align-items: start;
+    max-width: min(22rem, 100%);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-4);
+    align-items: stretch;
     text-align: left;
   }
 
-  .ai_approach_step::before {
+  .ai_approach_step_icon {
+    position: relative;
+    flex: 0 0 40px;
+    width: 40px;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai_approach_step:not(:last-child) .ai_approach_step_icon::after {
     content: "";
     position: absolute;
-    left: 19px;
-    top: 40px;
-    bottom: calc(var(--spacing-7) * -1);
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(50% + 20px);
+    bottom: calc(-1 * var(--spacing-10));
     width: 2px;
     background: var(--primary-200);
+    z-index: 0;
   }
 
-  .ai_approach_step:last-child::before {
-    display: none;
-  }
-
-  .ai_approach_step img {
-    grid-column: 1;
-    grid-row: 1 / span 3;
-  }
-
-  .ai_approach_step_num,
-  .ai_approach_step_title,
-  .ai_approach_step_desc {
-    grid-column: 2;
-  }
-
-  .ai_approach_step_num {
-    margin-top: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 40px 1fr;
-    column-gap: var(--spacing-4);
-    row-gap: var(--spacing-1);
-    align-items: start;
-    text-align: left;
-  }
-
-  .ai_approach_step::before {
-    content: "";
-    position: absolute;
-    left: 19px;
-    top: 40px;
-    bottom: calc(var(--spacing-7) * -1);
-    width: 2px;
-    background: var(--primary-200);
-  }
-
-  .ai_approach_step:last-child::before {
-    display: none;
-  }
-
-  .ai_approach_step img {
-    grid-column: 1;
-    grid-row: 1 / span 3;
-  }
-
-  .ai_approach_step_num,
-  .ai_approach_step_title,
-  .ai_approach_step_desc {
-    grid-column: 2;
+  .ai_approach_step_content {
+    flex: 1;
+    align-items: flex-start;
+    min-width: 0;
   }
 
   .ai_approach_step_num {
@@ -717,6 +700,10 @@
   height: 16px;
 }
 
+.ai_related_mobile_cta {
+  display: none;
+}
+
 .ai_related_cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -730,6 +717,67 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .ai_related_header .ai_related_link--desktop {
+    display: none;
+  }
+
+  .ai_related_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: var(--spacing-4);
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    margin-inline: 0;
+    padding-inline: 0;
+    padding-inline-end: var(--spacing-4);
+    scroll-padding-inline-end: var(--spacing-4);
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    padding-bottom: var(--spacing-2);
+  }
+
+  .ai_related_cards::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .ai_related_cards::-webkit-scrollbar-thumb {
+    background: var(--primary-200);
+    border-radius: 4px;
+  }
+
+  .ai_related_card {
+    flex: 0 0 min(85%, 320px);
+    max-width: 320px;
+    scroll-snap-align: start;
+  }
+
+  .ai_related_mobile_cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2);
+    width: 100%;
+    margin-top: var(--spacing-6);
+    padding: var(--spacing-4) var(--spacing-6);
+    border-radius: var(--radius-2);
+    border: 1px solid var(--primary-300);
+    background: var(--secondary-100);
+    color: var(--primary);
+    font-size: var(--text-btn-small);
+    font-weight: var(--font-weight-500);
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  .ai_related_mobile_cta img {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .ai_related_img {
@@ -779,7 +827,19 @@
   }
 
   .ai_related_cards {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    overflow-x: visible;
+    flex-wrap: unset;
+    margin-inline: 0;
+    padding-inline: 0;
+    scroll-snap-type: none;
+  }
+
+  .ai_related_card {
+    flex: unset;
+    max-width: none;
+    scroll-snap-align: unset;
   }
 }
 
@@ -856,10 +916,6 @@
 }
 
 @media (max-width: 767px) {
-  .ai-cta {
-    align-items: stretch;
-    text-align: left;
-  }
 
   .ai-cta-actions {
     justify-content: flex-start;
@@ -869,4 +925,5 @@
     width: 100%;
   }
 }
+
 

@@ -1,4 +1,4 @@
-.ai_hero {
+.fidic_hero {
     background: var(--secondary-100);
 }
 
@@ -21,7 +21,7 @@
     color: var(--primary);
   }
 
-  .ai_hero_wrapper {
+  .fidic_hero_wrapper {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
@@ -30,7 +30,7 @@
     gap: var(--spacing-6, 16px);
   }
   
-  .ai_hero_text {
+  .fidic_hero_text {
     display: flex;
     flex-direction: column;
     align-self: stretch;
@@ -39,7 +39,7 @@
     padding: var(--spacing-8, 24px);
   }
   
-  .ai_hero_text_content {
+  .fidic_hero_text_content {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -47,12 +47,12 @@
     gap: var(--spacing-2, 8px);
   }
 
-  .ai_hero_text h1 {
+  .fidic_hero_text h1 {
     font-size: var(--text-h1);
     line-height: 1.25;
     letter-spacing: 0;
   }
-  .ai_hero_text p {
+  .fidic_hero_text p {
     color: var(--black);
     font-size: var(--text-large);
     font-weight: var(--font-weight-300);
@@ -60,19 +60,19 @@
     letter-spacing: 0.01em;
   }
   
-  .ai_hero_image {
+  .fidic_hero_image {
     max-height: 240px;
     width: 100%;
     border-radius: var(--radius-5);
   }
   
-  .ai_hero_image img {
+  .fidic_hero_image img {
     max-height: 240px;
     width: 100%;
     object-fit: cover;
     border-radius: var(--radius-5);
   }
-  .ai_hero_actions {
+  .fidic_hero_actions {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-4);
@@ -80,30 +80,30 @@
   }
 
   @media (min-width: 768px) {
-    .ai_hero_actions {
+    .fidic_hero_actions {
       flex-direction: row;
     }
   }
 
   
 @media (min-width: 992px) {
-    .ai_hero_wrapper {
+    .fidic_hero_wrapper {
       display: flex;
       flex-basis: 50%;
       align-items: stretch;
       justify-content: center;
     }
   
-    .ai_hero_text {
+    .fidic_hero_text {
       flex-basis: 66.66%;
     }
   
-    .ai_hero_image {
+    .fidic_hero_image {
       max-height: 100%;
       width: 33.33%;
     }
   
-    .ai_hero_image img {
+    .fidic_hero_image img {
       object-fit: cover;
       min-height: 100% !important;
       height: 100%;
@@ -115,71 +115,71 @@
 
 /* AI Overview Section */
 
-.ai_overview {
+.fidic_overview {
   background: var(--white);
 }
 
-.ai_overview_wrapper {
+.fidic_overview_wrapper {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-6);
   align-items: flex-start;
 }
 
-.ai_overview_subtitle {
+.fidic_overview_subtitle {
   display: flex;
   align-items: center;
   gap: var(--spacing-2);
   margin-bottom: var(--spacing-3);
 }
 
-.ai_overview_subtitle h6 {
+.fidic_overview_subtitle h6 {
     font-size: var(--text-h6);
     font-weight: 500;
 }
 
-.ai_overview_pre {
+.fidic_overview_pre {
   width: 32px;
   height: 2px;
   background-color: var(--primary);
 }
 
-.ai_overview_title {
+.fidic_overview_title {
   margin: 0;
 }
 
-.ai_overview_right {
+.fidic_overview_right {
   max-width: 720px;
 }
 
-.ai_overview_right p + p {
+.fidic_overview_right p + p {
   margin-top: var(--spacing-4);
 }
 
 @media (min-width: 992px) {
-  .ai_overview_wrapper {
+  .fidic_overview_wrapper {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: var(--spacing-8);
   }
 
-  .ai_overview_left {
+  .fidic_overview_left {
     flex: 0 0 33.33%;
   }
 
-  .ai_overview_right {
+  .fidic_overview_right {
     flex: 1;
   }
 }
 
 /* AI Approach (delivery steps) */
 
-.ai_approach {
+.fidic_approach {
   background: var(--white);
 }
 
-.ai_approach_header {
+.fidic_approach_header {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-2);
@@ -187,28 +187,28 @@
   align-items: center;
 }
 
-.ai_approach_subtitle {
+.fidic_approach_subtitle {
   display: flex;
   align-items: center;
   gap: var(--spacing-2);
 }
 
-.ai_approach_subtitle h6 {
+.fidic_approach_subtitle h6 {
   font-size: var(--text-h6);
   font-weight: 500;
 }
 
-.ai_approach_line {
+.fidic_approach_line {
   width: 32px;
   height: 2px;
   background-color: var(--primary);
 }
 
-.ai_approach_title {
+.fidic_approach_title {
   margin: 0;
 }
 
-.ai_approach_steps {
+.fidic_approach_steps {
   position: relative;
   margin-top: var(--spacing-8);
   display: flex;
@@ -216,7 +216,7 @@
   align-items: flex-start;
 }
 
-.ai_approach_connector {
+.fidic_approach_connector {
   position: absolute;
   top: 20px;
   left: calc(40px / 2);
@@ -225,7 +225,7 @@
   background: var(--primary-200);
 }
 
-.ai_approach_step {
+.fidic_approach_step {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -234,11 +234,11 @@
   min-width: 0;
 }
 
-.ai_approach_step_icon {
+.fidic_approach_step_icon {
   z-index: 1;
 }
 
-.ai_approach_step_icon img {
+.fidic_approach_step_icon img {
   width: 40px;
   height: 40px;
   border-radius: 999px;
@@ -250,19 +250,19 @@
   z-index: 1;
 }
 
-.ai_approach_icon {
+.fidic_approach_icon {
   width: 18px;
   height: 18px;
   object-fit: contain;
 }
 
-.ai_approach_step_content {
+.fidic_approach_step_content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.ai_approach_step_num {
+.fidic_approach_step_num {
   margin-top: var(--spacing-1);
   color: var(--primary);
   font-size: var(--text-btn-secondary);
@@ -270,28 +270,28 @@
   line-height: 1;
 }
 
-.ai_approach_step_title {
+.fidic_approach_step_title {
   margin-top: var(--spacing-2);
 }
 
-.ai_approach_step_desc {
+.fidic_approach_step_desc {
   margin-top: var(--spacing-1);
   max-width: 220px;
 }
 
 @media (max-width: 767px) {
-  .ai_approach_steps {
+  .fidic_approach_steps {
     flex-direction: column;
     gap: var(--spacing-7);
     margin-top: var(--spacing-6);
     align-items: center;
   }
 
-  .ai_approach_connector {
+  .fidic_approach_connector {
     display: none;
   }
 
-  .ai_approach_step {
+  .fidic_approach_step {
     position: relative;
     width: 100%;
     max-width: min(22rem, 100%);
@@ -299,11 +299,12 @@
     display: flex;
     flex-direction: row;
     gap: var(--spacing-4);
+    /* Stretch so the icon column can match row height; icon stays visually centered inside it */
     align-items: stretch;
     text-align: left;
   }
 
-  .ai_approach_step_icon {
+  .fidic_approach_step_icon {
     position: relative;
     flex: 0 0 40px;
     width: 40px;
@@ -313,7 +314,8 @@
     justify-content: center;
   }
 
-  .ai_approach_step:not(:last-child) .ai_approach_step_icon::after {
+  /* Vertical connector: from bottom of icon circle through row + flex gap toward next step */
+  .fidic_approach_step:not(:last-child) .fidic_approach_step_icon::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -325,17 +327,17 @@
     z-index: 0;
   }
 
-  .ai_approach_step_content {
+  .fidic_approach_step_content {
     flex: 1;
     align-items: flex-start;
     min-width: 0;
   }
 
-  .ai_approach_step_num {
+  .fidic_approach_step_num {
     margin-top: 0;
   }
 
-  .ai_approach_step_desc {
+  .fidic_approach_step_desc {
     max-width: none;
     margin-top: 0;
   }
@@ -343,41 +345,41 @@
 
 /* AI Capabilities Grid */
 
-.ai_capabilities {
+.fidic_capabilities {
   background-color: var(--secondary-100);
 }
 
-.ai_capabilities_pre {
+.fidic_capabilities_pre {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-4);
   margin-bottom: var(--spacing-8);
 }
 
-.ai_capabilities_pre_left {
+.fidic_capabilities_pre_left {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-2);
 }
 
-.ai_capabilities_subtitle {
+.fidic_capabilities_subtitle {
   display: flex;
   align-items: center;
   gap: var(--spacing-2);
 }
 
-.ai_capabilities_subtitle h6 {
+.fidic_capabilities_subtitle h6 {
   font-size: var(--text-h6);
   font-weight: 500;
 }
 
-.ai_capabilities_pre_line {
+.fidic_capabilities_pre_line {
   width: 32px;
   height: 2px;
   background-color: var(--primary);
 }
 
-.ai_capabilities_all {
+.fidic_capabilities_all {
   display: none;
   align-items: center;
   gap: var(--spacing-2);
@@ -389,25 +391,25 @@
   margin-left: auto;
 }
 
-.ai_capabilities_all_icon {
+.fidic_capabilities_all_icon {
   width: 16px;
   height: 16px;
 }
 
-.ai_capabilities_grid {
+.fidic_capabilities_grid {
   display: grid;
   gap: var(--spacing-6);
   grid-template-columns: 1fr;
   align-items: stretch;
 }
 
-.ai_capabilities_card{
+.fidic_capabilities_card{
     border-radius: var(--radius-5);
 }
 
 
-.ai_capabilities_card,
-.ai_capabilities_map {
+.fidic_capabilities_card,
+.fidic_capabilities_map {
   border: 1px solid var(--border);
   background: var(--white);
   padding: var(--spacing-6);
@@ -416,11 +418,11 @@
   overflow: hidden;
 }
 
-.ai_capabilities_card {
+.fidic_capabilities_card {
   text-decoration: none;
 }
 
-.ai_capabilities_num {
+.fidic_capabilities_num {
   width: 48px;
   height: 48px;
   border-radius: var(--radius-3);
@@ -433,7 +435,7 @@
   font-weight: var(--font-weight-600);
 }
 
-.ai_capabilities_card_title {
+.fidic_capabilities_card_title {
   margin-top: var(--spacing-3);
   margin-bottom: var(--spacing-1);
   font-size: var(--text-h6);
@@ -442,14 +444,14 @@
   line-height: 1.3;
 }
 
-.ai_capabilities_card_desc {
+.fidic_capabilities_card_desc {
   font-size: var(--text-small);
   line-height: 1.5;
   color: var(--neutral-600);
   margin-bottom: var(--spacing-4);
 }
 
-.ai_capabilities_card_more {
+.fidic_capabilities_card_more {
   margin-top: auto;
   display: inline-flex;
   align-items: center;
@@ -459,19 +461,19 @@
   font-weight: var(--font-weight-600);
 }
 
-.ai_capabilities_more_icon {
+.fidic_capabilities_more_icon {
   width: 16px;
   height: 16px;
 }
 
-.ai_capabilities_map {
+.fidic_capabilities_map {
   background: transparent;
   padding: 0;
   border-radius: var(--radius-5);
   overflow: hidden;
 }
 
-.ai_capabilities_map_img {
+.fidic_capabilities_map_img {
   display: block;
   width: 100%;
   height: 100%;
@@ -480,73 +482,73 @@
 }
 
 @media (min-width: 768px) {
-  .ai_capabilities_pre {
+  .fidic_capabilities_pre {
     flex-direction: row;
     align-items: flex-start;
   }
 
-  .ai_capabilities_all {
+  .fidic_capabilities_all {
     margin-top: 12px;
     display: inline-flex;
   }
 
-  .ai_capabilities_grid {
+  .fidic_capabilities_grid {
     grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
   }
 }
 
 /* AI Industry Applications */
 
-.ai_industry {
+.fidic_industry {
   background: var(--secondary-100);
 }
 
-.ai_industry_wrapper {
+.fidic_industry_wrapper {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-6);
 }
 
-.ai_industry_subtitle {
+.fidic_industry_subtitle {
   display: flex;
   align-items: center;
   gap: var(--spacing-2);
   margin-bottom: var(--spacing-3);
 }
 
-.ai_industry_subtitle h6 {
+.fidic_industry_subtitle h6 {
   font-size: var(--text-h6);
   font-weight: 500;
 }
 
-.ai_industry_line {
+.fidic_industry_line {
   width: 32px;
   height: 2px;
   background-color: var(--primary);
 }
 
-.ai_industry_title {
+.fidic_industry_title {
   margin: 0 0 var(--spacing-3);
 }
 
-.ai_industry_text {
+.fidic_industry_text {
   line-height: 1.7;
   max-width: 560px;
 }
 
-.ai_industry_right {
+.fidic_industry_right {
   display: flex;
   justify-content: flex-end;
 }
 
-.ai_industry_chips {
+.fidic_industry_chips {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-3);
   align-items: center;
 }
 
-.ai_chip {
+.fidic_chip {
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-2);
@@ -560,76 +562,76 @@
   white-space: nowrap;
 }
 
-.ai_chip_icon {
+.fidic_chip_icon {
   width: 20px;
   height: 20px;
   display: block;
 }
 
 @media (min-width: 992px) {
-  .ai_industry_wrapper {
+  .fidic_industry_wrapper {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     gap: var(--spacing-12);
   }
 
-  .ai_industry_left {
+  .fidic_industry_left {
     flex: 1;
   }
 
-  .ai_industry_right {
+  .fidic_industry_right {
     flex: 1;
   }
 }
 
 @media (max-width: 767px) {
-  .ai_industry_right {
+  .fidic_industry_right {
     justify-content: flex-start;
   }
 
-  .ai_industry_chips {
+  .fidic_industry_chips {
     gap: var(--spacing-2);
   }
 
-  .ai_chip {
+  .fidic_chip {
     white-space: normal;
   }
 }
 
 /* Why McGeorge (copied social-impact structure) */
-.ai_why_wrapper {
+.fidic_why_wrapper {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-8);
 }
 
-.ai_why_content {
+.fidic_why_content {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-6);
 }
 
-.ai_why_header {
+.fidic_why_header {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-3);
 }
 
-.ai_why_subtitle {
+.fidic_why_subtitle {
   display: flex;
   align-items: center;
   gap: var(--spacing-2);
   margin-bottom: var(--spacing-1);
 }
 
-.ai_why_subtitle .line {
+.fidic_why_subtitle .line {
   width: 32px;
   height: 2px;
   background-color: var(--primary);
 }
 
-.ai_why_subtitle h6 {
+.fidic_why_subtitle h6 {
   font-size: var(--text-h6);
   font-weight: 500;
   text-transform: uppercase;
@@ -637,13 +639,13 @@
   line-height: 1;
 }
 
-.ai_why_cards {
+.fidic_why_cards {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-2);
 }
 
-.ai_why_card {
+.fidic_why_card {
   display: flex;
   align-items: center;
   gap: var(--spacing-4);
@@ -653,29 +655,29 @@
   border-radius: var(--radius-4);
 }
 
-.ai_why_icon {
+.fidic_why_icon {
   width: 36px;
   height: 36px;
 }
 
-.ai_why_text {
+.fidic_why_text {
   display: flex;
   flex-direction: column;
 }
 
-.ai_why_text h6 {
+.fidic_why_text h6 {
   margin: 0;
 }
 
-.ai_why_text p {
+.fidic_why_text p {
   margin: 0;
 }
 
-.ai_why_image {
+.fidic_why_image {
   width: 100%;
 }
 
-.ai_why_image img {
+.fidic_why_image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -683,64 +685,64 @@
 }
 
 @media (min-width: 1024px) {
-  .ai_why_wrapper {
+  .fidic_why_wrapper {
     flex-direction: row;
     align-items: stretch;
     gap: var(--spacing-8);
   }
 
-  .ai_why_content {
+  .fidic_why_content {
     flex: 1;
     justify-content: center;
   }
 
-  .ai_why_image {
+  .fidic_why_image {
     flex: 1;
     display: flex;
   }
 
-  .ai_why_icon {
+  .fidic_why_icon {
     width: 48px;
     height: 48px;
   }
 }
 
 /* AI Related Services */
-.ai_related_section {
+.fidic_related_section {
   background-color: var(--secondary-100);
 }
 
-.ai_related_wrapper {
+.fidic_related_wrapper {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-6);
 }
 
-.ai_related_header {
+.fidic_related_header {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-3);
 }
 
-.ai_related_header_left {
+.fidic_related_header_left {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-2);
 }
 
-.ai_related_subtitle {
+.fidic_related_subtitle {
   display: flex;
   align-items: center;
   gap: var(--spacing-2);
 }
 
-.ai_related_subtitle .line {
+.fidic_related_subtitle .line {
   width: 32px;
   height: 2px;
   background-color: var(--primary);
 }
 
-.ai_related_subtitle h6 {
+.fidic_related_subtitle h6 {
   font-size: var(--text-h6);
   font-weight: 500;
   text-transform: uppercase;
@@ -748,7 +750,7 @@
   line-height: 1;
 }
 
-.ai_related_link {
+.fidic_related_link {
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-2);
@@ -758,22 +760,22 @@
   text-decoration: none;
 }
 
-.ai_related_link img {
+.fidic_related_link img {
   width: 16px;
   height: 16px;
 }
 
-.ai_related_mobile_cta {
+.fidic_related_mobile_cta {
   display: none;
 }
 
-.ai_related_cards {
+.fidic_related_cards {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-4);
 }
 
-.ai_related_card {
+.fidic_related_card {
   background-color: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius-4);
@@ -783,11 +785,11 @@
 }
 
 @media (max-width: 767px) {
-  .ai_related_header .ai_related_link--desktop {
+  .fidic_related_header .fidic_related_link--desktop {
     display: none;
   }
 
-  .ai_related_cards {
+  .fidic_related_cards {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -795,7 +797,6 @@
     overflow-x: auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
-    /* Align with section-container horizontal padding — no negative margin */
     margin-inline: 0;
     padding-inline: 0;
     padding-inline-end: var(--spacing-4);
@@ -805,22 +806,22 @@
     padding-bottom: var(--spacing-2);
   }
 
-  .ai_related_cards::-webkit-scrollbar {
+  .fidic_related_cards::-webkit-scrollbar {
     height: 4px;
   }
 
-  .ai_related_cards::-webkit-scrollbar-thumb {
+  .fidic_related_cards::-webkit-scrollbar-thumb {
     background: var(--primary-200);
     border-radius: 4px;
   }
 
-  .ai_related_card {
+  .fidic_related_card {
     flex: 0 0 min(85%, 320px);
     max-width: 320px;
     scroll-snap-align: start;
   }
 
-  .ai_related_mobile_cta {
+  .fidic_related_mobile_cta {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -838,19 +839,19 @@
     box-sizing: border-box;
   }
 
-  .ai_related_mobile_cta img {
+  .fidic_related_mobile_cta img {
     width: 16px;
     height: 16px;
   }
 }
 
-.ai_related_img {
+.fidic_related_img {
   width: 100%;
   height: 120px;
   object-fit: cover;
 }
 
-.ai_related_card_body {
+.fidic_related_card_body {
   padding: var(--spacing-4);
   display: flex;
   flex-direction: column;
@@ -858,12 +859,12 @@
   flex: 1;
 }
 
-.ai_related_card_body h6,
-.ai_related_card_body p {
+.fidic_related_card_body h6,
+.fidic_related_card_body p {
   margin: 0;
 }
 
-.ai_related_more {
+.fidic_related_more {
   margin-top: auto;
   display: inline-flex;
   align-items: center;
@@ -874,23 +875,23 @@
   text-decoration: none;
 }
 
-.ai_related_more img {
+.fidic_related_more img {
   width: 16px;
   height: 16px;
 }
 
 @media (min-width: 768px) {
-  .ai_related_header {
+  .fidic_related_header {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
   }
 
-  .ai_related_link {
+  .fidic_related_link {
     margin-top: 10px;
   }
 
-  .ai_related_cards {
+  .fidic_related_cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     overflow-x: visible;
@@ -900,7 +901,7 @@
     scroll-snap-type: none;
   }
 
-  .ai_related_card {
+  .fidic_related_card {
     flex: unset;
     max-width: none;
     scroll-snap-align: unset;
@@ -908,17 +909,17 @@
 }
 
 @media (min-width: 1024px) {
-  .ai_related_cards {
+  .fidic_related_cards {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 /* AI CTA band */
-.ai-cta-section {
+.fidic-cta-section {
   background-color: var(--secondary);
 }
 
-.ai-cta {
+.fidic-cta {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -927,21 +928,21 @@
   padding-block: var(--spacing-10);
 }
 
-.ai-cta-subtitle {
+.fidic-cta-subtitle {
   display: flex;
   align-items: center;
   gap: var(--spacing-3);
   margin-bottom: var(--spacing-2);
 }
 
-.ai-cta-subtitle .line {
+.fidic-cta-subtitle .line {
   flex: 0 0 auto;
   width: 32px;
   height: 2px;
   background-color: var(--primary);
 }
 
-.ai-cta-kicker {
+.fidic-cta-kicker {
   margin: 0;
   font-size: var(--text-h6);
   font-weight: 500;
@@ -949,16 +950,16 @@
   letter-spacing: 0.08em;
 }
 
-.ai-cta .text-h2 {
+.fidic-cta .text-h2 {
   max-width: 720px;
 }
 
-.ai-cta .text-body {
+.fidic-cta .text-body {
   max-width: 760px;
   line-height: 1.6;
 }
 
-.ai-cta-actions {
+.fidic-cta-actions {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -966,26 +967,39 @@
   margin-top: var(--spacing-4);
 }
 
-.ai-cta-actions .btn-primary {
+.fidic-cta-actions .btn-primary {
   min-width: 220px;
 }
 
-.ai-cta-actions .btn-primary-outline {
+.fidic-cta-actions .btn-primary-outline {
   min-width: 180px;
 }
 
-.ai-cta-actions img {
+.fidic-cta-actions img {
   width: 16px;
   height: 16px;
 }
 
 @media (max-width: 767px) {
 
-  .ai-cta-actions {
-    justify-content: flex-start;
+  .fidic-cta-actions {
+    justify-content: center;
   }
 
-  .ai-cta-actions button {
+  .fidic-cta-actions button {
     width: 100%;
+  }
+}
+
+/* FIDIC-specific capabilities map behavior */
+.page-fidic .fidic_capabilities_map {
+  border: none;
+  height: 120px;
+}
+
+@media (min-width: 768px) {
+  .page-fidic .fidic_capabilities_map {
+    grid-column: span 2;
+    height: 100%;
   }
 }

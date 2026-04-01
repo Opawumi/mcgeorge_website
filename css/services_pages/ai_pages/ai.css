@@ -180,6 +180,76 @@ letter-spacing: 0.5px;
     background: url("../../../assets/services/ai/gpu_background_image.png") lightgray 50% / cover no-repeat;
 }
 
+.component_2_background_image_contract {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/fidic/contract_background_image.jpg") lightgray 50% / cover no-repeat;
+}
+
+.component_2_background_image_claims {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/fidic/claims.jpg") lightgray 50% / cover no-repeat;
+}
+
+.component_2_background_image_engineer {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/fidic/engineer.jpg") lightgray 50% / cover no-repeat;
+}
+
+.component_2_background_image_compliance {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/fidic/compliance.jpg") lightgray 50% / cover no-repeat;
+}
+
+.component_2_background_image_documentation {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/fidic/documentation.jpg") lightgray 50% / cover no-repeat;
+}
+
+.component_2_background_image_project {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/fidic/project.jpg") lightgray 50% / cover no-repeat;
+}
+
+.component_2_background_image_construction {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/fidic/construction.jpg") lightgray 50% / cover no-repeat;
+}
+
+.component_2_background_image_training {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/fidic/training.jpg") lightgray 50% / cover no-repeat;
+}       
+
+.component_2_background_image_dispute {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/fidic/dispute.jpg") lightgray 50% / cover no-repeat;
+}
+
+.component_2_background_image_digital {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-5);
+    background: url("../../../assets/services/fidic/digital.jpg") lightgray 50% / cover no-repeat;
+}
+
 .section_1 {
     display: flex;
     width: 100%;
@@ -835,6 +905,26 @@ letter-spacing: 0.5px;
     background: url(/assets/services/ai/finance.jpg) lightgray 0px -24.633px / 100% 146.964% no-repeat !important; 
 }
 
+.claims {
+    background: url(/assets/services/fidic/claims.jpg) lightgray 0px -24.633px / 100% 146.964% no-repeat !important; 
+}
+
+.engineer {
+    background: url(/assets/services/fidic/engineer.jpg) lightgray 0px -24.633px / 100% 146.964% no-repeat !important; 
+}
+
+.contract {
+    background: url(/assets/services/fidic/contract.jpg) lightgray 0px -24.633px / 100% 146.964% no-repeat !important; 
+}
+
+.documentation {
+    background: url(/assets/services/fidic/documentation.jpg) lightgray 0px -24.633px / 100% 146.964% no-repeat !important; 
+}
+
+.fidic_contracts {
+    background: url(/assets/services/fidic/contract_background_image.jpg) lightgray 0px -24.633px / 100% 146.964% no-repeat !important; 
+}
+
 .section_8 > div + div > div > div + div {
     display: flex;
     padding: var(--spacing-6);
@@ -875,13 +965,18 @@ letter-spacing: 0.5px;
     letter-spacing: 0;
 }
 
-.section_8 > div + div > div > div + div > div > p {
+.section_8 > div + div > div > div + div > div > p {    
     align-self: stretch;
     color: var(--neutral-600);
     font-size: var(--text-small);
     font-weight: var(--font-weight-400);
     line-height: 20px;
     letter-spacing: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
 }
 
 .section_8 > div + div > div > div + div > div + div > h6 {
@@ -1073,6 +1168,66 @@ letter-spacing: 0.5px;
     }
 
     .component_2_background_image_10 {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_contract {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_claims {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }   
+
+    .component_2_background_image_engineer {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_compliance {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_documentation {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_project {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_construction {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_training {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_dispute {
+        height: 240px;
+        align-self: stretch;
+        flex: unset;
+    }
+
+    .component_2_background_image_digital {
         height: 240px;
         align-self: stretch;
         flex: unset;

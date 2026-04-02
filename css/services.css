@@ -1,0 +1,498 @@
+/* ==========================================================================
+   Services Page - Desktop View
+   Uses project variables from variables.css
+   ========================================================================== */
+
+/* Hero Section
+   -------------------------------------------------------------------------- */
+.services_hero {
+  background-color: var(--secondary-100);
+  padding: var(--spacing-8) var(--spacing-12);
+}
+
+.services_hero_inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  gap: var(--spacing-6);
+  align-items: stretch;
+}
+
+.services_hero_text_box {
+  background-color: var(--secondary);
+  padding: var(--spacing-9);
+  border-radius: var(--radius-5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-6);
+  flex: 2 1 0;
+  min-width: 0;
+}
+
+.services_hero_breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+}
+
+.services_hero_breadcrumb_link {
+  font-size: var(--text-btn-small);
+  font-weight: var(--font-weight-500);
+  color: var(--black);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.services_hero_breadcrumb_link:hover {
+  color: var(--primary);
+}
+
+.services_hero_breadcrumb_icon {
+  width: 16px;
+  height: 16px;
+  color: var(--black);
+}
+
+.services_hero_breadcrumb_current {
+  font-size: var(--text-btn-small);
+  font-weight: var(--font-weight-500);
+  color: var(--primary);
+  letter-spacing: 0.5px;
+}
+
+.services_hero_title_block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.services_hero_title {
+  font-size: var(--text-h1);
+  font-weight: var(--font-weight-700);
+  line-height: 1.16667;
+  color: var(--black);
+  margin: 0;
+}
+
+.services_hero_title_accent {
+  color: var(--primary);
+}
+
+.services_hero_description {
+  font-size: var(--text-large);
+  font-weight: var(--font-weight-400);
+  line-height: 1.55556;
+  color: var(--black);
+  margin: 0;
+}
+
+.services_hero_actions {
+  display: flex;
+  gap: var(--spacing-4);
+}
+
+.services_hero_image {
+  flex: 1 1 0;
+  min-width: 0;
+  border-radius: var(--radius-5);
+  overflow: hidden;
+  position: relative;
+}
+
+.services_hero_image_bg {
+  position: absolute;
+  inset: 0;
+}
+
+/* Stats Section
+   -------------------------------------------------------------------------- */
+.services_stats {
+  background-color: var(--white);
+  padding: var(--spacing-8) var(--spacing-12);
+  text-align: center;
+}
+
+.services_stats_inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  gap: var(--spacing-6);
+  align-items: center;
+}
+
+.services_stat_card {
+  flex: 1 1 0;
+  border: var(--stroke-1) solid var(--border);
+  border-radius: var(--radius-5);
+  padding: var(--spacing-5) var(--spacing-8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-4);
+}
+
+.services_stat_number {
+  font-size: var(--text-h2);
+  font-weight: var(--font-weight-700);
+  line-height: 1.22222;
+  color: var(--primary);
+}
+
+.services_stat_label {
+  font-size: var(--text-btn-secondary);
+  font-weight: var(--font-weight-500);
+  color: var(--neutral-500);
+  letter-spacing: 0.5px;
+}
+
+/* Intro Section
+   -------------------------------------------------------------------------- */
+.services_intro {
+  background-color: var(--secondary-100);
+  padding: var(--spacing-8) var(--spacing-12);
+}
+
+.services_intro_inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  gap: var(--spacing-6);
+  align-items: flex-start;
+}
+
+.services_intro_text {
+  flex: 0 0 612px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.services_intro_title {
+  font-size: var(--text-h2);
+  font-weight: var(--font-weight-700);
+  line-height: 1.22222;
+  color: var(--black);
+  margin: 0;
+}
+
+.services_intro_title_accent {
+  color: var(--primary);
+}
+
+.services_intro_description {
+  flex: 1 1 0;
+  font-size: var(--text-large);
+  font-weight: var(--font-weight-400);
+  line-height: 1.55556;
+  color: var(--black);
+  margin: 0;
+}
+
+/* Section Label (shared)
+   -------------------------------------------------------------------------- */
+.services_section_label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.services_section_dash {
+  width: 32px;
+  height: 2px;
+  background-color: var(--primary);
+  border-radius: 9999px;
+}
+
+.services_section_label_text {
+  font-size: var(--text-citation);
+  font-weight: var(--font-weight-500);
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+/* Service Detail Sections
+   -------------------------------------------------------------------------- */
+.services_detail {
+  padding: var(--spacing-8) var(--spacing-12);
+  background-color: var(--white);
+}
+
+.services_detail_inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  gap: var(--spacing-6);
+  align-items: stretch;
+}
+
+.services_detail_reverse .services_detail_inner {
+  flex-direction: row-reverse;
+}
+
+.services_detail_image {
+  flex: 1 1 0;
+  min-width: 0;
+  border-radius: var(--radius-5);
+  overflow: hidden;
+  background-color: var(--neutral-100);
+  position: relative;
+}
+
+.services_detail_image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.services_detail_content {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+.services_detail_title {
+  font-size: var(--text-h2);
+  font-weight: var(--font-weight-700);
+  line-height: 1.22222;
+  color: var(--black);
+  margin: 0;
+}
+
+.services_detail_description {
+  font-size: var(--text-large);
+  font-weight: var(--font-weight-400);
+  line-height: 1.55556;
+  color: var(--black);
+  margin: 0;
+}
+
+.services_detail_features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-4);
+}
+
+.services_feature_item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-size: var(--text-small);
+  font-weight: var(--font-weight-400);
+  color: var(--primary);
+  line-height: 1.42857;
+}
+
+.services_feature_icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  background-color: var(--secondary);
+  border-radius: var(--radius-6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services_feature_icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.services_detail .learn-more-btn {
+  align-self: flex-start;
+  padding: var(--spacing-3) var(--spacing-6);
+  font-size: var(--text-btn-primary);
+  font-weight: var(--font-weight-600);
+  letter-spacing: 0.5px;
+}
+
+/* Compact variant for sections without feature tags */
+.services_detail_compact .services_detail_content {
+  justify-content: center;
+}
+
+/* CTA Section
+   -------------------------------------------------------------------------- */
+.services_cta {
+  background-color: var(--secondary);
+  padding: var(--spacing-8) var(--spacing-12);
+}
+
+.services_cta_inner {
+  max-width: 1036px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-6);
+  text-align: center;
+}
+
+.services_cta_label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2);
+}
+
+.services_cta_title {
+  font-size: var(--text-h2);
+  font-weight: var(--font-weight-700);
+  line-height: 1.22222;
+  color: var(--black);
+  margin: 0;
+}
+
+.services_cta_title_accent {
+  color: var(--primary);
+}
+
+.services_cta_description {
+  font-size: var(--text-large);
+  font-weight: var(--font-weight-400);
+  line-height: 1.55556;
+  color: var(--black);
+  margin: 0;
+}
+
+.services_cta_actions {
+  display: flex;
+  gap: var(--spacing-4);
+}
+
+.services_cta_icon {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+/* ==========================================================================
+   Mobile Responsive (max-width: 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+  /* Hero
+     ---------------------------------------------------------------------- */
+  .services_hero {
+    padding: var(--spacing-6) var(--spacing-4);
+  }
+
+  .services_hero_inner {
+    flex-direction: column;
+  }
+
+  .services_hero_text_box {
+    flex: none;
+    padding: var(--spacing-6);
+    gap: var(--spacing-5);
+  }
+
+  .services_hero_actions {
+    flex-direction: column;
+  }
+
+  .services_hero_actions .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .services_hero_image {
+    min-height: 260px;
+  }
+
+  /* Stats
+     ---------------------------------------------------------------------- */
+  .services_stats {
+    padding: var(--spacing-6) var(--spacing-4);
+  }
+
+  .services_stats_inner {
+    flex-wrap: wrap;
+    gap: var(--spacing-3);
+  }
+
+  .services_stat_card {
+    flex: 1 1 calc(50% - var(--spacing-3) / 2);
+    min-width: 0;
+    padding: var(--spacing-4) var(--spacing-3);
+  }
+
+  /* Intro
+     ---------------------------------------------------------------------- */
+  .services_intro {
+    padding: var(--spacing-6) var(--spacing-4);
+  }
+
+  .services_intro_inner {
+    flex-direction: column;
+    gap: var(--spacing-3);
+  }
+
+  .services_intro_text {
+    flex: none;
+  }
+
+  /* Service Detail Sections
+     ---------------------------------------------------------------------- */
+  .services_detail {
+    padding: var(--spacing-6) var(--spacing-4);
+  }
+
+  .services_detail_inner {
+    flex-direction: column;
+  }
+
+  .services_detail_reverse .services_detail_inner {
+    flex-direction: column;
+  }
+
+  .services_detail_image {
+    position: static;
+    min-height: 260px;
+  }
+
+  .services_detail_image img {
+    position: relative;
+    top: auto;
+    left: auto;
+    height: auto;
+  }
+
+  .services_detail_features {
+    flex-direction: column;
+    gap: var(--spacing-3);
+  }
+
+  .services_detail .learn-more-btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* CTA
+     ---------------------------------------------------------------------- */
+  .services_cta {
+    padding: var(--spacing-6) var(--spacing-4);
+  }
+
+  .services_cta_actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .services_cta_actions .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}

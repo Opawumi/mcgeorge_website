@@ -161,7 +161,7 @@
   background-color: var(--primary);
 }
 
-.agentic_key_title{
+.agentic_key_title {
   margin-top: var(--spacing-3);
   margin-bottom: var(--spacing-5);
 }
@@ -482,8 +482,8 @@
 @media (max-width: 767px) {
   .ai_approach_steps {
     flex-direction: column;
-    gap: var(--spacing-7);
-    margin-top: var(--spacing-6);
+    gap: var(--spacing-10);
+    margin-top: var(--spacing-10);
     align-items: center;
   }
 
@@ -519,7 +519,7 @@
     left: 50%;
     transform: translateX(-50%);
     top: calc(50% + 20px);
-    bottom: calc(-1 * var(--spacing-10));
+    bottom: calc(-2 * var(--spacing-10));
     width: 2px;
     background: var(--primary-200);
     z-index: 0;
@@ -644,7 +644,7 @@
 
 /* AI Related Services */
 .ai_related_section {
-  background-color: var(--secondary-100);
+  /* background-color: var(--secondary-100); */
 }
 
 .ai_related_wrapper {
@@ -707,7 +707,7 @@
 .ai_related_cards {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spacing-4);
+  gap: var(--spacing-6);
 }
 
 .ai_related_card {
@@ -787,7 +787,7 @@
 }
 
 .ai_related_card_body {
-  padding: var(--spacing-4);
+  padding: var(--spacing-6);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-2);
@@ -916,7 +916,6 @@
 }
 
 @media (max-width: 767px) {
-
   .ai-cta-actions {
     justify-content: flex-start;
   }
@@ -925,5 +924,3 @@
     width: 100%;
   }
 }
-
-

@@ -284,11 +284,64 @@
   filter: brightness(0) invert(1);
 }
 
+/* WellEdge Section Layout (Product 6)
+   Uses CSS Grid so desktop = original look, mobile = stacks naturally
+   -------------------------------------------------------------------------- */
+.products_section_wellEdge {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: var(--spacing-6);
+  row-gap: 0;
+}
+
+/* Row 1, Col 1: content */
+.products_wellEdge_content {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing-6);
+}
+
+/* Row 2, Col 1+2: partner cards (full width) */
+.products_section_wellEdge .products_partner_cards {
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
+
+/* Row 3, Col 1+2: button (full width, centered) */
+.products_section_wellEdge .products_partner_action {
+  grid-column: 1 / 3;
+  grid-row: 3;
+}
+
+/* Col 2, Rows 1–3: screenshot pinned to the right column */
+.products_wellEdge_screenshot {
+  grid-column: 2;
+  grid-row: 1;
+  border-radius: var(--radius-5);
+  overflow: hidden;
+  background-color: var(--secondary-200);
+  position: relative;
+  min-height: 394px;
+}
+
+.products_wellEdge_screenshot img {
+  position: absolute;
+  top: 64px;
+  left: 64px;
+  width: calc(100% + 100px);
+  height: auto;
+  border-radius: var(--radius-3);
+  box-shadow: -2px 2px 36px 12px rgba(2, 1, 0, 0.15);
+  display: block;
+}
+
 /* Partner Cards (Product 6 / WellEdge)
    -------------------------------------------------------------------------- */
 .products_partner_cards {
-  max-width: 1440px;
-  margin: 0 auto;
   display: flex;
   gap: var(--spacing-6);
   margin-top: var(--spacing-9);
@@ -311,11 +364,19 @@
   height: 48px;
   background-color: var(--secondary-200);
   border-radius: var(--radius-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-h6);
+  font-weight: var(--font-weight-600);
+  color: var(--black);
+  flex-shrink: 0;
 }
 
 .products_partner_card_body {
   display: flex;
   flex-direction: column;
+  gap: var(--spacing-2);
 }
 
 .products_partner_card_title {
@@ -395,3 +456,219 @@
   height: 24px;
   filter: brightness(0) invert(1);
 }
+
+/* ==========================================================================
+   Products Page - Mobile Responsive (≤ 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+  /* Hero Section
+     ------------------------------------------------------------------------ */
+  .products_hero {
+    padding: var(--spacing-6) var(--spacing-4);
+  }
+
+  .products_hero_inner {
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
+
+  .products_hero_text_box {
+    padding: var(--spacing-6);
+    gap: var(--spacing-3);
+    width: 100%;
+  }
+
+  .products_hero_title {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+    line-height: 1.2;
+  }
+
+  .products_hero_description {
+    font-size: var(--text-regular);
+  }
+
+  .products_hero_image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+
+  .products_hero_image_bg {
+    min-height: 220px;
+  }
+
+  /* Product Sections
+     ------------------------------------------------------------------------ */
+  .products_section {
+    padding: var(--spacing-8) var(--spacing-4);
+  }
+
+  /* All product sections: screenshot on top, content below */
+  .products_section_inner,
+  .products_section_reverse .products_section_inner {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* Screenshot container: fixed height, full-width */
+  .products_section_screenshot {
+    width: 100%;
+    height: 220px;
+    flex: none;
+    border-radius: var(--radius-5) var(--radius-5) 0 0;
+    overflow: hidden;
+  }
+
+  /* Reset the absolute-positioned image to fill the container naturally */
+  .products_section_screenshot img,
+  .products_section_reverse .products_section_screenshot img {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  /* Content side */
+  .products_section_content {
+    flex: none;
+    width: 100%;
+    gap: var(--spacing-5);
+    padding-top: var(--spacing-6);
+  }
+
+  .products_section_details {
+    gap: var(--spacing-4);
+  }
+
+  .products_section_description {
+    font-size: var(--text-regular);
+  }
+
+  /* Product Logo */
+  .products_product_logo {
+    width: 100%;
+    max-width: 220px;
+    height: 72px;
+  }
+
+  /* Built For box */
+  .products_built_for {
+    font-size: var(--text-caption);
+  }
+
+  /* Features grid — keep 2 columns on mobile (matches design) */
+  .products_features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-3);
+  }
+
+  .products_feature_item {
+    font-size: var(--text-caption);
+    align-items: flex-start;
+    gap: var(--spacing-1);
+  }
+
+  /* View Button — full width on mobile */
+  .products_view_btn {
+    align-self: stretch;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* WellEdge Section Layout
+     ------------------------------------------------------------------------ */
+  .products_section_wellEdge {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+
+  /* Screenshot: full-width card, appears last (correct DOM order) */
+  .products_wellEdge_screenshot {
+    width: 100%;
+    height: 240px;
+    min-height: 0;
+    flex: none;
+    border-radius: var(--radius-5);
+    overflow: hidden;
+  }
+
+  .products_wellEdge_screenshot img {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .products_wellEdge_content {
+    gap: var(--spacing-4);
+  }
+
+  /* Partner Cards (WellEdge)
+     ------------------------------------------------------------------------ */
+  .products_section_wellEdge .products_partner_cards {
+    flex-direction: column;
+    gap: var(--spacing-4);
+    margin-top: 0;
+  }
+
+  .products_partner_card {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--spacing-4);
+    padding: var(--spacing-4);
+  }
+
+  .products_partner_card_icon {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-3);
+    flex-shrink: 0;
+  }
+
+  .products_section_wellEdge .products_partner_action {
+    padding: 0;
+  }
+
+  .products_partner_action .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* CTA Section
+     ------------------------------------------------------------------------ */
+  .products_cta {
+    padding: var(--spacing-8) var(--spacing-4);
+  }
+
+  .products_cta_title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    line-height: 1.3;
+  }
+
+  .products_cta_description {
+    font-size: var(--text-regular);
+  }
+
+  .products_cta_actions {
+    flex-direction: column;
+    width: 100%;
+    gap: var(--spacing-3);
+  }
+
+  .products_cta_actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+

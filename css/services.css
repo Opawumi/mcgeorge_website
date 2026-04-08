@@ -396,8 +396,18 @@
     gap: var(--spacing-5);
   }
 
+  .services_hero_title {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+    line-height: 1.2;
+  }
+
+  .services_hero_description {
+    font-size: var(--text-regular);
+  }
+
   .services_hero_actions {
     flex-direction: column;
+    width: 100%;
   }
 
   .services_hero_actions .btn {
@@ -407,24 +417,40 @@
   }
 
   .services_hero_image {
-    min-height: 260px;
+    min-height: 240px;
+    border-radius: var(--radius-5);
+    overflow: hidden;
   }
 
-  /* Stats
+  /* Stats — single column, borderless rows (matching design)
      ---------------------------------------------------------------------- */
   .services_stats {
-    padding: var(--spacing-6) var(--spacing-4);
+    padding: var(--spacing-4) var(--spacing-4);
   }
 
   .services_stats_inner {
-    flex-wrap: wrap;
-    gap: var(--spacing-3);
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
   }
 
   .services_stat_card {
-    flex: 1 1 calc(50% - var(--spacing-3) / 2);
-    min-width: 0;
-    padding: var(--spacing-4) var(--spacing-3);
+    flex: none;
+    width: 100%;
+    border: none;
+    border-bottom: var(--stroke-1) solid var(--border);
+    border-radius: 0;
+    padding: var(--spacing-5) var(--spacing-3);
+    gap: var(--spacing-1);
+  }
+
+  .services_stat_card:last-child {
+    border-bottom: none;
+  }
+
+  .services_stat_number {
+    font-size: var(--text-h2);
+    line-height: 1.2;
   }
 
   /* Intro
@@ -435,11 +461,21 @@
 
   .services_intro_inner {
     flex-direction: column;
-    gap: var(--spacing-3);
+    gap: var(--spacing-4);
   }
 
   .services_intro_text {
     flex: none;
+    width: 100%;
+  }
+
+  .services_intro_title {
+    font-size: clamp(1.75rem, 7vw, 2.25rem);
+    line-height: 1.2;
+  }
+
+  .services_intro_description {
+    font-size: var(--text-regular);
   }
 
   /* Service Detail Sections
@@ -448,32 +484,75 @@
     padding: var(--spacing-6) var(--spacing-4);
   }
 
-  .services_detail_inner {
-    flex-direction: column;
-  }
-
+  /* All sections collapse to single column */
+  .services_detail_inner,
   .services_detail_reverse .services_detail_inner {
     flex-direction: column;
+    gap: var(--spacing-6);
   }
 
+  /* Non-reverse sections (AI, Development, EPC, Energy, Agribusiness):
+     image is first in DOM → appears first on mobile (before content).
+     This creates "paired images" effect at section boundaries. */
+
+  /* Reverse sections (FIDIC, Digital Marketing, ICT, Sports):
+     content is second in DOM but must appear FIRST on mobile */
+  .services_detail_reverse .services_detail_content {
+    order: 1;
+  }
+  .services_detail_reverse .services_detail_image {
+    order: 2;
+  }
+
+  /* Gap adjustment for content side */
+  .services_detail_content {
+    gap: var(--spacing-4);
+  }
+
+  /* Image sizing for all sections on mobile */
   .services_detail_image {
     position: static;
-    min-height: 260px;
+    min-height: 240px;
+    border-radius: var(--radius-5);
+    overflow: hidden;
   }
 
   .services_detail_image img {
     position: relative;
     top: auto;
     left: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
+  .services_detail_title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    line-height: 1.25;
+  }
+
+  .services_detail_description {
+    font-size: var(--text-regular);
+  }
+
+  /* Features: 2-column grid on mobile (matches design images) */
   .services_detail_features {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-3);
+    flex-wrap: unset;
+    flex-direction: unset;
   }
 
+  .services_feature_item {
+    font-size: var(--text-caption);
+    align-items: flex-start;
+    gap: var(--spacing-1);
+  }
+
+  /* Learn More button — full width on mobile */
   .services_detail .learn-more-btn {
+    align-self: stretch;
     width: 100%;
     text-align: center;
     justify-content: center;
@@ -485,9 +564,19 @@
     padding: var(--spacing-6) var(--spacing-4);
   }
 
+  .services_cta_title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    line-height: 1.3;
+  }
+
+  .services_cta_description {
+    font-size: var(--text-regular);
+  }
+
   .services_cta_actions {
     flex-direction: column;
     width: 100%;
+    gap: var(--spacing-3);
   }
 
   .services_cta_actions .btn {

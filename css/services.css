@@ -313,6 +313,7 @@
   font-size: var(--text-btn-primary);
   font-weight: var(--font-weight-600);
   letter-spacing: 0.5px;
+  text-decoration: none;
 }
 
 /* Compact variant for sections without feature tags */

@@ -1,0 +1,1074 @@
+/* ICT & Digital Transformation — desktop-first, matches Figma frame */
+
+.ict_hero {
+  background-color: var(--secondary-100);
+  padding: var(--spacing-8) var(--spacing-12);
+}
+
+.ict_hero_inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  gap: var(--spacing-6);
+  align-items: stretch;
+}
+
+/* Match Figma: text card ~824px vs image ~400px (roughly 68% / 32% of the row) */
+.ict_hero_text_box {
+  background-color: var(--secondary);
+  padding: var(--spacing-9);
+  border-radius: var(--radius-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-7);
+  flex: 824 1 0;
+  min-width: 0;
+}
+
+.ict_hero_breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  flex-wrap: wrap;
+}
+
+.ict_hero_breadcrumb a {
+  font-size: var(--text-btn-small);
+  font-weight: var(--font-weight-500);
+  color: var(--black);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.ict_hero_breadcrumb a:hover {
+  color: var(--primary);
+}
+
+.ict_hero_breadcrumb_icon {
+  width: 16px;
+  height: 16px;
+  color: var(--black);
+  flex-shrink: 0;
+}
+
+.ict_hero_breadcrumb_current {
+  font-size: var(--text-btn-small);
+  font-weight: var(--font-weight-500);
+  color: var(--primary);
+  letter-spacing: 0.5px;
+}
+
+.ict_hero_title {
+  font-size: var(--text-h1);
+  font-weight: var(--font-weight-700);
+  line-height: 1.16667;
+  color: var(--black);
+  margin: 0;
+}
+
+.ict_hero_title_accent {
+  color: var(--primary);
+}
+
+.ict_hero_description {
+  font-size: var(--text-large);
+  font-weight: var(--font-weight-400);
+  line-height: 1.55556;
+  color: var(--black);
+  margin: 0;
+}
+
+.ict_hero_actions {
+  display: flex;
+  gap: var(--spacing-4);
+  flex-wrap: wrap;
+}
+
+.ict_hero_image {
+  flex: 400 1 0;
+  min-width: 0;
+  max-width: 400px;
+  border-radius: var(--radius-5);
+  overflow: hidden;
+  position: relative;
+  min-height: 280px;
+  align-self: stretch;
+}
+
+.ict_hero_image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overview */
+.ict_overview {
+  background: var(--white);
+  padding: var(--spacing-8) var(--spacing-12);
+}
+
+.ict_overview_inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  gap: var(--spacing-6);
+  align-items: flex-start;
+}
+
+.ict_section_label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.ict_section_dash {
+  width: 32px;
+  height: 2px;
+  background-color: var(--primary);
+  border-radius: 9999px;
+  flex-shrink: 0;
+}
+
+.ict_section_label_text {
+  font-size: var(--text-citation);
+  font-weight: var(--font-weight-500);
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.ict_overview_left {
+  flex: 0 0 400px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.ict_overview_title {
+  font-size: var(--text-h2);
+  font-weight: var(--font-weight-700);
+  line-height: 1.22222;
+  color: var(--black);
+  margin: 0;
+}
+
+.ict_overview_title_accent {
+  color: var(--primary);
+}
+
+.ict_overview_body {
+  flex: 1;
+  font-size: var(--text-large);
+  font-weight: var(--font-weight-400);
+  line-height: 1.55556;
+  color: var(--black);
+  margin: 0;
+}
+
+/* Capabilities grid */
+.ict_capabilities {
+  background: var(--secondary-100);
+  padding: var(--spacing-8) var(--spacing-12);
+}
+
+.ict_capabilities_inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.ict_capabilities_header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.ict_capabilities_grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--spacing-6);
+  align-items: stretch;
+}
+
+.ict_cap_card {
+  background: var(--white);
+  border: var(--stroke-1) solid var(--border);
+  border-radius: var(--radius-5);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  align-items: flex-start;
+}
+
+.ict_cap_num {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-3);
+  background: var(--secondary-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-h5);
+  font-weight: var(--font-weight-600);
+  color: var(--primary);
+}
+
+.ict_cap_title {
+  font-size: var(--text-h6);
+  font-weight: var(--font-weight-600);
+  line-height: 1.375;
+  color: var(--black);
+  margin: 0;
+}
+
+.ict_cap_desc {
+  font-size: var(--text-small);
+  font-weight: var(--font-weight-400);
+  line-height: 1.42857;
+  color: var(--neutral-600);
+  margin: 0;
+  flex: 1;
+}
+
+.ict_cap_link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-size: var(--text-btn-secondary);
+  font-weight: var(--font-weight-500);
+  color: var(--primary);
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.ict_cap_link:hover {
+  text-decoration: underline;
+}
+
+.ict_cap_link svg {
+  flex-shrink: 0;
+}
+
+/* Approach */
+.ict_approach {
+  background: var(--white);
+  padding: var(--spacing-8) var(--spacing-12);
+}
+
+.ict_approach_inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.ict_approach_header {
+  text-align: center;
+  max-width: 1036px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  align-items: center;
+}
+
+.ict_section_label_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2);
+}
+
+.ict_approach_title {
+  font-size: var(--text-h2);
+  font-weight: var(--font-weight-700);
+  line-height: 1.22222;
+  color: var(--black);
+  margin: 0;
+}
+
+.ict_approach_track {
+  position: relative;
+  width: 100%;
+  padding-top: 24px;
+}
+
+.ict_approach_line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 47px;
+  width: min(970px, calc(100% - 120px));
+  height: 2px;
+  background: var(--primary-200);
+  z-index: 0;
+}
+
+.ict_approach_steps {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--spacing-6);
+}
+
+.ict_approach_step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-6);
+}
+
+.ict_approach_icon_wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-6);
+  border: var(--stroke-1) solid var(--primary-200);
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ict_approach_icon_wrap svg {
+  width: 24px;
+  height: 24px;
+}
+
+.ict_approach_step_num {
+  font-size: var(--text-btn-secondary);
+  font-weight: var(--font-weight-500);
+  color: var(--primary);
+  letter-spacing: 0.5px;
+}
+
+.ict_approach_step_title {
+  font-size: var(--text-h6);
+  font-weight: var(--font-weight-600);
+  line-height: 1.375;
+  color: var(--black);
+  margin: 0;
+}
+
+.ict_approach_step_desc {
+  font-size: var(--text-small);
+  font-weight: var(--font-weight-400);
+  line-height: 1.42857;
+  color: var(--neutral-600);
+  margin: 0;
+}
+
+/* Industry */
+.ict_industry {
+  background: var(--secondary-100);
+  padding: var(--spacing-8) var(--spacing-12);
+}
+
+.ict_industry_inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  gap: var(--spacing-6);
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.ict_industry_copy {
+  flex: 0 1 612px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.ict_industry_title {
+  font-size: var(--text-h2);
+  font-weight: var(--font-weight-700);
+  line-height: 1.22222;
+  color: var(--black);
+  margin: 0;
+}
+
+.ict_industry_title_accent {
+  color: var(--primary);
+}
+
+.ict_industry_body {
+  font-size: var(--text-large);
+  line-height: 1.55556;
+  color: var(--black);
+  margin: 0;
+}
+
+.ict_industry_tags {
+  flex: 0 1 476px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-4);
+  justify-content: flex-end;
+}
+
+.ict_tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: 8.5px 16.5px 8.5px 8.5px;
+  background: var(--white);
+  border: var(--stroke-00) solid var(--primary-300);
+  border-radius: var(--radius-3);
+  font-size: var(--text-regular);
+  color: var(--primary);
+}
+
+.ict_tag_icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 2.4px;
+  background: var(--secondary);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.ict_tag_icon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: var(--primary);
+  border-radius: 1px;
+}
+
+/* Why */
+.ict_why {
+  background: var(--white);
+  padding: var(--spacing-8) var(--spacing-12);
+}
+
+.ict_why_inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  gap: var(--spacing-6);
+  align-items: stretch;
+}
+
+.ict_why_left {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.ict_why_list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.ict_why_card {
+  display: flex;
+  gap: var(--spacing-4);
+  align-items: center;
+  padding: 17px;
+  border: var(--stroke-1) solid var(--border);
+  border-radius: var(--radius-5);
+  background: var(--white);
+}
+
+.ict_why_icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-3);
+  background: var(--secondary-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ict_why_icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.ict_why_card_title {
+  font-size: var(--text-h6);
+  font-weight: var(--font-weight-600);
+  color: var(--black);
+  margin: 0 0 0;
+}
+
+.ict_why_card_desc {
+  font-size: var(--text-small);
+  color: var(--neutral-600);
+  margin: 0;
+  line-height: 1.42857;
+}
+
+.ict_why_image {
+  flex: 1 1 0;
+  min-width: 0;
+  border-radius: var(--radius-5);
+  overflow: hidden;
+  position: relative;
+  min-height: 320px;
+}
+
+.ict_why_image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Related */
+.ict_related {
+  background: var(--secondary-100);
+  padding: var(--spacing-8) var(--spacing-12);
+}
+
+/* Heading row + link share row 1 on desktop; cards row 2 (see grid-template-areas). */
+.ict_related_inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "ict-related-heading ict-related-link"
+    "ict-related-cards ict-related-cards";
+  gap: var(--spacing-6);
+  align-items: end;
+}
+
+.ict_related_top {
+  grid-area: ict-related-heading;
+  display: block;
+  min-width: 0;
+}
+
+.ict_related_grid {
+  grid-area: ict-related-cards;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--spacing-6);
+}
+
+.ict_related_card {
+  border: var(--stroke-1) solid var(--border);
+  border-radius: var(--radius-5);
+  overflow: hidden;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 332px;
+}
+
+.ict_related_card_img {
+  height: 160px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.ict_related_card_img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ict_related_card_body {
+  padding: var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  flex: 1;
+}
+
+.ict_related_card_title {
+  font-size: var(--text-h6);
+  font-weight: var(--font-weight-600);
+  line-height: 1.375;
+  color: var(--black);
+  margin: 0;
+}
+
+.ict_related_card_desc {
+  font-size: var(--text-small);
+  color: var(--neutral-600);
+  margin: 0;
+  line-height: 1.42857;
+  flex: 1;
+}
+
+.ict_related_link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-size: var(--text-btn-secondary);
+  font-weight: var(--font-weight-500);
+  color: var(--primary);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  margin-top: auto;
+}
+
+.ict_related_link:hover {
+  text-decoration: underline;
+}
+
+.ict_related_link--current {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.9;
+}
+
+.ict_related_link--current:hover {
+  text-decoration: none;
+}
+
+.ict_related_all {
+  grid-area: ict-related-link;
+  justify-self: end;
+  align-self: end;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-size: var(--text-btn-secondary);
+  font-weight: var(--font-weight-500);
+  color: var(--primary);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.ict_related_all:hover {
+  text-decoration: underline;
+}
+
+/* CTA */
+.ict_cta {
+  background-color: var(--secondary);
+  padding: var(--spacing-8) var(--spacing-12);
+}
+
+.ict_cta_inner {
+  max-width: 1036px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+  align-items: center;
+  text-align: center;
+}
+
+.ict_cta_label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2);
+}
+
+.ict_cta_title {
+  font-size: var(--text-h2);
+  font-weight: var(--font-weight-700);
+  line-height: 1.22222;
+  color: var(--black);
+  margin: 0;
+}
+
+.ict_cta_title_accent {
+  color: var(--primary);
+}
+
+.ict_cta_description {
+  font-size: var(--text-large);
+  line-height: 1.55556;
+  color: var(--black);
+  margin: 0;
+}
+
+.ict_cta_actions {
+  display: flex;
+  gap: var(--spacing-4);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ict_cta_actions .btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.ict_cta_actions .btn-primary img {
+  filter: brightness(0) invert(1);
+}
+
+.ict_cta_actions .btn-primary-outline svg {
+  flex-shrink: 0;
+}
+
+/* Tablet — does not change desktop (1024px+) layout */
+@media (max-width: 1023px) {
+  /* Single column matches mobile ICT mockups (stacked capability cards) */
+  .ict_capabilities_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ict_industry_inner {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  /* Row layout uses 612px as width; in column layout that same basis becomes HEIGHT — huge gap. */
+  .ict_industry_copy {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: none;
+  }
+
+  .ict_industry_tags {
+    justify-content: flex-start;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: none;
+  }
+
+  .ict_why_inner {
+    flex-direction: column;
+  }
+
+  .ict_related_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile — stacked layout, vertical timeline, horizontal related scroll */
+@media (max-width: 767px) {
+  .ict_hero,
+  .ict_overview,
+  .ict_capabilities,
+  .ict_approach,
+  .ict_industry,
+  .ict_why,
+  .ict_related,
+  .ict_cta {
+    padding-left: var(--spacing-4);
+    padding-right: var(--spacing-4);
+  }
+
+  .ict_hero_inner {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* Visually connect text panel + image like mobile Figma (shared “card” silhouette) */
+  .ict_hero_text_box {
+    flex: 1 1 auto;
+    width: 100%;
+    padding: var(--spacing-7);
+    gap: var(--spacing-6);
+    border-radius: var(--radius-5) var(--radius-5) 0 0;
+  }
+
+  .ict_hero_title {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+    line-height: 1.2;
+  }
+
+  .ict_hero_description {
+    font-size: var(--text-regular);
+    line-height: 1.5;
+  }
+
+  .ict_hero_actions {
+    flex-direction: column;
+    width: 100%;
+    gap: var(--spacing-3);
+  }
+
+  .ict_hero_actions .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ict_hero_image {
+    flex: 1 1 auto;
+    max-width: none;
+    width: 100%;
+    min-height: 220px;
+    align-self: stretch;
+    border-radius: 0 0 var(--radius-5) var(--radius-5);
+  }
+
+  .ict_overview_inner {
+    flex-direction: column;
+    gap: var(--spacing-5);
+  }
+
+  .ict_overview_left {
+    flex: 1 1 auto;
+  }
+
+  /* Allow “What we deliver … in ICT” to read on one fluid line */
+  .ict_overview_title br {
+    display: none;
+  }
+
+  .ict_overview_title {
+    font-size: clamp(1.375rem, 5vw, 1.75rem);
+  }
+
+  .ict_overview_body {
+    font-size: var(--text-regular);
+  }
+
+  .ict_capabilities_inner {
+    gap: var(--spacing-5);
+  }
+
+  .ict_capabilities_header .ict_overview_title {
+    font-size: clamp(1.25rem, 5.2vw, 1.625rem);
+    line-height: 1.3;
+  }
+
+  .ict_capabilities_grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-4);
+  }
+
+  .ict_cap_card {
+    padding: var(--spacing-5);
+  }
+
+  .ict_cap_title {
+    font-size: clamp(0.9375rem, 3.6vw, 1rem);
+    line-height: 1.4;
+  }
+
+  /* Approach: vertical timeline (line left, icon + copy row) */
+  .ict_approach {
+    padding-top: var(--spacing-7);
+    padding-bottom: var(--spacing-7);
+  }
+
+  .ict_approach_header {
+    text-align: center;
+    padding: 0 var(--spacing-1);
+  }
+
+  .ict_approach_title {
+    font-size: clamp(1.375rem, 5vw, 1.75rem);
+  }
+
+  .ict_approach_track {
+    padding-top: 0;
+    padding-left: 0;
+    position: relative;
+  }
+
+  .ict_approach_line {
+    display: none;
+  }
+
+  .ict_approach_track::before {
+    content: "";
+    position: absolute;
+    left: 23px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: var(--primary-200);
+    z-index: 0;
+  }
+
+  .ict_approach_steps {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-7);
+    grid-template-columns: none;
+  }
+
+  .ict_approach_step {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: var(--spacing-4);
+    row-gap: var(--spacing-1);
+    align-items: start;
+    text-align: left;
+    padding: 0;
+    padding-left: 0;
+  }
+
+  .ict_approach_icon_wrap {
+    grid-column: 1;
+    grid-row: 1 / -1;
+    align-self: start;
+    position: relative;
+    z-index: 1;
+    background: var(--white);
+  }
+
+  .ict_approach_step_num {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .ict_approach_step_title {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .ict_approach_step_desc {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  /* Industry: tight stack — gap was from flex-basis 612px applying as height in column flex (fixed above @1023px) */
+  .ict_industry_inner {
+    gap: var(--spacing-3);
+    justify-content: flex-start;
+  }
+
+  .ict_industry_copy {
+    gap: var(--spacing-2);
+    flex: 0 0 auto;
+  }
+
+  .ict_industry_title {
+    font-size: clamp(1.375rem, 5vw, 1.75rem);
+  }
+
+  .ict_industry_body {
+    font-size: var(--text-regular);
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .ict_industry_tags {
+    flex: 0 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--spacing-3);
+    justify-content: stretch;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .ict_tag {
+    font-size: var(--text-small);
+    padding: 8px 10px 8px 8px;
+    min-width: 0;
+  }
+
+  .ict_why_inner {
+    gap: var(--spacing-5);
+  }
+
+  .ict_why_left {
+    gap: var(--spacing-5);
+  }
+
+  .ict_why_image {
+    min-height: 240px;
+  }
+
+  .ict_why_card {
+    align-items: flex-start;
+  }
+
+  /* Related: heading → carousel → “View all” last (matches mobile design) */
+  .ict_related_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-4);
+    grid-template-columns: unset;
+    grid-template-areas: unset;
+  }
+
+  .ict_related_top {
+    width: 100%;
+  }
+
+  .ict_related_all {
+    width: 100%;
+    max-width: none;
+    justify-self: auto;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-3) var(--spacing-6);
+    border: var(--stroke-1) solid var(--primary);
+    border-radius: var(--radius-2);
+    background: var(--white);
+    white-space: normal;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 0;
+  }
+
+  .ict_related_grid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: var(--spacing-4);
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--spacing-4);
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: var(--spacing-2);
+    grid-template-columns: unset;
+  }
+
+  .ict_related_card {
+    flex: 0 0 min(300px, calc(100vw - 3rem));
+    min-height: auto;
+    scroll-snap-align: start;
+  }
+
+  .ict_cta_inner {
+    gap: var(--spacing-5);
+    padding: 0 var(--spacing-1);
+  }
+
+  .ict_cta_title {
+    font-size: clamp(1.375rem, 5vw, 1.75rem);
+  }
+
+  .ict_cta_description {
+    font-size: var(--text-regular);
+  }
+
+  .ict_cta_actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ict_cta_actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

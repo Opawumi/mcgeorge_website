@@ -2,3 +2,9 @@
 
 @import url("./agentic-ai.css");
 
+@media (max-width: 767px) {
+  .card-list-bullet{
+    width: 36px;
+    height: 36px;
+  }
+}

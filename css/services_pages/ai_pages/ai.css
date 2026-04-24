@@ -3,7 +3,7 @@
 .component_2 {
   display: flex;
   width: 100%;
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   padding: var(--spacing-10) var(--spacing-12);
   align-items: center;
@@ -194,7 +194,7 @@
   flex: 1 0 0;
   align-self: stretch;
   border-radius: var(--radius-5);
-  background: url("../../../img/services/fidic/contract_background_image.jpg")
+  background: url("../../../img/services/fidic/contract_structure_&_advisory.jpg")
     lightgray 50% / cover no-repeat;
 }
 
@@ -202,7 +202,7 @@
   flex: 1 0 0;
   align-self: stretch;
   border-radius: var(--radius-5);
-  background: url("../../../img/services/fidic/claims.jpg") lightgray 50% /
+  background: url("../../../img/services/fidic/component_2_background_image_claims_1.jpg") lightgray 50% /
     cover no-repeat;
 }
 
@@ -218,7 +218,7 @@
   flex: 1 0 0;
   align-self: stretch;
   border-radius: var(--radius-5);
-  background: url("../../../img/services/fidic/compliance.jpg") lightgray 50% /
+  background: url("../../../img/services/fidic/contract_compliance.jpg") lightgray 50% /
     cover no-repeat;
 }
 
@@ -242,7 +242,7 @@
   flex: 1 0 0;
   align-self: stretch;
   border-radius: var(--radius-5);
-  background: url("../../../img/services/fidic/construction.jpg") lightgray
+  background: url("../../../img/services/fidic/construction_supervision.jpg") lightgray
     50% / cover no-repeat;
 }
 
@@ -251,6 +251,134 @@
   align-self: stretch;
   border-radius: var(--radius-5);
   background: url("../../../img/services/fidic/training.jpg") lightgray 50% /
+    cover no-repeat;
+}
+
+.component_2_background_image_procurements {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-5);
+  background: url("../../../img/services/epc/contract_structure_&_advisory.jpg") lightgray 50% /
+    cover no-repeat;
+}
+
+.component_2_background_image_construction {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-5);
+  background: url("../../../img/services/epc/epc_construction.jpg") lightgray 50% /
+    cover no-repeat;
+}
+
+.component_2_background_image_procurements_ict_tax {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-5);
+  background: url("../../../img/services/ict/tax_engine.jpg") lightgray 50% /
+    cover no-repeat;
+}
+
+.component_2_background_image_procurements_ict_erp {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-5);
+  background: url("../../../img/services/ict/erp.jpg") lightgray 50% /
+    cover no-repeat;
+}
+
+.component_2_background_image_procurements_ict_tax_tech {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-5);
+  background: url("../../../img/services/ict/tax_tech.jpg") lightgray 50% /
+    cover no-repeat;
+}
+
+.component_2_background_image_procurements_ict_logic {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-5);
+  background: url("../../../img/services/ict/logic.jpg") lightgray 50% /
+    cover no-repeat;
+}
+
+.component_2_background_image_manufacturing {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-5);
+  background: url("../../../img/services/epc/manufacturing_class.jpg") lightgray 100% /
+    cover no-repeat;
+}
+
+.component_2_background_image_arbitration {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-5);
+  background: url("../../../img/services/epc/epc_discuss.jpg") lightgray 50% /
+    cover no-repeat;
+}
+
+.component_2_background_image_epc_mrig {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-5);
+  background: url("../../../img/services/epc/mrig.jpg") lightgray 50% /
+    cover no-repeat;
+}
+
+.component_2_background_image_oil_well {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-5);
+  background: url("../../../img/services/oil/well_design.png") lightgray 50% /
+    cover no-repeat;
+}
+
+.component_2_background_image_oil_drill {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-5);
+  background: url("../../../img/services/oil/well_drill.png") lightgray 50% /
+    cover no-repeat;
+}
+
+.component_2_background_image_oil_parameter {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-5);
+  background: url("../../../img/services/oil/well_parameters_opt.jpg") lightgray 50% /
+    cover no-repeat;
+}
+
+.component_2_background_image_oil_learning {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-5);
+  background: url("../../../img/services/oil/learning.jpg") lightgray 50% /
+    cover no-repeat;
+}
+
+.component_2_background_image_oil_rig {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-5);
+  background: url("../../../img/services/oil/rigs.jpg") lightgray 50% /
+    cover no-repeat;
+}
+
+.component_2_background_image_oil_renewable {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-5);
+  background: url("../../../img/services/oil/renewable.jpg") lightgray 50% /
+    cover no-repeat;
+}
+
+.component_2_background_image_cybersecurity {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-5);
+  background: url("../../../img/services/ict/cybersecurity.jpg") lightgray 50% /
     cover no-repeat;
 }
 
@@ -268,6 +396,143 @@
   border-radius: var(--radius-5);
   background: url("../../../img/services/fidic/digital.jpg") lightgray 50% /
     cover no-repeat;
+}
+
+.frame {
+  width: 100%;
+  display: flex;
+  padding: var(--spacing-9) var(--spacing-12);
+  align-items: center;
+  gap: 24px;
+  border-bottom: var(--stroke-00) solid var(--border);
+}
+
+.frame > div {
+  display: flex;
+  padding: var(--spacing-4);
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--spacing-4);
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-3);
+  background: url("../../../img/services/link.png") lightgray 50% / cover no-repeat;
+}
+
+.frame > a {
+  display: flex;
+  width: 612px;
+  padding: var(--spacing-4);
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--spacing-4);
+  border-radius: var(--radius-3);
+  border: var(--stroke-00) solid var(--primary);
+  background: var(--secondary-100);
+}
+
+.frame > a > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--spacing-0);
+}
+
+.frame > a > div > p {
+  color: var(--neutral-600);
+  font-size: var(--text-caption);
+  font-weight: var(--font-weight-400);
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: right;
+}
+
+.frame > a > div > h6 {
+  color: var(--primary);
+  text-align: right;
+  font-size: var(--text-h5);
+  font-weight: var(--font-weight-600);
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.frame > a > div + div {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  padding: 0 10.812px 0 10.788px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: var(--radius-1);
+  background: var(--secondary-200);
+}
+
+.frame > a > div + div > svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.previous {
+  display: flex !important;
+  width: 612px !important;
+  padding: 16px 16px !important;
+  align-items: center !important;
+  gap: 16px !important;
+  border-radius: var(--radius-3) !important;
+  border: var(--stroke-00) solid var(--primary) !important;
+  background: var(--secondary-100) !important;
+  justify-content: flex-start !important;
+}
+
+.previous > div {
+  display: flex !important;
+  width: 36px !important;
+  height: 36px !important;
+  padding: 0 10.812px 0 10.788px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+  border-radius: 3.601px !important;
+  background: var(--secondary-200) !important;
+}
+
+.previous > div > svg {
+  width: 16px !important;
+  height: 16px !important;
+  flex-shrink: 0 !important;
+}
+
+.previous > div + div {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 0 !important;
+  flex: 1 1 0% !important;
+  min-width: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+  background: none !important;
+}
+
+.previous > div + div > p {
+  color: var(--neutral-600) !important;
+  text-align: right !important;
+  font-size: var(--text-caption) !important;
+  font-weight: var(--font-weight-400) !important;
+  line-height: 16px !important;
+  letter-spacing: 0 !important;
+}
+
+.previous > div + div > h6 {
+  color: var(--primary) !important;
+  text-align: right !important;
+  font-size: var(--text-h5) !important;
+  font-weight: var(--font-weight-600) !important;
+  line-height: 24px !important;
+  letter-spacing: 0 !important;
 }
 
 .section_1 {
@@ -332,7 +597,7 @@
 .section_2 {
   display: flex;
   width: 100%;
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   padding: var(--spacing-10) var(--spacing-12);
   flex-direction: column;
@@ -433,7 +698,7 @@
 .section_7 {
   display: flex;
   width: 100%;
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   padding: var(--spacing-10) var(--spacing-12);
   flex-direction: column;
@@ -549,14 +814,27 @@
   flex: 1 0 0;
   align-self: stretch;
   border-radius: var(--radius-5);
-  background: url("../../../img/services/ai/manufacturing_background_image_2.jpg")
+}
+
+.epc_Solution_bg{
+  background: url("../../../img/epc/epc_bg_images.jpg")
+    lightgray 50% / cover no-repeat;
+}
+
+.fdic_bg_image{
+  background: url("../../../img/services/fidic/FIDIC_Contract_Structuring_Advisory_1.jpg")
+    lightgray 50% / cover no-repeat;
+}
+
+.oil_Solution_bg{
+  background: url("../../../img/services/oil/epc_bg_images.jpg")
     lightgray 50% / cover no-repeat;
 }
 
 .section_3 {
   display: flex;
   width: 100%;
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   padding: var(--spacing-10) var(--spacing-12);
   flex-direction: column;
@@ -819,7 +1097,7 @@
 .section_8 {
   display: flex;
   width: 100%;
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   padding: var(--spacing-10) var(--spacing-12);
   flex-direction: column;
@@ -957,6 +1235,51 @@
     0px -24.633px / 100% 146.964% no-repeat !important;
 }
 
+.ict_erp {
+  background: url(/img/services/ict/erp.jpg) lightgray
+  0px -24.633px / 100% 146.964% no-repeat !important;
+}
+
+.ict_tax_engine {
+  background: url(/img/services/ict/tax_engine.jpg) lightgray
+  0px -24.633px / 100% 146.964% no-repeat !important;
+}
+
+.ict_tax_tech {
+  background: url(/img/services/ict/tax_tech.jpg) lightgray
+  0px -24.633px / 100% 146.964% no-repeat !important;
+}
+
+.ict_logic {
+  background: url(/img/services/ict/logic.jpg) lightgray
+  50% / cover no-repeat !important;
+}
+
+.epc_construction {
+  background: url(/img/services/epc/epc_construction.jpg) lightgray
+  0px -24.633px / 100% 146.964% no-repeat !important;
+}
+
+.epc_procurements {
+  background: url(/img/services/epc/handshake.jpg) lightgray
+  0px -24.633px / 100% 146.964% no-repeat !important;
+}
+
+.manufacturing_class {
+  background: url(/img/services/epc/manufacturing_class.jpg) lightgray
+  0px -24.633px / 100% 146.964% no-repeat !important;
+}
+
+.epc_discuss {
+  background: url(/img/services/epc/epc_discuss.jpg) lightgray
+  0px -24.633px / 100% 146.964% no-repeat !important;
+}
+
+.mrig {
+  background: url(/img/services/epc/mrig.jpg) lightgray
+  0px -24.633px / 100% 146.964% no-repeat !important;
+}
+
 .section_8 > div + div > div > div + div {
   display: flex;
   padding: var(--spacing-6);
@@ -1027,7 +1350,7 @@
 .cta {
   display: flex;
   width: 100%;
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   padding: var(--spacing-10) var(--spacing-12);
   flex-direction: column;
@@ -1066,6 +1389,7 @@
   font-weight: var(--font-weight-700);
   line-height: 44px;
   letter-spacing: 0;
+  text-align: center;
 }
 
 .cta > div > h2 > span {
@@ -1136,6 +1460,8 @@
   body {
     overflow-x: hidden;
   }
+
+ 
 
   .component_2 {
     display: flex;
@@ -1249,6 +1575,114 @@
   }
 
   .component_2_background_image_training {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  }
+
+  .component_2_background_image_procurements {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  }
+
+  .component_2_background_image_procurements_ict_erp {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  }
+
+  .component_2_background_image_procurements_ict_tax {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  }
+
+  .component_2_background_image_procurements_ict_tax_tech {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  }
+
+  .component_2_background_image_procurements_ict_logic {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  }
+
+  .component_2_background_image_construction {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  }
+
+  .component_2_background_image_manufacturing {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  }
+
+  .component_2_background_image_oil_renewable {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  }
+
+  .component_2_background_image_oil_learning {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  }
+
+  .component_2_background_image_oil_rig {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  }
+
+  .component_2_background_image_oil_parameter {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  }
+
+  .component_2_background_image_oil_well {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  }
+
+  .component_2_background_image_oil_control {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  }
+
+  .component_2_background_image_oil_drill {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  }
+
+  .component_2_background_image_oil_simulation {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  } 
+
+  .component_2_background_image_oil_simulation {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  }
+
+  .component_2_background_image_arbitration {
+    height: 240px;
+    align-self: stretch;
+    flex: unset;
+  }
+
+  .component_2_background_image_epc_mrig {
     height: 240px;
     align-self: stretch;
     flex: unset;
@@ -1888,5 +2322,87 @@
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0;
+  }
+
+  .frame {
+    display: flex;
+    padding: 24px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .frame > div {
+    display: flex;
+    min-height: 61px;
+    padding: 12px 12px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    border-radius: var(--radius-3);
+  }
+
+  .frame > a {
+    width: 100%;
+    display: flex;
+    padding: 12px 12px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    justify-content: flex-start;
+  }
+
+  .frame > a > div {
+    order: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .frame > a > div > h6,
+  .frame > a > div > p {
+    text-align: left;
+  }
+
+  .frame > a > div + div {
+    order: 0;
+  }
+
+  .previous {
+    display: flex !important;
+    padding: 12px 12px !important;
+    align-items: center !important;
+    gap: 12px !important;
+    align-self: stretch !important;
+    border-radius: var(--radius-3) !important;
+    border: var(--stroke-00) solid var(--primary) !important;
+    background: var(--secondary-100) !important;
+    width: 100% !important;
+  }
+
+  .previous > div {
+    display: flex !important;
+    width: 36px !important;
+    height: 36px !important;
+    padding: 0 10.812px 0 10.788px !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .previous> div {
+    order: unset !important;
+  }
+
+  .previous > div + div {
+    flex: 1 1 0% !important;
+    min-width: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  .previous > div + div > h6 {
+    text-align: left !important;
   }
 }

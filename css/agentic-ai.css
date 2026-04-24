@@ -210,7 +210,7 @@
   color: var(--black);
   font-size: var(--text-small);
   font-weight: var(--font-weight-600);
-  line-height: 1.6;
+  line-height: 20px;
 }
 
 .agentic_key_picture {
@@ -265,6 +265,13 @@
   margin-bottom: var(--spacing-4);
 }
 
+@media (max-width: 767px) {
+  .card-list-bullet {
+    width: 36px;
+    height: 36px;
+  }
+}
+
 .agentic_card_title {
   font-size: var(--text-h6);
   font-weight: 600;
@@ -304,7 +311,11 @@
   .agentic_hero_actions {
     flex-direction: row;
   }
+
+
 }
+
+
 
 @media (min-width: 992px) {
   .agentic_key_wrapper {
@@ -419,8 +430,10 @@
 .ai_approach_connector {
   position: absolute;
   top: 20px;
-  left: calc(40px / 2);
-  right: calc(40px / 2);
+  /* left: calc(40px / 2);
+  right: calc(40px / 2); */
+  left: 100px;
+  right: 100px;
   height: 2px;
   background: var(--primary-200);
 }
@@ -485,6 +498,7 @@
     gap: var(--spacing-10);
     margin-top: var(--spacing-10);
     align-items: center;
+
   }
 
   .ai_approach_connector {
@@ -539,6 +553,21 @@
     max-width: none;
     margin-top: 0;
   }
+
+
+  .agentic_key_item{
+  display: flex;
+  padding: var(--spacing-5, 16px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-4, 12px);
+  align-self: stretch; 
+}
+
+.agentic_key_check{
+    width: 36px;
+    height: 36px;
+}
 }
 
 /* AI Industry Applications (replicated from artificial-intelligence page) */
@@ -571,7 +600,7 @@
 }
 
 .ai_industry_title {
-  margin: 0 0 var(--spacing-3);
+  margin: 0;
 }
 
 .ai_industry_text {
@@ -585,10 +614,12 @@
 }
 
 .ai_industry_chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-3);
-  align-items: center;
+ display: flex;
+align-items: flex-start;
+align-content: flex-start;
+gap: 16px var(--spacing-4, 16px);
+flex: 1 0 0;
+flex-wrap: wrap;
 }
 
 .ai_chip {
@@ -616,11 +647,15 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    gap: var(--spacing-12);
+    gap: 24px;
   }
 
   .ai_industry_left {
-    flex: 1;
+    display: flex;
+    width: 718px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-3);
   }
 
   .ai_industry_right {
@@ -634,11 +669,28 @@
   }
 
   .ai_industry_chips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
     gap: var(--spacing-2);
+    grid-template-areas:
+      "education education"
+      "energy financial"
+      "government government"
+      "healthcare manufacturing";
   }
+
+  .ai_chip:nth-child(1) { grid-area: education;
+  width: fit-content; }
+  .ai_chip:nth-child(2) { grid-area: energy; }
+  .ai_chip:nth-child(3) { grid-area: financial; }
+  .ai_chip:nth-child(4) { grid-area: government; width: fit-content; }
+  .ai_chip:nth-child(5) { grid-area: healthcare; }
+  .ai_chip:nth-child(6) { grid-area: manufacturing; }
 
   .ai_chip {
     white-space: normal;
+    
   }
 }
 
@@ -818,12 +870,17 @@
 @media (min-width: 768px) {
   .ai_related_header {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: space-between;
   }
 
+  .ai_related_header_left {
+    flex: 1;
+    align-self: flex-start;
+  }
+
   .ai_related_link {
-    margin-top: 10px;
+    margin-top: 0;
   }
 
   .ai_related_cards {

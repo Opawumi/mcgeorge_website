@@ -538,7 +538,7 @@
 .section_1 {
   display: flex;
   width: 100%;
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   padding: var(--spacing-10) var(--spacing-12);
   align-items: flex-start;
@@ -816,6 +816,11 @@
   border-radius: var(--radius-5);
 }
 
+.agent_ai_bg{
+  background: url("../../../img/services/ai/manufacturing_background_image_2.jpg") lightgray 50% / cover no-repeat;
+}
+
+
 .epc_Solution_bg{
   background: url("../../../img/epc/epc_bg_images.jpg")
     lightgray 50% / cover no-repeat;
@@ -828,6 +833,11 @@
 
 .oil_Solution_bg{
   background: url("../../../img/services/oil/epc_bg_images.jpg")
+    lightgray 50% / cover no-repeat;
+}
+
+.ict_bg_image{
+  background: url("../../../img/services/ict/ict_solution.jpg")
     lightgray 50% / cover no-repeat;
 }
 
@@ -1191,8 +1201,28 @@
   min-width: 100%;
   height: 160px;
   align-self: stretch;
-  background: url(/img/services/ai/agentic_ai.png) lightgray 0px -24.633px /
-    100% 146.964% no-repeat;
+  /* background: url(/img/oil-gas-energy/oil_gas_card_1.png) lightgray 0px -24.633px /
+    100% 146.964% no-repeat; */
+}
+
+.oil_well_design{
+  background: url(/img/oil-gas-energy/oil_gas_card_11.png) lightgray 50% / cover no-repeat;
+  height: 160px;
+}
+
+.oil_well_drilling {
+  background: url(/img/oil-gas-energy/oil_gas_card_1.png) lightgray 50% / cover no-repeat;
+  height: 160px;
+}
+
+.oil_well_optimization{
+  background: url(/img/oil-gas-energy/oil_gas_card_2.jpg) lightgray 50% / cover no-repeat;
+  height: 160px;
+}
+
+.oil_well_control{
+  background: url(/img/oil-gas-energy/oil_gas_card_4.jpg) lightgray 50% / cover no-repeat;
+  height: 160px;
 }
 
 .cybersecurity {

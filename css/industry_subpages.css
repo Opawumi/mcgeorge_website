@@ -607,7 +607,7 @@ img.capability_icon {
   background: var(--white);
 }
 
-.solve_check {
+.mark_right {
   border-radius: var(--Corner-Radius-radius-3, 8px);
   background: var(--Secondary-Secondary-300, #d2fcdc);
   display: flex;
@@ -617,6 +617,11 @@ img.capability_icon {
   padding-left: 0;
   justify-content: center;
   align-items: center;
+}
+.solve_check {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 
 .solve_card p {

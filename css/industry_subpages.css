@@ -1,10 +1,9 @@
 /* Industry Theme: Synchronized with Agentic AI styling */
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
-
 
 .industry_hero {
   background: var(--secondary-100);
@@ -17,7 +16,6 @@
   justify-content: center;
   align-items: flex-start;
   gap: var(--spacing-6, 16px);
-
 }
 
 .industry_hero_text {
@@ -31,14 +29,13 @@
 
 .industry_hero_text h1 {
   color: var(--Black, #020100);
-font-family: var(--Family-Heading, Inter);
-font-size: var(--Size-Headings-H1, 48px);
-font-style: normal;
-font-weight: 700;
-line-height: var(--Line-Height-Headings-H1, 56px); /* 116.667% */
-letter-spacing: var(--Letter-Spacing-Headings-H1, 0);
+  font-family: var(--Family-Heading, Inter);
+  font-size: var(--Size-Headings-H1, 48px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--Line-Height-Headings-H1, 56px); /* 116.667% */
+  letter-spacing: var(--Letter-Spacing-Headings-H1, 0);
 }
-
 
 .industry_hero_text p {
   color: var(--black);
@@ -64,12 +61,12 @@ letter-spacing: var(--Letter-Spacing-Headings-H1, 0);
 
 .intelligent {
   color: var(--Primary-Primary, #006625);
-font-family: var(--Family-Heading, Inter);
-font-size: var(--Size-Headings-H1, 48px);
-font-style: normal;
-font-weight: 700;
-line-height: var(--Line-Height-Headings-H1, 56px);
-letter-spacing: var(--Letter-Spacing-Headings-H1, 0);
+  font-family: var(--Family-Heading, Inter);
+  font-size: var(--Size-Headings-H1, 48px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--Line-Height-Headings-H1, 56px);
+  letter-spacing: var(--Letter-Spacing-Headings-H1, 0);
 }
 
 /* Breadcrumbs (localized styles) */
@@ -90,7 +87,6 @@ letter-spacing: var(--Letter-Spacing-Headings-H1, 0);
   color: var(--primary);
 }
 
-
 .industry_hero_actions {
   display: flex;
   flex-direction: column;
@@ -99,23 +95,20 @@ letter-spacing: var(--Letter-Spacing-Headings-H1, 0);
 }
 
 .btn-primary {
-    background-color: var(--primary);
-    border-color: var(--primary);
-    color: var(--white);
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
 }
-
 
 .industry_nav_section {
   padding-top: 0;
 }
-
 
 .industry_nav_wrapper {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-4);
 }
-
 
 .industry_nav_pattern {
   height: 80px;
@@ -182,30 +175,26 @@ letter-spacing: var(--Letter-Spacing-Headings-H1, 0);
   align-items: flex-start;
 }
 
-
-
-
-
 /*Nav  WRAPPER */
 .nav-wrapper {
-    display: flex;
-    padding: var(--spacing-9, 48px) var(--spacing-12, 96px);
-    align-items: center;
-    gap: 24px;
-    width: 100%;
-    justify-content: center;
+  display: flex;
+  padding: var(--spacing-9, 48px) var(--spacing-12, 96px);
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  justify-content: center;
 }
 
 /* CARD */
 .nav-card {
   display: flex;
- width: 1440px;
+  width: 1440px;
   padding: var(--spacing-4, 16px);
   align-items: center;
   gap: var(--spacing-4, 16px);
   border-radius: var(--Corner-Radius-radius-3, 8px);
   border: var(--Strokes-stroke-00, 0.5px) solid var(--Primary-Primary, #006625);
-  background: var(--Secondary-Secondary-100, #F4FEF6);
+  background: var(--Secondary-Secondary-100, #f4fef6);
 }
 
 .nav-card:hover {
@@ -265,17 +254,17 @@ letter-spacing: var(--Letter-Spacing-Headings-H1, 0);
     padding: 20px 12px;
     gap: 12px;
 
-    max-width: 420px;   /* 👈 prevents it from being too wide */
-    margin: 0 auto;     /* 👈 center it */
+    max-width: 420px; /* 👈 prevents it from being too wide */
+    margin: 0 auto; /* 👈 center it */
   }
 
   .nav-card {
     width: 100%;
-    padding: 12px;      /* 👈 reduce height */
+    padding: 12px; /* 👈 reduce height */
   }
 
   .nav-card h4 {
-    font-size: 14px;    /* 👈 smaller text */
+    font-size: 14px; /* 👈 smaller text */
   }
 
   .label {
@@ -288,7 +277,6 @@ letter-spacing: var(--Letter-Spacing-Headings-H1, 0);
     font-size: 13px;
   }
 }
-
 
 /* Overview Section */
 .industry_overview {
@@ -324,9 +312,6 @@ letter-spacing: var(--Letter-Spacing-Headings-H1, 0);
   line-height: 1.669;
   max-width: 720px;
 }
-
-
-
 
 /* Key Capabilities Section */
 .industry_capabilities {
@@ -393,48 +378,43 @@ img.capability_icon {
   margin: 0;
 }
 
+.section-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
-  .section-wrapper {
-      max-width: 1440px;
-      margin: 0 auto;
-      
-    }
- 
+/* Typography/Quotes_Callouts/Citation */
+.section-label {
+  color: var(--Primary-Primary, #006625);
+  font-family: var(--Family-Quotes_Callouts, Inter);
+  font-size: var(--Size-Quotes-_Callouts-Citation, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--Line-Height-Quotes-_Callouts-Citation, 24px); /* 150% */
+  letter-spacing: var(--Letter-Spacing-Quotes-_Callouts-Citation, 0);
+  text-transform: uppercase;
+}
 
-    /* Typography/Quotes_Callouts/Citation */
-    .section-label {
-      color: var(--Primary-Primary, #006625);
-      font-family: var(--Family-Quotes_Callouts, Inter);
-      font-size: var(--Size-Quotes-_Callouts-Citation, 16px);
-      font-style: normal;
-      font-weight: 500;
-      line-height: var(--Line-Height-Quotes-_Callouts-Citation, 24px); /* 150% */
-      letter-spacing: var(--Letter-Spacing-Quotes-_Callouts-Citation, 0);
-      text-transform: uppercase;
-      
-    }
- 
-    .section-label::before {
-      content: '';
-      display: inline-block;
-      width: 31.99px;
-      height: 1.979px;
-      background: #006625;
-    }
- 
-    /* Typography/Headings/H2 */
-    .section-heading {
-      color: #0F1419;
-      font-family: var(--Family-Heading, Inter);
-      font-size: var(--Size-Headings-H2, 36px);
-      font-style: normal;
-      flex-direction: column;
-      font-weight: 700;
-      line-height: var(--Line-Height-Headings-H2, 44px); /* 122.222% */
-      letter-spacing: var(--Letter-Spacing-Headings-H2, 0);
-      
-    }
- /* .services_heading{
+.section-label::before {
+  content: "";
+  display: inline-block;
+  width: 31.99px;
+  height: 1.979px;
+  background: #006625;
+}
+
+/* Typography/Headings/H2 */
+.section-heading {
+  color: #0f1419;
+  font-family: var(--Family-Heading, Inter);
+  font-size: var(--Size-Headings-H2, 36px);
+  font-style: normal;
+  flex-direction: column;
+  font-weight: 700;
+  line-height: var(--Line-Height-Headings-H2, 44px); /* 122.222% */
+  letter-spacing: var(--Letter-Spacing-Headings-H2, 0);
+}
+/* .services_heading{
 
       align-items: flex-start;
       width: 1440px;
@@ -443,75 +423,86 @@ img.capability_icon {
       
 } */
 
-    .service-card {
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 24px 28px;
-      margin-bottom: 16px;
-    }
- 
-    .service-card-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
- 
-    .service-title {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 15px;
-      font-weight: 700;
-      color: #0f1a14;
-    }
- 
-    .service-dot {
-      width: 24px;
-      height: 24px;
-      
-    }
- 
-    .industry_subtitle .line {
+.service-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-bottom: 16px;
+}
+
+.service-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f1a14;
+}
+
+.service-dot {
+  width: 24px;
+  height: 24px;
+}
+
+.industry_subtitle .line {
   width: 32px;
   height: 2px;
   background-color: var(--primary);
 }
-
 
 .industry_subtitle {
   display: flex;
   align-items: center;
   gap: var(--spacing-2);
 }
-    .view-service {
-      font-size: 13px;
-      color: #006625;
-      text-decoration: none;
-      white-space: nowrap;
-    }
+.view-service {
+  font-size: 13px;
+  color: #006625;
+  text-decoration: none;
+  white-space: nowrap;
+}
 
- 
-    /* Tags Grid */
-    .tags {
-      display: grid;
-      gap: 10px;
-    }
- 
-    .tags-4col { grid-template-columns: repeat(4, max-content); }
-    .tags-3col { grid-template-columns: repeat(3, max-content); }
-    .tags-2col { grid-template-columns: repeat(2, max-content); }
- 
-    .tags-4col { grid-template-columns: repeat(4, max-content); }
-.tags-4col { grid-template-columns: repeat(4, max-content); }
-.tags-3col { grid-template-columns: repeat(3, max-content); }
+/* Tags Grid */
+.tags {
+  display: grid;
+  gap: 10px;
+}
+
+.tags-4col {
+  grid-template-columns: repeat(4, max-content);
+}
+.tags-3col {
+  grid-template-columns: repeat(3, max-content);
+}
+.tags-2col {
+  grid-template-columns: repeat(2, max-content);
+}
+
+.tags-4col {
+  grid-template-columns: repeat(4, max-content);
+}
+.tags-4col {
+  grid-template-columns: repeat(4, max-content);
+}
+.tags-3col {
+  grid-template-columns: repeat(3, max-content);
+}
 
 /*how will deliver in aerospace grid styling*/
 
-
-.tags-4col-aero { grid-template-columns: repeat(5, max-content); }
-.tags-2col-aero { grid-template-columns: repeat(3, max-content); }
- 
+.tags-4col-aero {
+  grid-template-columns: repeat(5, max-content);
+}
+.tags-2col-aero {
+  grid-template-columns: repeat(3, max-content);
+}
 
 .tags {
   display: grid;
@@ -519,29 +510,30 @@ img.capability_icon {
   justify-content: start; /* or center */
 }
 
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-2, 8px);
+  border-radius: var(--Corner-Radius-radius-2, 4px);
+  border: var(--Strokes-stroke-00, 0.5px) solid
+    var(--Primary-Primary-300, #99c2a8);
+  background: var(--Secondary-Secondary-100, #f4fef6);
+  padding: 8px 14px;
+  font-size: 13px;
+  color: #006625;
+  text-decoration: none;
+  transition:
+    border-color 0.15s,
+    color 0.15s;
+}
 
-    .tag {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-     gap: var(--spacing-2, 8px);
-      border-radius: var(--Corner-Radius-radius-2, 4px);
-      border: var(--Strokes-stroke-00, 0.5px) solid var(--Primary-Primary-300, #99C2A8);
-      background: var(--Secondary-Secondary-100, #F4FEF6);
-      padding: 8px 14px;
-      font-size: 13px;
-      color: #006625;
-      text-decoration: none;
-      transition: border-color 0.15s, color 0.15s;
-    }
- 
-    .tag:hover {
-      border-color: #16a34a;
-      color: #16a34a;
-    }
+.tag:hover {
+  border-color: #16a34a;
+  color: #16a34a;
+}
 
-
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
   .tags {
     grid-template-columns: repeat(2, auto); /* 👈 reduce width */
     justify-content: center; /* optional: center it */
@@ -563,10 +555,7 @@ img.capability_icon {
   }
 }
 
-
-
-
-    /* What We Solve Section */
+/* What We Solve Section */
 .industry_solve {
   background: var(--white);
   padding-block: 0;
@@ -607,17 +596,15 @@ img.capability_icon {
 
 .solve_check {
   border-radius: var(--Corner-Radius-radius-3, 8px);
-  background: var(--Secondary-Secondary-300, #D2FCDC);
+  background: var(--Secondary-Secondary-300, #d2fcdc);
   display: flex;
   width: 48px;
   height: 48px;
-  
-    padding-left: 0;
+
+  padding-left: 0;
   justify-content: center;
-    align-items: center;
+  align-items: center;
 }
-
-
 
 .solve_card p {
   margin: 0;
@@ -639,11 +626,6 @@ img.capability_icon {
   object-position: 60% 35%;
   border-radius: var(--radius-5);
 }
-
-
-
-
-
 
 /* Implementation Approach (Timeline) */
 .industry_approach {
@@ -813,7 +795,6 @@ img.capability_icon {
   display: block;
 }
 
-
 /* Marketing Related Services */
 
 .industry_related_wrapper {
@@ -888,18 +869,8 @@ img.capability_icon {
   flex-direction: column;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Media Queries */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .industry_capabilities_grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1071,7 +1042,6 @@ img.capability_icon {
 
 /* Marketing Related Services */
 
-
 .industry_related_wrapper {
   display: flex;
   flex-direction: column;
@@ -1207,7 +1177,7 @@ img.capability_icon {
   }
 
   .nav_title {
-    color: var(--primary); 
+    color: var(--primary);
     text-align: right;
     font-family: var(--Family-Heading, Inter);
     font-size: var(--Size-Headings-H5, 18px);
@@ -1247,15 +1217,14 @@ img.capability_icon {
   object-fit: cover;
 }
 
-
 .industry_related_card_body {
- display: flex;
-padding: var(--spacing-6);
-flex-direction: column;
-align-items: flex-start;
-gap: var(--spacing-4);
-flex: 1 0 0;
-align-self: stretch;
+  display: flex;
+  padding: var(--spacing-6);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-4);
+  flex: 1 0 0;
+  align-self: stretch;
 }
 
 .industry_related_card_body h6,

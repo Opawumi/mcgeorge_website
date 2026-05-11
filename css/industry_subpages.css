@@ -176,7 +176,7 @@
 /* CARD */
 .nav-card {
   display: flex;
-  width: 1440px;
+  width: 50%;
   padding: var(--spacing-4, 16px);
   align-items: center;
   gap: var(--spacing-4, 16px);
@@ -188,6 +188,20 @@
 .nav-card:hover {
   border-color: #16a34a;
   background: #eef9f0;
+}
+.green-nav {
+  display: flex;
+  width: 50%;
+  padding: var(--spacing-4, 16px);
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--spacing-4, 16px);
+  flex: 1 0 0;
+  align-self: stretch;
+  /* padding: 0; */
+  border-radius: var(--Corner-Radius-radius-3, 8px);
+  background: url(../img/industry_pages/green-nav.png) lightgray 50% / cover
+    no-repeat;
 }
 
 /* LEFT SIDE */

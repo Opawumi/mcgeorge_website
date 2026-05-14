@@ -6,7 +6,7 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      color: #222;
+      color: #020100;
       background: #ffffff;
       line-height: 1.5;
     }
@@ -19,10 +19,10 @@
 
     .hero-card {
       position: relative;
-      background: #006b2d;
+      border-radius: var(--Corner-Radius-radius-5, 16px);
+      background: var(--Primary-Primary, #006625);
       color: white;
       padding: 32px 40px;
-      border-radius: 12px;
       overflow: hidden;
       min-height: 128px;
       display: flex;
@@ -30,11 +30,13 @@
     }
 
     .hero-card h1 {
-      font-size: 42px;
-      font-weight: 800;
-      position: relative;
-      z-index: 2;
-      letter-spacing: -0.5px;
+        color: var(--White, #FFF);
+        font-family: var(--Family-Heading, Inter);
+        font-size: var(--Size-Headings-H1, 48px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: var(--Line-Height-Headings-H1, 56px); /* 116.667% */
+        letter-spacing: var(--Letter-Spacing-Headings-H1, 0);
     }
 
     /* ── Diagonal line pattern ── */
@@ -59,13 +61,13 @@
     /* ── Body content ── */
     .content {
       padding: 52px 6.5%;
-      max-width: 1150px;
+      max-width: 100%;
     }
 
     .content p {
       font-size: 16px;
       margin-bottom: 22px;
-      color: #222;
+      color: #020100;
       line-height: 1.65;
     }
 
@@ -82,7 +84,7 @@
       position: relative;
       padding-left: 26px;
       line-height: 1.55;
-      color: #222;
+      color: #020100;
     }
 
     /* Green square bullet */
@@ -93,7 +95,7 @@
       top: 3px;
       width: 14px;
       height: 14px;
-      background: #4cce71;
+      background: #8FF7A7;
       border-radius: 2px;
     }
 

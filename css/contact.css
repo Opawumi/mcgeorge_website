@@ -1,0 +1,464 @@
+/* ==========================================================================
+   Contact Page Styles
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Hero Banner
+   -------------------------------------------------------------------------- */
+
+.contact_hero {
+  background-color: var(--primary);
+  border-radius: var(--radius-4);
+  margin: var(--spacing-6) var(--spacing-12);
+  overflow: hidden;
+}
+
+.contact_hero_inner {
+  position: relative;
+  padding: 48px 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 140px;
+}
+
+.contact_hero_text {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+}
+
+.contact_hero_title {
+  font-size: var(--text-h2);
+  font-weight: var(--font-weight-700);
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-3);
+}
+
+.contact_hero_desc {
+  font-size: var(--text-regular);
+  font-weight: var(--font-weight-400);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+/* Pattern: fills right half of hero, lines radiate from bottom-right corner */
+.contact_hero_pattern {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.contact_hero_svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   Form Section
+   -------------------------------------------------------------------------- */
+
+.contact_form_section {
+  padding: 0 var(--spacing-12);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.contact_form_inner {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Each labelled row — 50 / 50 split matching the design */
+.contact_form_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--spacing-8);
+  padding: var(--spacing-8) 0;
+  align-items: start;
+}
+
+.contact_form_row_divider {
+  border-bottom: 1px solid var(--border);
+}
+
+.contact_form_group_title {
+  font-size: 18px;
+  font-weight: var(--font-weight-600);
+  color: var(--black);
+  line-height: 1.3;
+  padding-top: 4px;
+  /* align with first input */
+}
+
+.contact_form_field_col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+/* --------------------------------------------------------------------------
+   Select (How can we help)
+   -------------------------------------------------------------------------- */
+
+.contact_select_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.contact_select {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  background: var(--white);
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--radius-2);
+  padding: 11px var(--spacing-5);
+  font-size: var(--text-regular);
+  color: var(--neutral-500);
+  font-weight: var(--font-weight-400);
+  cursor: pointer;
+  outline: none;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+  font-family: "Inter", sans-serif;
+}
+
+.contact_select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 102, 37, 0.10);
+  color: var(--black);
+}
+
+.contact_select_icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--neutral-600);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+/* --------------------------------------------------------------------------
+   Text Inputs — full border, rounded corners (all sides)
+   -------------------------------------------------------------------------- */
+
+.contact_input {
+  width: 100%;
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--radius-2);
+  background: var(--white);
+  padding: 11px var(--spacing-4);
+  font-size: var(--text-regular);
+  color: var(--black);
+  font-weight: var(--font-weight-400);
+  outline: none;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+  font-family: "Inter", sans-serif;
+}
+
+.contact_input::placeholder {
+  color: var(--neutral-500);
+}
+
+.contact_input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 102, 37, 0.10);
+}
+
+/* --------------------------------------------------------------------------
+   Textarea
+   -------------------------------------------------------------------------- */
+
+.contact_textarea {
+  width: 100%;
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--radius-2);
+  background: var(--white);
+  padding: 12px var(--spacing-4);
+  font-size: var(--text-regular);
+  color: var(--black);
+  font-weight: var(--font-weight-400);
+  outline: none;
+  resize: vertical;
+  min-height: 120px;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+.contact_textarea::placeholder {
+  color: var(--neutral-500);
+}
+
+.contact_textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 102, 37, 0.10);
+}
+
+/* --------------------------------------------------------------------------
+   Consent Checkbox
+   -------------------------------------------------------------------------- */
+
+.contact_consent_label {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-3);
+  cursor: pointer;
+  margin-top: var(--spacing-2);
+}
+
+.contact_checkbox_wrapper {
+  position: relative;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+}
+
+.contact_checkbox_input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  margin: 0;
+}
+
+.contact_checkbox_custom {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--neutral-400);
+  border-radius: var(--radius-1);
+  background: var(--white);
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.contact_checkbox_input:checked+.contact_checkbox_custom {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpolyline points='2,6 5,9 10,3' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact_checkbox_input:focus-visible+.contact_checkbox_custom {
+  box-shadow: 0 0 0 3px rgba(0, 102, 37, 0.2);
+}
+
+.contact_consent_text {
+  font-size: var(--text-small);
+  color: var(--neutral-600);
+  line-height: 1.6;
+  font-weight: var(--font-weight-400);
+}
+
+.contact_consent_link {
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: var(--font-weight-500);
+}
+
+.contact_consent_link:hover {
+  color: var(--primary-600);
+}
+
+/* --------------------------------------------------------------------------
+   Submit Button Row
+   -------------------------------------------------------------------------- */
+
+.contact_submit_row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--spacing-3);
+}
+
+.contact_submit_btn {
+  min-width: 160px;
+  padding: 14px var(--spacing-8);
+  font-size: var(--text-regular);
+  font-weight: var(--font-weight-600);
+  border-radius: var(--radius-2);
+}
+
+/* --------------------------------------------------------------------------
+   Locations Section
+   -------------------------------------------------------------------------- */
+
+.contact_locations_section {
+  background-color: var(--neutral-100);
+  padding: var(--spacing-10) 0;
+}
+
+.contact_locations_inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-12);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.contact_locations_header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.contact_locations_kicker {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.contact_locations_kicker_line {
+  display: block;
+  width: 32px;
+  height: 2px;
+  background-color: var(--primary);
+  flex-shrink: 0;
+}
+
+.contact_locations_kicker_text {
+  font-size: var(--text-small);
+  font-weight: var(--font-weight-600);
+  color: var(--primary);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact_locations_title {
+  font-size: var(--text-h2);
+  font-weight: var(--font-weight-700);
+  color: var(--black);
+  line-height: 1.25;
+}
+
+.contact_locations_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-5);
+}
+
+.contact_location_card {
+  background: var(--white);
+  border-radius: var(--radius-4);
+  padding: var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  transition: box-shadow 200ms ease;
+}
+
+.contact_location_card:hover {
+  box-shadow: 0 4px 16px rgba(0, 102, 37, 0.08);
+}
+
+.contact_location_icon {
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+}
+
+.contact_location_name {
+  font-size: var(--text-h6);
+  font-weight: var(--font-weight-600);
+  color: var(--black);
+  line-height: 1.4;
+  margin-bottom: var(--spacing-2);
+}
+
+.contact_location_address {
+  font-size: var(--text-small);
+  color: var(--neutral-600);
+  font-weight: var(--font-weight-400);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Responsive — Tablet (≤ 768px)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+  /* Hero */
+  .contact_hero {
+    margin: var(--spacing-4) var(--spacing-4);
+  }
+
+  .contact_hero_inner {
+    padding: var(--spacing-8) var(--spacing-6);
+    min-height: auto;
+  }
+
+  .contact_hero_title {
+    font-size: 22px;
+  }
+
+  .contact_hero_desc {
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+  /* Form */
+  .contact_form_section {
+    padding: 0 var(--spacing-4);
+  }
+
+  .contact_form_row {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    gap: var(--spacing-5);
+    padding: var(--spacing-7) 0;
+  }
+
+  .contact_form_group_title {
+    font-size: var(--text-h5);
+  }
+
+  /* Submit */
+  .contact_submit_row {
+    justify-content: stretch;
+  }
+
+  .contact_submit_btn {
+    width: 100%;
+  }
+
+  /* Locations */
+  .contact_locations_inner {
+    padding: 0 var(--spacing-4);
+  }
+
+  .contact_locations_grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-4);
+  }
+
+  .contact_locations_title {
+    font-size: var(--text-h3);
+  }
+}
+
+/* ==========================================================================
+   Responsive — Small mobile (≤ 480px)
+   ========================================================================== */
+
+@media (max-width: 480px) {
+  .contact_hero_inner {
+    padding: var(--spacing-6) var(--spacing-5);
+  }
+
+  .contact_hero_pattern {
+    opacity: 0.6;
+  }
+}

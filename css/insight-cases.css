@@ -647,6 +647,7 @@ a .infra {
   /* 128.571% */
   letter-spacing: var(--Letter-Spacing-Quotes-_Callouts-Citation, 0);
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .cta>div+div>button {
@@ -822,12 +823,17 @@ a .infra {
     gap: 24px;
   }
 
+  .cta>div>div {
+    flex-wrap: nowrap;
+  }
+
   .cta>div>div>h6 {
-    font-size: 14px;
+    font-size: clamp(10px, 3.1vw, 14px);
     font-weight: 500;
     line-height: 18px;
     letter-spacing: 0;
     text-transform: uppercase;
+    white-space: nowrap;
   }
 
   .cta>div {

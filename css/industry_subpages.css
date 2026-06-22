@@ -1351,6 +1351,7 @@ img.capability_icon {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  white-space: nowrap;
 }
 
 .industry-cta .text-h2 {
@@ -1384,6 +1385,14 @@ img.capability_icon {
 }
 
 @media (max-width: 767px) {
+  .industry-cta-subtitle {
+    flex-wrap: nowrap;
+  }
+
+  .industry-cta-kicker {
+    white-space: nowrap;
+  }
+
   .industry-cta-actions {
     justify-content: flex-start;
   }

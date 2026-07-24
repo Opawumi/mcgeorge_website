@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     toggle.setAttribute("aria-expanded", isOpen);
     hamburger.style.display = isOpen ? "none" : "block";
     close.style.display = isOpen ? "block" : "none";
+    document.documentElement.style.overflow = isOpen ? "hidden" : "";
     document.body.style.overflow = isOpen ? "hidden" : "";
   });
 
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
       toggle.setAttribute("aria-expanded", "false");
       hamburger.style.display = "block";
       close.style.display = "none";
+      document.documentElement.style.overflow = "";
       document.body.style.overflow = "";
     });
   });

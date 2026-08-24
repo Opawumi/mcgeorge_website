@@ -983,7 +983,20 @@
 }
 
 .section_4_section_productlist_container_link_component.oil_and_gas {
-  background: var(--black);
+  width: 100%;
+  height: 96px;
+  border-radius: var(--radius-3);
+  background-color: transparent;
+  background-image: url(../img/drillum.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* black background modifier for specific cards */
+.section_4_section_productlist_container_link_component.black-bg {
+  background: var(--black) !important;
+  color: var(--white);
 }
 
 .section_4_section_productlist_container_link.workmerate_erp_suite {
@@ -994,80 +1007,134 @@
   width: 160px;
   height: 40px;
   border-radius: var(--radius-3);
-  background: url(../img/workmerate.svg) var(--primary-100) 50% / contain no-repeat;
+  background: url(../img/workmerate.png) var(--primary-100) 50% / cover
+    no-repeat;
 }
 
 .section_4_section_productlist_container_link_component_image_2 {
-  width: 140px;
-  height: 50px;
+  width: 168px;
+  height: 96px;
   border-radius: var(--radius-3);
-  background: url(../img/ememoIcon.svg) var(--primary-100) 50% / contain no-repeat;
+  background: url(../img/e-memoo.png) var(--primary-100) 50% / cover no-repeat;
 }
 
 .section_4_section_productlist_container_link_component_image_3 {
-  width: 160px;
-  height: 40px;
+  width: 168px;
+  height: 96px;
   border-radius: var(--radius-3);
-  background: url(../img/mcsportng.svg) var(--primary-100) 50% / contain no-repeat;
+  background: url(../img/mcsportng.svg) var(--primary-100) 50% / cover no-repeat;
 }
 
 .section_4_section_productlist_container_link_component_image_4 {
-  width: 140px;
-  height: 50px;
+  width: 168px;
+  height: 96px;
   border-radius: var(--radius-3);
-  background: url(../img/hds.svg) var(--black) 50% / contain no-repeat;
+  background-color: transparent;
+  background-image: url(../img/Component-14.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section_4_section_productlist_container_link_component_image_5 {
-  width: 160px;
-  height: 50px;
+  width: 168px;
+  height: 96px;
   border-radius: var(--radius-3);
-  background: url(../img/optitrack.svg) var(--black) 50% / contain no-repeat;
+  background-color: transparent;
+  background-image: url(../img/optitract.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.section_4_section_productlist_container_link_component_image_6 {
-  width: 170px;
-  height: 50px;
-  border-radius: var(--radius-3);
-  background: url(../img/omniscient.svg) var(--black) 50% / contain no-repeat;
+.section_4_section_productlist_container_link_component.omniscent-card {
+  background: transparent;
+}
 }
 
 .section_4_section_productlist_container_link_component_image_7 {
-  width: 150px;
-  height: 50px;
+  width: 100%;
+  height: 96px;
   border-radius: var(--radius-3);
-  background: url(../img/drillum.svg) var(--black) 50% / contain no-repeat;
+  background-color: transparent;
+  background-image: url(../img/omniscent.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section_4_section_productlist_container_link_component_image_8 {
-  width: 160px;
-  height: 60px;
+  width: 100%;
+  height: 96px;
   border-radius: var(--radius-3);
-  background: url(../img/mclearnms.svg) var(--primary-100) 50% / contain no-repeat;
+  background-color: transparent;
+  background-image: url(../img/mclearnms.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section_4_section_productlist_container_link_component_image_9 {
-  width: 160px;
-  height: 50px;
+  width: 168px;
+  height: 96px;
   border-radius: var(--radius-3);
-  background: url(../img/asmartfarm.svg) var(--primary-100) 50% / contain no-repeat;
+  background-color: transparent;
+  background-image: url(../img/asmartfarm.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.section_4_section_productlist_container_link_component_frame {
+/* Styles for cards that should show a small image on the left */
+.section_4_section_productlist_container_link.image-left {
   display: flex;
-  width: 100%;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--spacing-4);
-  align-self: stretch;
 }
 
+.section_4_section_productlist_container_link.image-left .section_4_section_productlist_container_link_component {
+  flex: 0 0 auto;
+  padding: 8px;
+  background: var(--black);
+}
+
+.section_4_section_productlist_container_link.image-left .section_4_section_productlist_container_link_component_image_5 {
+  width: 150px;
+  height: 90px;
+  background-size: contain;
+}
+
+.section_4_section_productlist_container_link.image-left .section_4_section_productlist_container_link_component_frame {
+  flex: 1 1 auto;
+}
+
+.section_4_section_productlist_container_link_component_image_3 {
+  width: 100%;
+  height: 96px;
+  border-radius: var(--radius-3);
+  background-color: var(--primary-100);
+  background-image: url(../img/mcsportng.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; /* show entire image */
+}
+ 
 .section_4_section_productlist_container_link_component_frame_container {
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--spacing-1);
-  flex: 1 0 0;
+  flex: 1 0 0; /* text container takes available space */
+}
+
+/* make the overall frame a horizontal row so text is left and icon right */
+.section_4_section_productlist_container_link_component_frame {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-3);
+  width: 100%;
 }
 
 .section_4_section_productlist_container_link_component_frame_container_title {
@@ -1686,6 +1753,245 @@
   height: 32px;
 }
 
+
+
+/* =========================
+   TRUSTED PARTNERS SECTION
+========================= */
+
+.trusted-partners {
+  width: 100%;
+  min-height: 315px;
+  background: #f4fff7;
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.trusted-partners *,
+.section_7 *,
+.section_7 {
+  font-family: "Inter", sans-serif;
+}
+
+.partners-container {
+  width: 100%;
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 45px 20px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Small heading */
+
+.section-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.section-label span {
+  width: 25px;
+  height: 2px;
+  background: #168347;
+}
+
+.section-label p {
+  margin: 0;
+  color: #168347;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Main heading */
+
+.partners-container h2 {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  max-width: 1036px;
+  min-height: 44px;
+  color: #050505;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+
+.partners-container h2 strong {
+  color: #168347;
+  font-family: "Inter", sans-serif;
+}
+
+.highlight {
+  color: #168347;
+  font-family: "Inter", sans-serif;
+}
+/* Description */
+
+.description {
+  max-width: 850px;
+  margin: 12px auto 0;
+  text-align: center;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+}
+
+/* Logos */
+
+.partner-logos {
+  width: min(1248px, 100%);
+  margin-top: 38px;
+  overflow: hidden;
+  position: relative;
+  padding: 8px 0;
+}
+
+.partner-track {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  width: max-content;
+  animation: partner-scroll 24s linear infinite;
+  will-change: transform;
+}
+
+.partner-logos:hover .partner-track {
+  animation-play-state: paused;
+}
+
+.partner {
+  height: 60px;
+  flex: 0 0 auto;
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner img {
+  max-width: 145px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: none;
+}
+
+@keyframes partner-scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .partner-track {
+    gap: 20px;
+  }
+
+  .partner {
+    min-width: 120px;
+  }
+
+  .partner img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 700px) {
+  .trusted-partners {
+    min-height: auto;
+  }
+
+  .partners-container {
+    padding: 40px 16px;
+  }
+
+  .section-label {
+    gap: 8px;
+  }
+
+  .section-label span {
+    width: 18px;
+  }
+
+  .section-label p {
+    font-size: 12px;
+  }
+
+  .partners-container h2 {
+    font-size: clamp(24px, 5vw, 30px);
+    line-height: 1.25;
+    height: auto;
+  }
+
+  .description {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .partner-logos {
+    width: 100%;
+    margin-top: 28px;
+    overflow: hidden;
+    padding: 4px 0;
+  }
+
+  .partner-track {
+    gap: 14px;
+    animation-duration: 18s;
+  }
+
+  .partner {
+    min-width: 110px;
+    height: 52px;
+  }
+
+  .partner img {
+    max-width: 100px;
+    max-height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-container {
+    padding: 32px 12px 36px;
+  }
+
+  .partners-container h2 {
+    font-size: 22px;
+  }
+
+  .partner-track {
+    gap: 12px;
+    animation-duration: 16s;
+  }
+
+  .partner {
+    min-width: 84px;
+  }
+
+  .partner img {
+    max-width: 74px;
+  }
+}
+
+
+
 .section_7 {
   display: flex;
   width: 100%;
@@ -1721,6 +2027,7 @@
 
 .section_7_container_container_title {
   color: var(--primary);
+  font-family: "Inter", sans-serif;
   font-size: var(--text-h5);
   font-weight: var(--font-weight-500);
   line-height: 24px;
@@ -1745,6 +2052,7 @@
 
 .section_7_container_container_2_title_text {
   color: var(--black);
+  font-family: "Inter", sans-serif;
   font-size: var(--text-h2);
   font-weight: var(--font-weight-700);
   line-height: 44px;
@@ -1753,6 +2061,7 @@
 
 .section_7_container_container_2_title_subtitle {
   color: var(--primary);
+  font-family: "Inter", sans-serif;
   font-size: var(--text-h2);
   font-weight: var(--font-weight-700);
   line-height: 44px;
@@ -1761,6 +2070,7 @@
 
 .section_7_container_container_2_subtitle {
   color: var(--primary);
+  font-family: "Inter", sans-serif;
   font-size: var(--text-h2);
   font-weight: var(--font-weight-700);
   line-height: 44px;
@@ -1771,6 +2081,7 @@
   align-self: stretch;
   color: var(--black);
   text-align: center;
+  font-family: "Inter", sans-serif;
   font-size: var(--text-large);
   font-weight: var(--font-weight-400);
   line-height: 28px;

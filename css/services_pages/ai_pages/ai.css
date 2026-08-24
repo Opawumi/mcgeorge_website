@@ -226,7 +226,7 @@
   flex: 1 0 0;
   align-self: stretch;
   border-radius: var(--radius-5);
-  background: url("../../../img/services/fidic/documentation.jpg") lightgray
+  background: url("../../../img/services/fidic/tender-documentation.png") lightgray
     50% / cover no-repeat;
 }
 
@@ -242,7 +242,7 @@
   flex: 1 0 0;
   align-self: stretch;
   border-radius: var(--radius-5);
-  background: url("../../../img/services/fidic/construction_supervision.jpg") lightgray
+  background: url("../../../img/services/fidic/fidic-construttion.png") lightgray
     50% / cover no-repeat;
 }
 
@@ -250,7 +250,7 @@
   flex: 1 0 0;
   align-self: stretch;
   border-radius: var(--radius-5);
-  background: url("../../../img/services/fidic/training.jpg") lightgray 50% /
+  background: url("../../../img/services/fidic/fidic-training-image.png") lightgray 50% /
     cover no-repeat;
 }
 
@@ -428,8 +428,31 @@
   gap: var(--spacing-4);
   border-radius: var(--radius-3);
   border: var(--stroke-00) solid var(--primary);
-  background: var(--secondary-100);
+  background: #F4FEF6;
 }
+
+.frame > a:hover {
+  background: #8FF7A7;
+}
+
+/* When the anchor is hovered, make the small arrow button background dark green and icon white */
+.frame > a:hover > div + div {
+  background: #006625;
+}
+
+.frame > a:hover > div + div svg {
+  stroke: #fff;
+  fill: none;
+}
+
+/* Ensure any SVG path inside the hovered anchor turns white (override presentation attributes) */
+.frame > a:hover svg path {
+  stroke: #fff !important;
+}
+
+
+
+
 
 .frame > a > div {
   display: flex;
@@ -484,6 +507,19 @@
   border: var(--stroke-00) solid var(--primary) !important;
   background: var(--secondary-100) !important;
   justify-content: flex-start !important;
+}
+
+/* Ensure previous link uses the same hover behavior as .frame > a */
+.frame > a.previous:hover {
+  background: #8FF7A7 !important;
+}
+
+.frame > a.previous:hover > div:first-child {
+  background: #006625 !important;
+}
+
+.frame > a.previous:hover svg path {
+  stroke: #fff !important;
 }
 
 .previous > div {

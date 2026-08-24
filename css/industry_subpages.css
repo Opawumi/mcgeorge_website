@@ -187,7 +187,46 @@
 
 .nav-card:hover {
   border-color: #16a34a;
-  background: #eef9f0;
+  background: #8FF7A7;
+}
+
+/* Hover behavior: only the hovered nav-card (left or right) gets hover styles */
+.nav-card:hover {
+  border-color: #16a34a;
+  background: #8FF7A7;
+}
+
+/* Green-nav hover only when hovered directly */
+.green-nav:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* When a nav-card is hovered, style its arrow-box (so only the hovered one changes) */
+.nav-card:hover .arrow-box {
+  background: #006625;
+  color: #fff;
+}
+
+.nav-card:hover .arrow-box .arrow-icon,
+.nav-card:hover .arrow-box .arrow-icon * {
+  color: #fff;
+  stroke: #fff;
+  fill: #fff;
+}
+
+/* Smooth transitions: keep arrow icon transitions to color-only so shape doesn't change */
+.nav-card,
+.green-nav {
+  transition: background-color 180ms ease, transform 150ms ease, box-shadow 180ms ease, filter 150ms ease;
+}
+
+.arrow-box {
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.arrow-box .arrow-icon {
+  transition: color 160ms ease, stroke 160ms ease;
 }
 .green-nav {
   display: flex;
@@ -239,13 +278,47 @@
   width: 34px;
   height: 34px;
   border-radius: 8px;
-  background: #d1fae5;
+  background: #8FF7A7;
   color: #16a34a;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
   font-weight: bold;
+}
+
+.arrow-box:hover{
+  background: #006625;
+  color: #fff;
+}
+
+/* SVG icon inside arrow-box: default green, turns white on hover */
+.arrow-box .arrow-icon {
+  color: #006625;
+  stroke: currentColor;
+  fill: none;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* For previous arrows, flip the icon */
+.arrow-box .arrow-icon.arrow-left {
+  transform: rotate(180deg);
+}
+
+.arrow-box:hover .arrow-icon {
+  /* keep stroke-only icon on hover; don't add a fill */
+  color: #fff;
+  stroke: currentColor;
+  fill: none;
+}
+
+/* Ensure path elements inside the SVG use the currentColor stroke and no fill */
+.arrow-box .arrow-icon path {
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
 }
 
 /* RESPONSIVE */

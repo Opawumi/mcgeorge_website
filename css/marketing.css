@@ -112,12 +112,12 @@
   border: 0.5px solid var(--primary); /* User correction */
   border-radius: var(--radius-3); /* User correction */
   text-decoration: none;
-  background: var(--white);
+  background: #F4FEF6;
   transition: background-color 0.2s ease;
 }
 
 .marketing_nav_link_box:hover {
-  background-color: var(--secondary-100);
+  background-color: #8FF7A7;
 }
 
 .marketing_nav_link_content {
@@ -158,6 +158,10 @@
   flex-shrink: 0;
 }
 
+.nav_arrow_box:hover{
+  background-color: #006625;
+}
+
 .marketing_nav_link_box--prev .nav_arrow_box {
   margin-right: var(--spacing-4);
 }
@@ -169,6 +173,57 @@
 .nav_arrow_box img {
   width: 18px;
   height: 18px;
+  display: none; /* hide raster fallback when using inline SVG */
+}
+
+.nav_arrow_box .nav-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  color: #006625; /* default icon color */
+  stroke: currentColor;
+  fill: none;
+}
+
+.nav_arrow_box:hover .nav-icon {
+  color: #fff; /* icon becomes white on hover */
+  stroke: currentColor;
+}
+
+/* Ensure both the button box and the SVG icon show hover state together
+   without changing other styling (only color/background). */
+.nav_arrow_box,
+.nav_arrow_box .nav-icon {
+  transition: background-color .15s ease, color .15s ease;
+}
+
+.nav_arrow_box:hover,
+.nav_arrow_box:focus,
+.nav_arrow_box .nav-icon:hover {
+  background-color: #006625; /* keeps the button background on hover */
+}
+
+.nav_arrow_box:hover .nav-icon,
+.nav_arrow_box .nav-icon:hover {
+  color: #fff; /* icon becomes white when either is hovered */
+}
+
+/* Per-link hover: hovering a single link toggles its own styles only */
+.marketing_nav_link_box:hover,
+.marketing_nav_link_box:focus-within {
+  background-color: #8FF7A7; /* same as single-link hover */
+}
+
+/* Arrow box for the hovered link */
+.marketing_nav_link_box:hover .nav_arrow_box,
+.marketing_nav_link_box:focus-within .nav_arrow_box {
+  background-color: #006625;
+}
+
+/* Icon for the hovered link becomes white */
+.marketing_nav_link_box:hover .nav-icon,
+.marketing_nav_link_box:focus-within .nav-icon {
+  color: #fff;
 }
 
 /* Overview Section */

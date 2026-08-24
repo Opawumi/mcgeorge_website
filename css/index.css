@@ -998,10 +998,10 @@
 }
 
 .section_4_section_productlist_container_link_component_image_2 {
-  width: 120px;
+  width: 140px;
   height: 50px;
   border-radius: var(--radius-3);
-  background: url(../img/e_memo.svg) var(--primary-100) 50% / contain no-repeat;
+  background: url(../img/ememoIcon.svg) var(--primary-100) 50% / contain no-repeat;
 }
 
 .section_4_section_productlist_container_link_component_image_3 {

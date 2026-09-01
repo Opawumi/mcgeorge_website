@@ -210,9 +210,8 @@ a {
     inset: 0;
     flex-direction: column;
     background-color: var(--white);
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    padding-top: 72px; /* space below fixed header bar */
+    overflow: hidden; /* Panel itself does NOT scroll */
+    padding-top: 72px; /* space below fixed logo/hamburger bar */
     padding-bottom: 0;
   }
 
@@ -227,6 +226,7 @@ a {
     flex-direction: column;
     padding: var(--spacing-4) var(--spacing-4) 0;
     margin-bottom: var(--spacing-2);
+    flex-shrink: 0;          /* ← always pinned at top, never scrolls */
   }
 
   .mobile-back-btn {
@@ -261,6 +261,8 @@ a {
     display: flex;
     flex-direction: column;
     flex: 1;
+    overflow-y: auto;        /* ← scrollable middle area */
+    -webkit-overflow-scrolling: touch;
   }
 
   .mobile-nav-item {
@@ -306,6 +308,8 @@ a {
     display: flex;
     flex-direction: column;
     flex: 1;
+    overflow-y: auto;        /* ← scrollable middle area */
+    -webkit-overflow-scrolling: touch;
   }
 
   .mobile-sub-item {
@@ -339,7 +343,7 @@ a {
   /* ─── "View All" / "View Service Page" links ─────────────────── */
 
   .mobile-view-all {
-    display: inline-block;
+    display: block;
     padding: var(--spacing-4) var(--spacing-4);
     font-size: 14px;
     font-weight: var(--font-weight-600);
@@ -347,7 +351,7 @@ a {
     text-decoration: underline;
     text-underline-offset: 2px;
     border-top: 1px solid var(--border);
-    margin-top: auto;
+    flex-shrink: 0;          /* ← pinned above Contact Us footer */
   }
 
   /* ─── Contact Us button fixed at bottom ──────────────────────── */
@@ -356,8 +360,7 @@ a {
     padding: var(--spacing-4) var(--spacing-4);
     background-color: var(--white);
     border-top: 1px solid var(--border);
-    margin-top: auto;
-    flex-shrink: 0;
+    flex-shrink: 0;          /* ← always pinned to bottom */
   }
 
   .mobile-panel-footer .btn {

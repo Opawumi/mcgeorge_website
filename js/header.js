@@ -1,37 +1,108 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Mobile menu toggle
+
+  /* ═══════════════════════════════════════════════════════════════════
+     1. HAMBURGER TOGGLE
+  ═══════════════════════════════════════════════════════════════════ */
   var toggle = document.querySelector(".site-header-toggle");
-  var nav = document.querySelector(".site-header-nav");
+  var nav    = document.querySelector(".site-header-nav");
   if (!toggle || !nav) return;
 
   var hamburger = toggle.querySelector(".hamburger-icon");
-  var close = toggle.querySelector(".close-icon");
+  var close     = toggle.querySelector(".close-icon");
+
+  function openNav() {
+    nav.classList.add("nav-open");
+    toggle.setAttribute("aria-expanded", "true");
+    hamburger.style.display = "none";
+    close.style.display = "block";
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+    // Always start at main panel when opening
+    resetToMainPanel();
+  }
+
+  function closeNav() {
+    nav.classList.remove("nav-open");
+    toggle.setAttribute("aria-expanded", "false");
+    hamburger.style.display = "block";
+    close.style.display = "none";
+    document.documentElement.style.overflow = "";
+    document.body.style.overflow = "";
+    resetToMainPanel();
+  }
 
   toggle.addEventListener("click", function () {
-    var isOpen = nav.classList.toggle("nav-open");
-    toggle.setAttribute("aria-expanded", isOpen);
-    hamburger.style.display = isOpen ? "none" : "block";
-    close.style.display = isOpen ? "block" : "none";
-    document.documentElement.style.overflow = isOpen ? "hidden" : "";
-    document.body.style.overflow = isOpen ? "hidden" : "";
+    if (nav.classList.contains("nav-open")) {
+      closeNav();
+    } else {
+      openNav();
+    }
   });
 
-  nav.querySelectorAll(".site-header-link").forEach(function (link) {
-    link.addEventListener("click", function () {
-      // Don't close menu for dropdown trigger
-      if (link.classList.contains("site-header-dropdown-trigger")) {
-        return;
-      }
-      nav.classList.remove("nav-open");
-      toggle.setAttribute("aria-expanded", "false");
-      hamburger.style.display = "block";
-      close.style.display = "none";
-      document.documentElement.style.overflow = "";
-      document.body.style.overflow = "";
-    });
+  /* ═══════════════════════════════════════════════════════════════════
+     2. MOBILE PANEL NAVIGATION
+  ═══════════════════════════════════════════════════════════════════ */
+  var panelHistory = []; // stack of panel IDs
+
+  function resetToMainPanel() {
+    panelHistory = [];
+    var allPanels = nav.querySelectorAll(".mobile-nav-panel");
+    allPanels.forEach(function (p) { p.classList.remove("active"); });
+    var main = nav.querySelector(".mobile-nav-panel[data-panel-id='main']");
+    if (main) main.classList.add("active");
+  }
+
+  function showPanel(targetId) {
+    var allPanels = nav.querySelectorAll(".mobile-nav-panel");
+    var current   = nav.querySelector(".mobile-nav-panel.active");
+    var next      = nav.querySelector(".mobile-nav-panel[data-panel-id='" + targetId + "']");
+    if (!next) return;
+
+    if (current) {
+      panelHistory.push(current.getAttribute("data-panel-id"));
+      current.classList.remove("active");
+    }
+    next.classList.add("active");
+    // Scroll to top of new panel
+    next.scrollTop = 0;
+  }
+
+  function goBack() {
+    if (panelHistory.length === 0) {
+      closeNav();
+      return;
+    }
+    var prevId  = panelHistory.pop();
+    var current = nav.querySelector(".mobile-nav-panel.active");
+    var prev    = nav.querySelector(".mobile-nav-panel[data-panel-id='" + prevId + "']");
+    if (!prev) return;
+    if (current) current.classList.remove("active");
+    prev.classList.add("active");
+    prev.scrollTop = 0;
+  }
+
+  // Forward navigation: buttons / links with data-mobile-panel
+  nav.addEventListener("click", function (e) {
+    // Forward: panel trigger
+    var trigger = e.target.closest("[data-mobile-panel]");
+    if (trigger) {
+      e.preventDefault();
+      var targetId = trigger.getAttribute("data-mobile-panel");
+      showPanel(targetId);
+      return;
+    }
+    // Back button
+    var backBtn = e.target.closest(".mobile-back-btn");
+    if (backBtn) {
+      e.preventDefault();
+      goBack();
+      return;
+    }
   });
 
-  // Dropdown toggle for all dropdown wrappers (Services, Industries, Insights)
+  /* ═══════════════════════════════════════════════════════════════════
+     3. DESKTOP DROPDOWN TOGGLE (simple dropdowns – non-mega-menu pages)
+  ═══════════════════════════════════════════════════════════════════ */
   var allDropdownWrappers = document.querySelectorAll(".site-header-dropdown-wrapper");
 
   allDropdownWrappers.forEach(function (wrapper) {
@@ -66,8 +137,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Mega Menu Interaction
-  var megaMenuItems = document.querySelectorAll(".mega-menu-service-item");
+  /* ═══════════════════════════════════════════════════════════════════
+     4. DESKTOP MEGA MENU (mouseenter panel switching – index.html only)
+  ═══════════════════════════════════════════════════════════════════ */
+  var megaMenuItems  = document.querySelectorAll(".mega-menu-service-item");
   var megaMenuPanels = document.querySelectorAll(".mega-menu-panel");
 
   if (megaMenuItems.length > 0 && megaMenuPanels.length > 0) {
@@ -75,22 +148,14 @@ document.addEventListener("DOMContentLoaded", function () {
       item.addEventListener("mouseenter", function () {
         var targetId = item.getAttribute("data-target");
 
-        // Remove active class from all items and panels
-        megaMenuItems.forEach(function (i) {
-          i.classList.remove("active");
-        });
-        megaMenuPanels.forEach(function (p) {
-          p.classList.remove("active");
-        });
+        megaMenuItems.forEach(function (i)  { i.classList.remove("active"); });
+        megaMenuPanels.forEach(function (p) { p.classList.remove("active"); });
 
-        // Add active class to hovered item and corresponding panel
         item.classList.add("active");
         var targetPanel = document.getElementById(targetId);
-        if (targetPanel) {
-          targetPanel.classList.add("active");
-        }
+        if (targetPanel) targetPanel.classList.add("active");
       });
     });
   }
-});
 
+});

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>McGeorge Consulting Ltd. | Contact Us</title>
+    <meta
+      name="description"
+      content="Get in touch with McGeorge Consulting Ltd. Connect with our global experts and turn your vision into action."
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
+
+    <!-- Hero Banner -->
+    <section class="contact_hero">
+      <div class="contact_hero_inner">
+        <div class="contact_hero_text">
+          <h1 class="contact_hero_title">Contact Us</h1>
+          <p class="contact_hero_desc">
+            Connect with our global experts and turn your vision into action.
+            Choose an option below and we'll respond shortly.
+          </p>
+        </div>
+        <div class="contact_hero_pattern" aria-hidden="true">
+          <!-- Lines radiate as a fan from focal point at bottom-right corner -->
+          <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 620 200"
+            preserveAspectRatio="xMaxYMax slice"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="contact_hero_svg"
+          >
+            <!-- Focal point: bottom-right corner (620, 200) -->
+            <!-- Lines fan out toward the top-left / top / right edges -->
+            <line x1="620" y1="200" x2="620"  y2="-20"  stroke="rgba(255,255,255,0.22)" stroke-width="1"/>
+            <line x1="620" y1="200" x2="540"  y2="-20"  stroke="rgba(255,255,255,0.20)" stroke-width="1"/>
+            <line x1="620" y1="200" x2="460"  y2="-20"  stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+            <line x1="620" y1="200" x2="375"  y2="-20"  stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+            <line x1="620" y1="200" x2="285"  y2="-20"  stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <line x1="620" y1="200" x2="190"  y2="-20"  stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+            <line x1="620" y1="200" x2="90"   y2="-20"  stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact_form_section">
+      <div class="contact_form_inner">
+
+        <!-- How can we help? -->
+        <div class="contact_form_row contact_form_row_divider">
+          <div class="contact_form_label_col">
+            <h2 class="contact_form_group_title">How can we help?</h2>
+          </div>
+          <div class="contact_form_field_col">
+            <div class="contact_select_wrapper">
+              <select id="contact-reason" class="contact_select" aria-label="Reason for contacting McGeorge">
+                <option value="" disabled selected>Reason for contacting McGeorge</option>
+                <option value="advisory">Advisory &amp; Strategy</option>
+                <option value="engineering">Engineering &amp; Infrastructure</option>
+                <option value="ict">ICT &amp; Digital Transformation</option>
+                <option value="energy">Energy &amp; Environment</option>
+                <option value="agribusiness">Agribusiness</option>
+                <option value="training">Training &amp; Development</option>
+                <option value="partnership">Partnership</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="contact_select_icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- About you -->
+        <div class="contact_form_row contact_form_row_divider">
+          <div class="contact_form_label_col">
+            <h2 class="contact_form_group_title">About you</h2>
+          </div>
+          <div class="contact_form_field_col">
+            <input
+              type="text"
+              id="contact-first-name"
+              class="contact_input"
+              placeholder="First Name"
+              autocomplete="given-name"
+            />
+            <input
+              type="text"
+              id="contact-last-name"
+              class="contact_input"
+              placeholder="Last Name"
+              autocomplete="family-name"
+            />
+            <input
+              type="tel"
+              id="contact-phone"
+              class="contact_input"
+              placeholder="Phone Number"
+              autocomplete="tel"
+            />
+            <input
+              type="email"
+              id="contact-email"
+              class="contact_input"
+              placeholder="Email Address"
+              autocomplete="email"
+            />
+          </div>
+        </div>
+
+        <!-- About your business -->
+        <div class="contact_form_row contact_form_row_divider">
+          <div class="contact_form_label_col">
+            <h2 class="contact_form_group_title">About your business</h2>
+          </div>
+          <div class="contact_form_field_col">
+            <input
+              type="text"
+              id="contact-company"
+              class="contact_input"
+              placeholder="Company Name"
+              autocomplete="organization"
+            />
+          </div>
+        </div>
+
+        <!-- Your message -->
+        <div class="contact_form_row">
+          <div class="contact_form_label_col">
+            <h2 class="contact_form_group_title">Your message</h2>
+          </div>
+          <div class="contact_form_field_col">
+            <textarea
+              id="contact-message"
+              class="contact_textarea"
+              placeholder="Briefly describe your challenge, goals, or what you'd like to achieve..."
+              rows="5"
+            ></textarea>
+
+            <label class="contact_consent_label" for="contact-consent">
+              <span class="contact_checkbox_wrapper">
+                <input
+                  type="checkbox"
+                  id="contact-consent"
+                  class="contact_checkbox_input"
+                />
+                <span class="contact_checkbox_custom" aria-hidden="true"></span>
+              </span>
+              <span class="contact_consent_text">
+                By submitting, you agree to be contacted by McGeorge via email
+                or phone regarding your inquiry and relevant updates. You can
+                unsubscribe at any time. See our
+                <a href="#" class="contact_consent_link">Privacy Policy</a>
+                for details on how we protect your information.
+              </span>
+            </label>
+
+            <div class="contact_submit_row">
+              <button
+                type="submit"
+                id="contact-submit"
+                class="btn btn-primary contact_submit_btn"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Where to find us -->
+    <section class="contact_locations_section">
+      <div class="contact_locations_inner">
+        <div class="contact_locations_header">
+          <div class="contact_locations_kicker">
+            <span class="contact_locations_kicker_line"></span>
+            <span class="contact_locations_kicker_text">OUR LOCATIONS</span>
+          </div>
+          <h2 class="contact_locations_title">Where to find us</h2>
+        </div>
+
+        <div class="contact_locations_grid">
+          <div class="contact_location_card">
+            <div class="contact_location_icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="contact_location_content">
+              <h3 class="contact_location_name">Development &amp; Innovation Centre</h3>
+              <p class="contact_location_address">
+                No 23, Ven Adefila Str, Off Lajorin Rd, G.R.A Ilorin, Kwara State.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact_location_card">
+            <div class="contact_location_icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="contact_location_content">
+              <h3 class="contact_location_name">Discovery Centre</h3>
+              <p class="contact_location_address">
+                215 Konoko Crescent, Off Ademola Adetokunbo Crescent Wuse II, Abuja, FCT
+              </p>
+            </div>
+          </div>
+
+          <div class="contact_location_card">
+            <div class="contact_location_icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="contact_location_content">
+              <h3 class="contact_location_name">Suite D91</h3>
+              <p class="contact_location_address">
+                Assets Corp Plaza. 21, Obafemi Awolowo Way, Ikeja, Lagos, Nigeria.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+<svg width="190" height="50" viewBox="0 0 190 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon: Blue ring / aperture -->
+  <g transform="translate(10, 13)">
+    <circle cx="12" cy="12" r="10" stroke="#0088FF" stroke-width="3.5" fill="none"/>
+    <circle cx="8" cy="12" r="3.5" fill="#0088FF"/>
+  </g>
+  <!-- Text: OMNISCIENT -->
+  <text x="42" y="31" fill="#FFFFFF" font-family="'Inter', 'Montserrat', sans-serif" font-weight="800" font-size="19" letter-spacing="1.5">OMNISCIENT</text>
+</svg>

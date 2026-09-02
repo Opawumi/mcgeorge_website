@@ -1236,7 +1236,7 @@
 }
 
 .section_4_button {
-  display: flex;
+  display: inline-flex;
   padding: var(--spacing-3) var(--spacing-6);
   justify-content: center;
   align-items: center;
@@ -1244,6 +1244,8 @@
   border-radius: var(--radius-2);
   background: var(--primary);
   border: none;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .section_4_button_text {
@@ -1252,11 +1254,14 @@
   font-weight: var(--font-weight-600);
   line-height: 24px;
   letter-spacing: 0.5px;
+  white-space: nowrap;
+  margin: 0;
 }
 
 .section_4_button_icon {
   width: 16px;
   height: 16px;
+  flex-shrink: 0;
 }
 
 .section_5 {
@@ -2416,35 +2421,65 @@
   .section_4_button_container {
     display: flex;
     align-items: center;
-    gap: 32px;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+
+  .section_4_button {
+    display: inline-flex !important;
+    white-space: nowrap !important;
+    flex-wrap: nowrap !important;
+    padding: 10px 14px;
+    flex-shrink: 0;
+    gap: 6px;
+    min-width: max-content;
+  }
+
+  .section_4_button_text {
+    display: inline-block !important;
+    white-space: nowrap !important;
+    font-size: 13.5px;
+    line-height: 18px;
+    letter-spacing: 0;
+  }
+
+  .section_4_button_icon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
   }
 
   .productinfo_arrow_container {
     display: flex;
     align-items: center;
-    gap: var(--spacing-2);
+    gap: 6px;
+    flex-shrink: 0;
   }
 
   .productinfo_button_left {
     display: flex;
-    width: 48px;
-    height: 48px;
+    width: 38px;
+    height: 38px;
     justify-content: center;
     align-items: center;
     border-radius: 32px;
     border: var(--stroke-1) solid var(--primary);
     background-color: transparent;
+    flex-shrink: 0;
   }
 
   .productinfo_button_right {
     display: flex;
-    width: 48px;
-    height: 48px;
+    width: 38px;
+    height: 38px;
     justify-content: center;
     align-items: center;
     border-radius: 32px;
     border: var(--stroke-1) solid var(--primary);
     background-color: transparent;
+    flex-shrink: 0;
   }
 
   .productinfo_button_left:hover,

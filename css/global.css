@@ -144,6 +144,7 @@ a {
     overflow: hidden;
   }
 
+  /* Full-screen nav overlay */
   .site-header-nav {
     display: none;
     position: fixed;
@@ -154,31 +155,29 @@ a {
     background-color: var(--white);
     flex-direction: column;
     align-items: stretch;
-    padding: 80px var(--spacing-6) var(--spacing-6);
+    padding: 0;
     gap: 0;
     z-index: 999;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .site-header-dropdown-wrapper {
-    width: 100%;
+    overflow: hidden;
   }
 
   .site-header-nav.nav-open {
     display: flex;
   }
 
-  .site-header-nav .site-header-link {
-    width: 100%;
-    padding: var(--spacing-4) 0;
-    font-size: 18px;
-    border-bottom: var(--stroke-1) solid var(--border);
+  /* Hide all desktop nav items on mobile */
+  .site-header-nav > .site-header-link,
+  .site-header-nav > .site-header-dropdown-wrapper,
+  .site-header-nav > .site-header-mobile-actions {
+    display: none;
   }
 
-  .site-header-nav .site-header-link:last-child {
-    border-bottom: none;
+  /* Show only the mobile panels wrapper */
+  .site-header-nav > .mobile-nav-panels {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
   }
 
   .services-dropdown-wrapper .services-list ul {
@@ -253,6 +252,11 @@ a {
     display: none;
   }
 
+  .site-header-logo {
+    position: relative;
+    z-index: 1001;
+  }
+
   .site-header-toggle {
     display: flex;
     align-items: center;
@@ -260,24 +264,186 @@ a {
     z-index: 1001;
   }
 
-  .site-header-mobile-actions {
+  /* ─── Mobile Panel System ─────────────────────────────────────── */
+
+  .mobile-nav-panels {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  /* Each panel fills the full overlay */
+  .mobile-nav-panel {
+    display: none;
+    position: absolute;
+    inset: 0;
+    flex-direction: column;
+    background-color: var(--white);
+    overflow: hidden; /* Panel itself does NOT scroll */
+    padding-top: 72px; /* space below fixed logo/hamburger bar */
+    padding-bottom: 0;
+  }
+
+  .mobile-nav-panel.active {
+    display: flex;
+  }
+
+  /* ─── Panel Header (back button row) ─────────────────────────── */
+
+  .mobile-panel-header {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-3);
-    width: 100%;
-    padding-top: var(--spacing-4);
-    margin-top: auto;
+    padding: var(--spacing-4) var(--spacing-4) 0;
+    margin-bottom: var(--spacing-2);
+    flex-shrink: 0;          /* ← always pinned at top, never scrolls */
   }
 
-  .site-header-mobile-actions .btn {
-    width: 100%;
-    justify-content: center;
-    padding: var(--spacing-3) var(--spacing-6);
+  .mobile-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: var(--font-weight-600);
+    color: var(--primary);
+    padding: 0;
+    margin-bottom: var(--spacing-2);
   }
 
-  .site-header-mobile-actions .site-header-login {
+  .mobile-back-btn svg {
+    flex-shrink: 0;
+  }
+
+  .mobile-panel-title {
+    font-size: 20px;
+    font-weight: var(--font-weight-700);
+    color: var(--primary);
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  /* ─── Nav rows (main + sub-panel links) ──────────────────────── */
+
+  .mobile-nav-items {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;        /* ← scrollable middle area */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .mobile-nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-4) var(--spacing-4);
+    font-size: 17px;
+    font-weight: var(--font-weight-600);
+    color: var(--black);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    background: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    line-height: 1.3;
+  }
+
+  .mobile-nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-nav-item:hover,
+  .mobile-nav-item:focus-visible {
+    background-color: var(--neutral-100);
+    outline: none;
+  }
+
+  .mobile-nav-chevron {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: var(--primary);
+  }
+
+  /* ─── Sub-item list (bullet items in level-3 panels) ─────────── */
+
+  .mobile-sub-items {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;        /* ← scrollable middle area */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .mobile-sub-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: var(--spacing-4) var(--spacing-4);
+    font-size: 15px;
+    font-weight: var(--font-weight-500);
+    color: var(--neutral-700);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    line-height: 1.4;
+  }
+
+  .mobile-sub-item:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-sub-item:hover {
+    color: var(--primary);
+    background-color: var(--neutral-100);
+  }
+
+  .mobile-sub-item .menu-bullet-small {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  /* ─── "View All" / "View Service Page" links ─────────────────── */
+
+  .mobile-view-all {
+    display: block;
+    padding: var(--spacing-4) var(--spacing-4);
+    font-size: 14px;
+    font-weight: var(--font-weight-600);
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    border-top: 1px solid var(--border);
+    flex-shrink: 0;          /* ← pinned above Contact Us footer */
+  }
+
+  /* ─── Contact Us button fixed at bottom ──────────────────────── */
+
+  .mobile-panel-footer {
+    padding: var(--spacing-4) var(--spacing-4);
+    background-color: var(--white);
+    border-top: 1px solid var(--border);
+    flex-shrink: 0;          /* ← always pinned to bottom */
+  }
+
+  .mobile-panel-footer .btn {
+    width: 100%;
     justify-content: center;
-    padding: var(--spacing-3) 0;
+    padding: var(--spacing-4) var(--spacing-6);
+    font-size: 16px;
+  }
+}
+
+/* Hide mobile panels on desktop */
+@media (min-width: 769px) {
+  .mobile-nav-panels {
+    display: none;
   }
 }
 

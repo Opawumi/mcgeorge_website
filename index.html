@@ -438,13 +438,322 @@
             </div>
           </div>
           <a href="./career.html" class="site-header-link"> Career </a>
-          <div class="site-header-mobile-actions">
-            <a href="./contact.html" class="btn btn-primary btn-lg">
-              Contact Us
-              <img src="./img/arrow-right.svg" alt="" aria-hidden="true" class="site-header-cta-icon" />
-            </a>
-          </div>
+          <!-- ═══ MOBILE NAV PANELS (hidden on desktop) ═══ -->
+          <div class="mobile-nav-panels">
+
+            <!-- PANEL: Main Menu -->
+            <div class="mobile-nav-panel active" data-panel-id="main">
+              <div class="mobile-nav-items">
+                <a href="./about.html" class="mobile-nav-item">Why McGeorge</a>
+                <button type="button" class="mobile-nav-item" data-mobile-panel="services">
+                  Services
+                  <svg class="mobile-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+                <button type="button" class="mobile-nav-item" data-mobile-panel="industries">
+                  Industries
+                  <svg class="mobile-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+                <a href="./products.html" class="mobile-nav-item">Products</a>
+                <button type="button" class="mobile-nav-item" data-mobile-panel="insights">
+                  Insight
+                  <svg class="mobile-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+                <a href="./career.html" class="mobile-nav-item">Career</a>
+              </div>
+              <div class="mobile-panel-footer">
+                <a href="./contact.html" class="btn btn-primary btn-lg">
+                  Contact Us
+                  <img src="./img/arrow-right.svg" alt="" aria-hidden="true" class="site-header-cta-icon" />
+                </a>
+              </div>
+            </div>
+
+            <!-- PANEL: Services -->
+            <div class="mobile-nav-panel" data-panel-id="services">
+              <div class="mobile-panel-header">
+                <button type="button" class="mobile-back-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                  Services
+                </button>
+              </div>
+              <div class="mobile-nav-items">
+                <button type="button" class="mobile-nav-item" data-mobile-panel="svc-ai">
+                  Artificial Intelligence
+                  <svg class="mobile-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+                <button type="button" class="mobile-nav-item" data-mobile-panel="svc-fidic">
+                  FIDIC Contract Administration
+                  <svg class="mobile-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+                <a href="#" class="mobile-nav-item">Development &amp; Management Consultancy</a>
+                <button type="button" class="mobile-nav-item" data-mobile-panel="svc-digital-marketing">
+                  Digital Marketing and Communications
+                  <svg class="mobile-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+                <button type="button" class="mobile-nav-item" data-mobile-panel="svc-epc">
+                  Engineering, Procurement &amp; Construction (EPC)
+                  <svg class="mobile-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+                <button type="button" class="mobile-nav-item" data-mobile-panel="svc-ict">
+                  ICT &amp; Digital Transformation
+                  <svg class="mobile-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+                <button type="button" class="mobile-nav-item" data-mobile-panel="svc-oil-gas">
+                  Oil, Gas &amp; Energy Systems
+                  <svg class="mobile-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+                <a href="./sports-management.html" class="mobile-nav-item">Sports Management Systems</a>
+                <a href="./agribusiness.html" class="mobile-nav-item">Agribusiness &amp; Agripreneurship</a>
+              </div>
+              <a href="./services.html" class="mobile-view-all">View All Services</a>
+              <div class="mobile-panel-footer">
+                <a href="./contact.html" class="btn btn-primary btn-lg">
+                  Contact Us
+                  <img src="./img/arrow-right.svg" alt="" aria-hidden="true" class="site-header-cta-icon" />
+                </a>
+              </div>
+            </div>
+
+            <!-- PANEL: Artificial Intelligence sub-services -->
+            <div class="mobile-nav-panel" data-panel-id="svc-ai">
+              <div class="mobile-panel-header">
+                <button type="button" class="mobile-back-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                  Services
+                </button>
+                <h2 class="mobile-panel-title">Artificial Intelligence</h2>
+              </div>
+              <div class="mobile-sub-items">
+                <a href="./ai-research.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>AI Research Commercialization</a>
+                <a href="./ai-saas.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>AI SaaS Product Development</a>
+                <a href="./ai-teams.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>AI Talent Outsourcing &amp; Managed AI Teams</a>
+                <a href="./ai-enterprise.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Enterprise AI Deployment &amp; Integration</a>
+                <a href="./ai-gpu.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>AI Infrastructure Sales &amp; Deployment</a>
+                <a href="./ai-llm.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Large Language Model (LLM) Fine-Tuning Services</a>
+                <a href="./ai-data.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Data Science &amp; Analytics</a>
+                <a href="./agentic-ai.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Agentic AI</a>
+                <a href="./ai-cybersecurity.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>AI Cybersecurity Solutions</a>
+                <a href="./bootcamp.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>AI Trainings &amp; Bootcamps (Hands-On)</a>
+                <a href="./ai-executive.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>AI Executive &amp; Board-Level Strategy Advisory</a>
+                <a href="./ai-financial-services.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>AI for Financial Services</a>
+                <a href="./ai-government.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>AI for Government Digitization</a>
+                <a href="./ai-manufacturing.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>AI for Manufacturing &amp; Industry 4.0</a>
+                <a href="./ai-infrastructure.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>AI Infrastructure Consulting</a>
+              </div>
+              <a href="./artificial-intelligence.html" class="mobile-view-all">View Service Page</a>
+              <div class="mobile-panel-footer">
+                <a href="./contact.html" class="btn btn-primary btn-lg">
+                  Contact Us
+                  <img src="./img/arrow-right.svg" alt="" aria-hidden="true" class="site-header-cta-icon" />
+                </a>
+              </div>
+            </div>
+
+            <!-- PANEL: FIDIC Contract Administration sub-services -->
+            <div class="mobile-nav-panel" data-panel-id="svc-fidic">
+              <div class="mobile-panel-header">
+                <button type="button" class="mobile-back-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                  Services
+                </button>
+                <h2 class="mobile-panel-title">FIDIC Contract Administration</h2>
+              </div>
+              <div class="mobile-sub-items">
+                <a href="./fdic-contract.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>FIDIC Contract Structuring and Advisory</a>
+                <a href="./fdic-claims.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Claims Management and Delay Analysis</a>
+                <a href="./fdic-engineer.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Engineer / Employer's Representative Services</a>
+                <a href="./fdic-compliance.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>FIDIC Contract Compliance Audits</a>
+                <a href="./fdic-documentation.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Tender Documentation and Procurement Advisory</a>
+                <a href="./fdic-training.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>FIDIC Training and Capacity Building</a>
+                <a href="./fdic-construction.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Construction Supervision and Quality Assurance</a>
+                <a href="./fdic-project.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Project Risk Management and Contract Strategy</a>
+                <a href="./fdic-dispute.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Dispute Avoidance and Adjudication Board (DAAB) Support</a>
+                <a href="./fdic-digital.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Digital Contract Management and Project Controls</a>
+              </div>
+              <a href="./fidic.html" class="mobile-view-all">View Service Page</a>
+              <div class="mobile-panel-footer">
+                <a href="./contact.html" class="btn btn-primary btn-lg">
+                  Contact Us
+                  <img src="./img/arrow-right.svg" alt="" aria-hidden="true" class="site-header-cta-icon" />
+                </a>
+              </div>
+            </div>
+
+            <!-- PANEL: Digital Marketing sub-services -->
+            <div class="mobile-nav-panel" data-panel-id="svc-digital-marketing">
+              <div class="mobile-panel-header">
+                <button type="button" class="mobile-back-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                  Services
+                </button>
+                <h2 class="mobile-panel-title">Digital Marketing and Communications</h2>
+              </div>
+              <div class="mobile-sub-items">
+                <a href="./marketing-automation.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>AI Marketing Automation</a>
+                <a href="./marketing-web.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Web Development</a>
+                <a href="./marketing-lead.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Lead Generation</a>
+                <a href="./marketing-graphic.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Graphic Design</a>
+                <a href="./marketing-integrated.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Integrated Marketing Campaigns</a>
+                <a href="./marketing-data.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Marketing Data Analytics</a>
+                <a href="./marketing-media.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Media Planning &amp; Buying</a>
+                <a href="./marketing-social.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Social Media Management</a>
+                <a href="./marketing-events.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Event Promotion</a>
+                <a href="./marketing-brand.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Brand Strategy</a>
+                <a href="./marketing-pr.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Public Relations</a>
+                <a href="./marketing-copy.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Copywriting &amp; Creative</a>
+              </div>
+              <a href="./digital-marketing.html" class="mobile-view-all">View Service Page</a>
+              <div class="mobile-panel-footer">
+                <a href="./contact.html" class="btn btn-primary btn-lg">
+                  Contact Us
+                  <img src="./img/arrow-right.svg" alt="" aria-hidden="true" class="site-header-cta-icon" />
+                </a>
+              </div>
+            </div>
+
+            <!-- PANEL: EPC sub-services -->
+            <div class="mobile-nav-panel" data-panel-id="svc-epc">
+              <div class="mobile-panel-header">
+                <button type="button" class="mobile-back-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                  Services
+                </button>
+                <h2 class="mobile-panel-title">Engineering, Procurement &amp; Construction (EPC)</h2>
+              </div>
+              <div class="mobile-sub-items">
+                <a href="./epc-procurements.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Procurements</a>
+                <a href="./epc-construction.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Construction &amp; Real Estate Development</a>
+                <a href="./epc-manufacturing.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Advanced Manufacturing &amp; Industry 4.0</a>
+                <a href="./epc-mrig.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>McGeorge Research &amp; Innovation Group (MRIG)</a>
+                <a href="./epc-arbitration.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>EPC Arbitration</a>
+              </div>
+              <a href="./engineering-procurement-construction.html" class="mobile-view-all">View Service Page</a>
+              <div class="mobile-panel-footer">
+                <a href="./contact.html" class="btn btn-primary btn-lg">
+                  Contact Us
+                  <img src="./img/arrow-right.svg" alt="" aria-hidden="true" class="site-header-cta-icon" />
+                </a>
+              </div>
+            </div>
+
+            <!-- PANEL: ICT sub-services -->
+            <div class="mobile-nav-panel" data-panel-id="svc-ict">
+              <div class="mobile-panel-header">
+                <button type="button" class="mobile-back-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                  Services
+                </button>
+                <h2 class="mobile-panel-title">ICT &amp; Digital Transformation</h2>
+              </div>
+              <div class="mobile-sub-items">
+                <a href="./ict-erp.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Enterprise Resource Planning (ERP)</a>
+                <a href="./ict-tax.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Tax Automation &amp; Engines</a>
+                <a href="./ict-tax-tech.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Tax Management Technologies</a>
+                <a href="./ict-logic.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>AnyLogic Simulations</a>
+                <a href="./ict-custom.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Custom Development and Deployment</a>
+                <a href="./ict-cybersecurity.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Cybersecurity</a>
+              </div>
+              <a href="./ict-digital-transformation.html" class="mobile-view-all">View Service Page</a>
+              <div class="mobile-panel-footer">
+                <a href="./contact.html" class="btn btn-primary btn-lg">
+                  Contact Us
+                  <img src="./img/arrow-right.svg" alt="" aria-hidden="true" class="site-header-cta-icon" />
+                </a>
+              </div>
+            </div>
+
+            <!-- PANEL: Oil, Gas & Energy sub-services -->
+            <div class="mobile-nav-panel" data-panel-id="svc-oil-gas">
+              <div class="mobile-panel-header">
+                <button type="button" class="mobile-back-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                  Services
+                </button>
+                <h2 class="mobile-panel-title">Oil, Gas &amp; Energy Systems</h2>
+              </div>
+              <div class="mobile-sub-items">
+                <a href="./oil-well.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Well Design &amp; Simulation Software</a>
+                <a href="./oil-simulation.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Well Drilling &amp; Simulation Software</a>
+                <a href="./oil-parameter.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Well Parameter Optimization</a>
+                <a href="./oil-control.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Well Control Software</a>
+                <a href="./oil-learning.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Well e-Learning Training Software</a>
+                <a href="./oil-rig.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Well Rig Personnel Tracking System</a>
+                <a href="./oil-renewable.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Renewable Energy Technologies</a>
+              </div>
+              <a href="./industry_oil_energy.html" class="mobile-view-all">View Service Page</a>
+              <div class="mobile-panel-footer">
+                <a href="./contact.html" class="btn btn-primary btn-lg">
+                  Contact Us
+                  <img src="./img/arrow-right.svg" alt="" aria-hidden="true" class="site-header-cta-icon" />
+                </a>
+              </div>
+            </div>
+
+            <!-- PANEL: Industries -->
+            <div class="mobile-nav-panel" data-panel-id="industries">
+              <div class="mobile-panel-header">
+                <button type="button" class="mobile-back-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                  Industries
+                </button>
+              </div>
+              <div class="mobile-sub-items">
+                <a href="./industry-advanced.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Advanced Manufacturing &amp; Industry 4.0</a>
+                <a href="./industry-aerospace.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Aerospace &amp; Defense</a>
+                <a href="./industry-agribusiness.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Agriculture &amp; Agribusiness</a>
+                <a href="./industry-banking.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Banking, Finance &amp; Insurance</a>
+                <a href="./industry-construction.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Construction &amp; Real Estate</a>
+                <a href="./industry-digital-marketing-creative-economy.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Digital Marketing &amp; Creative Economy</a>
+                <a href="./industry-education.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Education &amp; Training</a>
+                <a href="./industry-green-renewable-economy.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Green &amp; Renewable Economy</a>
+                <a href="./industry-healthcare.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Healthcare</a>
+                <a href="./industry-ict.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>ICT</a>
+                <a href="./industry-manufacturing.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Manufacturing</a>
+                <a href="./industry_oil_energy.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Oil, Gas &amp; Energy</a>
+                <a href="./industry-research-innovation.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Research &amp; Innovation</a>
+                <a href="./industry-sport.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Sports</a>
+                <a href="./industry-strategy.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Strategy &amp; Advisory</a>
+              </div>
+              <a href="./industry.html" class="mobile-view-all">View All Industries</a>
+              <div class="mobile-panel-footer">
+                <a href="./contact.html" class="btn btn-primary btn-lg">
+                  Contact Us
+                  <img src="./img/arrow-right.svg" alt="" aria-hidden="true" class="site-header-cta-icon" />
+                </a>
+              </div>
+            </div>
+
+            <!-- PANEL: Insights -->
+            <div class="mobile-nav-panel" data-panel-id="insights">
+              <div class="mobile-panel-header">
+                <button type="button" class="mobile-back-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                  Insight
+                </button>
+              </div>
+              <div class="mobile-sub-items">
+                <a href="./insight-case-study.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Case Studies</a>
+                <a href="./insight-executive-briefs.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Executive Briefs</a>
+                <a href="#" class="mobile-sub-item"><span class="menu-bullet-small"></span>Featured Insights</a>
+                <a href="./insight-industry-trend.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Industry Trends</a>
+                <a href="./insight-inovation-technology.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Innovation &amp; Technology</a>
+                <a href="./insight-commercial.HTML" class="mobile-sub-item"><span class="menu-bullet-small"></span>Commercial &amp; Consumer</a>
+                <a href="./insight-digital.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Digital &amp; Technology</a>
+                <a href="./insight-industrial.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Industrial &amp; Infrastructure</a>
+                <a href="./insight-public.html" class="mobile-sub-item"><span class="menu-bullet-small"></span>Public &amp; Institutional</a>
+              </div>
+              <a href="#" class="mobile-view-all">View All Insights</a>
+              <div class="mobile-panel-footer">
+                <a href="./contact.html" class="btn btn-primary btn-lg">
+                  Contact Us
+                  <img src="./img/arrow-right.svg" alt="" aria-hidden="true" class="site-header-cta-icon" />
+                </a>
+              </div>
+            </div>
+
+          </div><!-- /.mobile-nav-panels -->
         </nav>
+
 
         <div class="site-header-actions">
           <a href="./contact.html" class="btn btn-primary btn-lg site-header-cta">
@@ -469,340 +778,194 @@
       </div>
     </div>
   </header>
-  <section class="hero_slider">
-    <section class="hero_section hero_section_section_1">
-      <div class="hero_container">
-        <div class="hero_text_container">
-          <div class="hero_text">
-            <h1>Artificial Intelligent Systems for the Digital Age</h1>
-            <p>
-              We design and deploy AI-powered solutions and digital
-              transformation strategies that help enterprises across
-              Technology, Financial Services, and Telecommunications stay
-              ahead of disruption.
-            </p>
-          </div>
-          <div class="hero_actions">
-            <button class="left">Explore AI Solutions</button>
-            <button class="right">Schedule a Consultation</button>
-          </div>
+  <!-- ═══ HERO SLIDER (Designer Version) ═══ -->
+  <main class="mcg-hero" id="home" data-slide="01">
+    <div class="image-frame">
+      <div class="hero-image" aria-hidden="true"></div>
+
+      <svg
+        class="curve-lines"
+        viewBox="0 0 1026 624"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path transform="matrix(1 0 0 1 -1260.109 540.419)" d="M0 39.775C0 39.775 694.223 159.099 1143.03 159.099C1591.836 159.099 2286.059 0 2286.059 0"/>
+        <path transform="matrix(1 0 0 1 -1260.109 492.69)"  d="M0 39.775C0 39.775 692.345 198.874 1143.03 198.874C1593.714 198.874 2286.059 0 2286.059 0"/>
+        <path transform="matrix(1 0 0 1 -1260.109 444.96)"  d="M0 39.775C0 39.775 689.943 238.649 1143.03 238.649C1596.117 238.649 2286.059 0 2286.059 0"/>
+        <path transform="matrix(1 0 0 1 -1260.109 397.23)"  d="M0 39.775C0 39.775 687.023 278.424 1143.03 278.424C1599.036 278.424 2286.059 0 2286.059 0"/>
+        <path transform="matrix(1 0 0 1 -1260.109 333.59)"  d="M0 55.685C0 55.685 687.023 334.109 1143.03 334.109C1599.036 334.109 2286.059 0 2286.059 0"/>
+        <path transform="matrix(1 0 0 1 -1260.109 261.995)" d="M0 119.325C0 119.325 687.023 397.749 1143.03 397.749C1599.036 397.749 2286.059 0 2286.059 0"/>
+        <path transform="matrix(1 0 0 1 -1260.109 174.491)" d="M0 198.874C0 198.874 687.023 477.298 1143.03 477.298C1599.036 477.298 2286.059 0 2286.059 0"/>
+        <path transform="matrix(1 0 0 1 -1260.109 86.986)"  d="M0 278.424C0 278.424 687.023 556.848 1143.03 556.848C1599.036 556.848 2286.059 0 2286.059 0"/>
+        <path transform="matrix(1 0 0 1 -1260.109 -0.519)"  d="M0 357.974C0 357.974 687.023 636.398 1143.03 636.398C1599.036 636.398 2286.059 0 2286.059 0"/>
+      </svg>
+
+      <div class="image-tint" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero-content">
+      <section class="intro-panel" aria-live="polite">
+        <div class="intro-copy">
+          <h1></h1>
+          <p></p>
         </div>
-        <div class="hero_navigation">
-          <div class="navigation_dots">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="navigation_container">
-            <h4 class="navigation_counter">01 <span>/ 07</span></h4>
-            <div class="arrow_container">
-              <button class="left_arrow_button">
-                <div class="left_arrow_button_icon_container">
-                  <div class="left_arrow_button_icon"></div>
-                </div>
-              </button>
-              <button class="right_arrow_button">
-                <div class="right_arrow_button_icon_container">
-                  <div class="right_arrow_button_icon"></div>
-                </div>
-              </button>
-            </div>
-          </div>
+        <div class="actions">
+          <a class="button button-solid" href="#services"></a>
+          <a class="button button-outline" href="./contact.html">Schedule a Consultation</a>
         </div>
-      </div>
-      <div class="gradient_overlay"></div>
-      <div class="lines_overlay"></div>
-      <div class="hero_background_image_1"></div>
-    </section>
-    <section class="hero_section hero_section_section_2">
-      <div class="hero_container">
-        <div class="hero_text_container">
-          <div class="hero_text">
-            <h1>FIDIC Contract Administration</h1>
-            <p>
-              Delivering trusted expertise in contract administration, claims
-              management, and dispute resolution to support complex
-              infrastructure and construction projects.
-            </p>
-          </div>
-          <div class="hero_actions">
-            <button class="left">Explore Our Services</button>
-            <button class="right">Schedule a Consultation</button>
-          </div>
+      </section>
+
+      <div class="hero-footer">
+        <div class="progress" role="tablist" aria-label="Choose a slide">
+          <button class="progress-segment" type="button" role="tab" aria-label="Go to slide 1"></button>
+          <button class="progress-segment" type="button" role="tab" aria-label="Go to slide 2"></button>
+          <button class="progress-segment" type="button" role="tab" aria-label="Go to slide 3"></button>
+          <button class="progress-segment" type="button" role="tab" aria-label="Go to slide 4"></button>
+          <button class="progress-segment" type="button" role="tab" aria-label="Go to slide 5"></button>
+          <button class="progress-segment" type="button" role="tab" aria-label="Go to slide 6"></button>
+          <button class="progress-segment" type="button" role="tab" aria-label="Go to slide 7"></button>
         </div>
-        <div class="hero_navigation">
-          <div class="navigation_dots">
-            <div class="dot"></div>
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="navigation_container">
-            <h4 class="navigation_counter">02 <span>/ 07</span></h4>
-            <div class="arrow_container">
-              <button class="left_arrow_button">
-                <div class="left_arrow_button_icon_container">
-                  <div class="left_arrow_button_icon"></div>
-                </div>
-              </button>
-              <button class="right_arrow_button">
-                <div class="right_arrow_button_icon_container">
-                  <div class="right_arrow_button_icon"></div>
-                </div>
-              </button>
-            </div>
+        <div class="slider-controls">
+          <span class="slide-count" aria-label="Slide 1 of 7">
+            <span class="slide-current">01</span>
+            <span class="slide-rest"> / 07</span>
+          </span>
+          <div class="arrow-buttons">
+            <button class="arrow-button" type="button" aria-label="Previous slide">
+              <span aria-hidden="true"></span>
+            </button>
+            <button class="arrow-button" type="button" aria-label="Next slide">
+              <span aria-hidden="true"></span>
+            </button>
           </div>
         </div>
       </div>
-      <div class="gradient_overlay"></div>
-      <div class="lines_overlay"></div>
-      <div class="hero_background_image_2"></div>
-    </section>
-    <section class="hero_section hero_section_section_3">
-      <div class="hero_container">
-        <div class="hero_text_container">
-          <div class="hero_text">
-            <h1>Powering the Energy Transition</h1>
-            <p>
-              Our specialized Oil & Gas software suite and deep sector
-              expertise help Energy, Mining, and Petrochemical organizations
-              optimize operations, manage risk, and navigate the energy
-              transition.
-            </p>
-          </div>
-          <div class="hero_actions">
-            <button class="left">Explore Energy Services</button>
-            <button class="right">Schedule a Consultation</button>
-          </div>
-        </div>
-        <div class="hero_navigation">
-          <div class="navigation_dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="navigation_container">
-            <h4 class="navigation_counter">03 <span>/ 07</span></h4>
-            <div class="arrow_container">
-              <button class="left_arrow_button">
-                <div class="left_arrow_button_icon_container">
-                  <div class="left_arrow_button_icon"></div>
-                </div>
-              </button>
-              <button class="right_arrow_button">
-                <div class="right_arrow_button_icon_container">
-                  <div class="right_arrow_button_icon"></div>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="gradient_overlay"></div>
-      <div class="lines_overlay"></div>
-      <div class="hero_background_image_3"></div>
-    </section>
-    <section class="hero_section hero_section_section_4">
-      <div class="hero_container">
-        <div class="hero_text_container">
-          <div class="hero_text">
-            <h1>Building Tomorrow's Infrastructure</h1>
-            <p>
-              We deliver full-cycle Engineering, Procurement & Construction
-              services and development consultancy for Government, Real
-              Estate, and Infrastructure sectors across emerging markets.
-            </p>
-          </div>
-          <div class="hero_actions">
-            <button class="left">View our Projects</button>
-            <button class="right">Schedule a Consultation</button>
-          </div>
-        </div>
-        <div class="hero_navigation">
-          <div class="navigation_dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="navigation_container">
-            <h4 class="navigation_counter">04 <span>/ 07</span></h4>
-            <div class="arrow_container">
-              <button class="left_arrow_button">
-                <div class="left_arrow_button_icon_container">
-                  <div class="left_arrow_button_icon"></div>
-                </div>
-              </button>
-              <button class="right_arrow_button">
-                <div class="right_arrow_button_icon_container">
-                  <div class="right_arrow_button_icon"></div>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="gradient_overlay"></div>
-      <div class="lines_overlay"></div>
-      <div class="hero_background_image_4"></div>
-    </section>
-    <section class="hero_section hero_section_section_5">
-      <div class="hero_container">
-        <div class="hero_text_container">
-          <div class="hero_text">
-            <h1>Elevating Sports & Entertainment</h1>
-            <p>
-              McSport and our sports management practice help organizations in
-              Sports, Media, and Entertainment build world-class operations,
-              fan engagement platforms, and athlete management systems.
-            </p>
-          </div>
-          <div class="hero_actions">
-            <button class="left">Explore Sports Solutions</button>
-            <button class="right">Schedule a Consultation</button>
-          </div>
-        </div>
-        <div class="hero_navigation">
-          <div class="navigation_dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="navigation_container">
-            <h4 class="navigation_counter">05 <span>/ 07</span></h4>
-            <div class="arrow_container">
-              <button class="left_arrow_button">
-                <div class="left_arrow_button_icon_container">
-                  <div class="left_arrow_button_icon"></div>
-                </div>
-              </button>
-              <button class="right_arrow_button">
-                <div class="right_arrow_button_icon_container">
-                  <div class="right_arrow_button_icon"></div>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="gradient_overlay"></div>
-      <div class="lines_overlay"></div>
-      <div class="hero_background_image_5"></div>
-    </section>
-    <section class="hero_section hero_section_section_6">
-      <div class="hero_container">
-        <div class="hero_text_container">
-          <div class="hero_text">
-            <h1>Data-Driven Growth Strategies</h1>
-            <p>
-              Our digital marketing expertise combines analytics, creative
-              strategy, and cutting-edge technology to drive measurable growth
-              for clients across Retail, Healthcare, and Education.
-            </p>
-          </div>
-          <div class="hero_actions">
-            <button class="left">See our Approach</button>
-            <button class="right">Schedule a Consultation</button>
-          </div>
-        </div>
-        <div class="hero_navigation">
-          <div class="navigation_dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot active"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="navigation_container">
-            <h4 class="navigation_counter">06 <span>/ 07</span></h4>
-            <div class="arrow_container">
-              <button class="left_arrow_button">
-                <div class="left_arrow_button_icon_container">
-                  <div class="left_arrow_button_icon"></div>
-                </div>
-              </button>
-              <button class="right_arrow_button">
-                <div class="right_arrow_button_icon_container">
-                  <div class="right_arrow_button_icon"></div>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="gradient_overlay"></div>
-      <div class="lines_overlay"></div>
-      <div class="hero_background_image_6"></div>
-    </section>
-    <section class="hero_section hero_section_section_7">
-      <div class="hero_container">
-        <div class="hero_text_container">
-          <div class="hero_text">
-            <h1>Transforming Agriculture Through Innovation</h1>
-            <p>
-              From precision farming with Asmartfarm to end-to-end
-              agribusiness consulting, we empower the Agriculture and Food &
-              Beverage industries with technology-driven solutions for
-              sustainable growth.
-            </p>
-          </div>
-          <div class="hero_actions">
-            <button class="left">Discover Agribusiness</button>
-            <button class="right">Schedule a Consultation</button>
-          </div>
-        </div>
-        <div class="hero_navigation">
-          <div class="navigation_dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot active"></div>
-          </div>
-          <div class="navigation_container">
-            <h4 class="navigation_counter">07 <span>/ 07</span></h4>
-            <div class="arrow_container">
-              <button class="left_arrow_button">
-                <div class="left_arrow_button_icon_container">
-                  <div class="left_arrow_button_icon"></div>
-                </div>
-              </button>
-              <button class="right_arrow_button">
-                <div class="right_arrow_button_icon_container">
-                  <div class="right_arrow_button_icon"></div>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="gradient_overlay"></div>
-      <div class="lines_overlay"></div>
-      <div class="hero_background_image_7"></div>
-    </section>
-  </section>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var slides = [
+        {
+          title: "Artificial Intelligent Systems for the Digital Age",
+          description: "We design and deploy AI-powered solutions and digital transformation strategies that help enterprises across Technology, Financial Services, and Telecommunications stay ahead of disruption.",
+          cta: "Explore AI Solutions",
+          image: "./img/Background Image 1.jpg"
+        },
+        {
+          title: "FIDIC Contract Administration",
+          description: "Delivering trusted expertise in contract administration, claims management, and dispute resolution to support complex infrastructure and construction projects.",
+          cta: "Explore Our Services",
+          image: "./img/Background Image 2.jpg"
+        },
+        {
+          title: "Powering the Energy Transition",
+          description: "Our specialized Oil & Gas software suite and deep sector expertise help Energy, Mining, and Petrochemical organizations optimize operations, manage risk, and navigate the energy transition.",
+          cta: "Explore Energy Services",
+          image: "./img/Background Image 3.jpg"
+        },
+        {
+          title: "Building Tomorrow's Infrastructure",
+          description: "We deliver full-cycle Engineering, Procurement & Construction services and development consultancy for Government, Real Estate, and Infrastructure sectors across emerging markets.",
+          cta: "View Our Projects",
+          image: "./img/Background Image 4.jpg"
+        },
+        {
+          title: "Elevating Sports & Entertainment",
+          description: "McSport and our sports management practice help organizations in Sports, Media, and Entertainment build world-class operations, fan engagement platforms, and athlete management systems.",
+          cta: "Explore Sports Solutions",
+          image: "./img/Background Image 5.jpg"
+        },
+        {
+          title: "Data-Driven Growth Strategies",
+          description: "Our digital marketing expertise combines analytics, creative strategy, and cutting-edge technology to drive measurable growth for clients across Retail, Healthcare, and Education.",
+          cta: "See Our Approach",
+          image: "./img/Background Image 6.jpg"
+        },
+        {
+          title: "Transforming Agriculture Through Innovation",
+          description: "From precision farming with Asmartfarm to end-to-end agribusiness consulting, we empower the Agriculture and Food & Beverage industries with technology-driven solutions for sustainable growth.",
+          cta: "Discover Agribusiness",
+          image: "./img/Background Image 7.jpg"
+        }
+      ];
+
+      var hero             = document.querySelector('.mcg-hero');
+      var heading          = hero.querySelector('h1');
+      var description      = hero.querySelector('.intro-copy p');
+      var primaryButton    = hero.querySelector('.button-solid');
+      var slideCount       = hero.querySelector('.slide-count');
+      var progressSegments = Array.from(hero.querySelectorAll('.progress-segment'));
+      var previousButton   = hero.querySelector('.arrow-button:first-child');
+      var nextButton       = hero.querySelector('.arrow-button:last-child');
+      var currentSlide     = 0;
+      var autoplayTimer;
+
+      function renderSlide(index) {
+        var slide       = slides[index];
+        var slideNumber = String(index + 1).padStart(2, '0');
+        hero.classList.remove('is-changing');
+        void hero.offsetWidth; // trigger reflow for animation restart
+        hero.classList.add('is-changing');
+        hero.querySelector('.hero-image').style.backgroundImage = 'url("' + slide.image + '")';
+        heading.textContent       = slide.title;
+        description.textContent   = slide.description;
+        primaryButton.textContent = slide.cta;
+        primaryButton.href        = '#services';
+        slideCount.querySelector('.slide-current').textContent = slideNumber;
+        slideCount.querySelector('.slide-rest').textContent    = ' / ' + String(slides.length).padStart(2, '0');
+        slideCount.setAttribute('aria-label', 'Slide ' + (index + 1) + ' of ' + slides.length);
+        hero.setAttribute('data-slide', slideNumber);
+        progressSegments.forEach(function (seg, i) {
+          var active = i === index;
+          seg.classList.toggle('active', active);
+          seg.setAttribute('aria-selected', String(active));
+        });
+      }
+
+      function goToSlide(index) {
+        currentSlide = (index + slides.length) % slides.length;
+        renderSlide(currentSlide);
+        startAutoplay();
+      }
+
+      function startAutoplay() {
+        clearInterval(autoplayTimer);
+        autoplayTimer = setInterval(function () { goToSlide(currentSlide + 1); }, 6000);
+      }
+
+      function preloadSlides() {
+        slides.slice(1).forEach(function (slide) {
+          var img = new Image();
+          img.src = slide.image;
+        });
+      }
+
+      previousButton.addEventListener('click', function () { goToSlide(currentSlide - 1); });
+      nextButton.addEventListener('click',     function () { goToSlide(currentSlide + 1); });
+      progressSegments.forEach(function (seg, i) {
+        seg.addEventListener('click', function () { goToSlide(i); });
+      });
+      hero.addEventListener('mouseenter', function () { clearInterval(autoplayTimer); });
+      hero.addEventListener('mouseleave', startAutoplay);
+      hero.addEventListener('focusin',    function () { clearInterval(autoplayTimer); });
+      hero.addEventListener('focusout',   function (e) {
+        if (!hero.contains(e.relatedTarget)) startAutoplay();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft')  goToSlide(currentSlide - 1);
+        if (e.key === 'ArrowRight') goToSlide(currentSlide + 1);
+      });
+
+      renderSlide(0);
+      startAutoplay();
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(preloadSlides);
+      } else {
+        window.addEventListener('load', preloadSlides, { once: true });
+      }
+    })();
+  </script>
 
   <section class="section_1">
     <div class="section_1_container">

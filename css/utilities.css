@@ -201,11 +201,13 @@
 .btn-primary-outline {
   background-color: transparent;
   color: var(--primary);
+  border-width: 1px;
   border-color: var(--primary);
 }
 
 .btn-primary-outline:hover:not(:disabled) {
   background-color: rgba(55, 55, 55, 0.2);
+  border-width: 1px;
   border-color: var(--primary);
 }
 

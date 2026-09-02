@@ -136,7 +136,9 @@
   font-size: var(--type-display-size);
   font-weight: 700;
   line-height: var(--type-display-leading);
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
   margin: 0;
   color: #fff;
 }
@@ -292,17 +294,27 @@
 }
 
 @media (max-width: 800px) {
+  :root {
+    --type-display-size: clamp(32px, 8.5vw, 38px);
+    --type-display-leading: 1.15;
+    --type-body-size: 15.5px;
+    --type-body-leading: 24px;
+    --type-label-size: 16px;
+    --type-label-leading: 24px;
+  }
+
   .mcg-hero {
-    min-height: 754px;
+    min-height: 680px;
+    position: relative;
   }
 
   .image-frame {
-    bottom: auto;
+    bottom: 0;
     height: 100%;
-    left: 30.3%;
-    right: auto;
+    left: 25%;
+    right: 0;
     top: 0;
-    width: 69.7%;
+    width: 75%;
   }
 
   .hero-image {
@@ -310,17 +322,39 @@
   }
 
   .hero-content {
-    gap: 24px;
-    left: 24px;
-    padding-bottom: 12px;
-    width: calc(100% - 48px);
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+    right: 16px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .intro-panel {
-    border-radius: 4px;
+    border-radius: 8px;
     gap: 20px;
-    padding: 24px;
+    padding: 24px 22px;
     width: 100%;
+    background: var(--green);
+  }
+
+  .intro-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .intro-copy h1 {
+    font-size: var(--type-display-size);
+    line-height: var(--type-display-leading);
+    font-weight: 700;
+  }
+
+  .intro-copy p {
+    font-size: var(--type-body-size);
+    line-height: var(--type-body-leading);
   }
 
   .actions {
@@ -331,11 +365,13 @@
 
   .button {
     white-space: normal;
+    padding: 14px 20px;
   }
 
   .hero-footer {
     align-items: center;
     flex-direction: row;
+    flex-shrink: 0;
   }
 
   .progress {
@@ -358,7 +394,35 @@
   }
 
   .arrow-buttons {
-    gap: 4px;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mcg-hero {
+    min-height: 640px;
+  }
+
+  .hero-content {
+    bottom: 16px;
+    left: 14px;
+    right: 14px;
+    gap: 16px;
+  }
+
+  .intro-panel {
+    padding: 22px 18px;
+    gap: 18px;
+  }
+
+  .intro-copy h1 {
+    font-size: clamp(30px, 8.2vw, 36px);
+    line-height: 1.15;
+  }
+
+  .intro-copy p {
+    font-size: 14.5px;
+    line-height: 22px;
   }
 }
 
